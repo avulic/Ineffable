@@ -1,9 +1,0 @@
-E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\r18075\Ineffable\bin\Debug\Ineffable.exe.config
-E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\r18075\bin\Debug\Ineffable.exe.config
-E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\r18075\bin\Debug\Ineffable.exe
-E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\r18075\bin\Debug\Ineffable.pdb
-E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\r18075\obj\Debug\Ineffable.csprojResolveAssemblyReference.cache
-E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\r18075\obj\Debug\Ineffable.Properties.Resources.resources
-E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\r18075\obj\Debug\Ineffable.csproj.GenerateResource.Cache
-E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\r18075\obj\Debug\Ineffable.exe
-E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\r18075\obj\Debug\Ineffable.pdb
