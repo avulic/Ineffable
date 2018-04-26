@@ -5,9 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IneffableBase", "IneffableBase.csproj", "{3F0FDA55-28E5-45C2-8F66-D593E0D6281E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmPrijava", "..\Prijava\FrmPrijava.csproj", "{789D45A6-2E9B-4F43-A43C-ABEF92F0A89C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prijava", "..\Prijava\Prijava.csproj", "{BF9D5CB2-57EA-4178-A101-5816EE5CAC92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmRegistracija", "FrmRegistracija\FrmRegistracija.csproj", "{9CADCAC9-BC8B-4D42-985D-1BB61A205309}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registracija", "..\Registracija\Registracija.csproj", "{9A22DABE-23EF-4535-BCF8-BBE5D045AE05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{3F0FDA55-28E5-45C2-8F66-D593E0D6281E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F0FDA55-28E5-45C2-8F66-D593E0D6281E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F0FDA55-28E5-45C2-8F66-D593E0D6281E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{789D45A6-2E9B-4F43-A43C-ABEF92F0A89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{789D45A6-2E9B-4F43-A43C-ABEF92F0A89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{789D45A6-2E9B-4F43-A43C-ABEF92F0A89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{789D45A6-2E9B-4F43-A43C-ABEF92F0A89C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9CADCAC9-BC8B-4D42-985D-1BB61A205309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CADCAC9-BC8B-4D42-985D-1BB61A205309}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9CADCAC9-BC8B-4D42-985D-1BB61A205309}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9CADCAC9-BC8B-4D42-985D-1BB61A205309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF9D5CB2-57EA-4178-A101-5816EE5CAC92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9D5CB2-57EA-4178-A101-5816EE5CAC92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9D5CB2-57EA-4178-A101-5816EE5CAC92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9D5CB2-57EA-4178-A101-5816EE5CAC92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A22DABE-23EF-4535-BCF8-BBE5D045AE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A22DABE-23EF-4535-BCF8-BBE5D045AE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A22DABE-23EF-4535-BCF8-BBE5D045AE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A22DABE-23EF-4535-BCF8-BBE5D045AE05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

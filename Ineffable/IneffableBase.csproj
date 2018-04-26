@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Prijava\FrmPrijava.csproj">
-      <Project>{789D45A6-2E9B-4F43-A43C-ABEF92F0A89C}</Project>
-      <Name>FrmPrijava</Name>
+    <ProjectReference Include="..\Prijava\Prijava.csproj">
+      <Project>{BF9D5CB2-57EA-4178-A101-5816EE5CAC92}</Project>
+      <Name>Prijava</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

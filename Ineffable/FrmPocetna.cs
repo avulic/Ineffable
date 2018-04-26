@@ -1,4 +1,5 @@
-﻿using Prijava;
+﻿
+using Prijava;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,6 @@ namespace Ineffable
 
         private void btnPrijava_Click(object sender, EventArgs e)
         {
-            this.Hide();
             FrmPrijava prijava = new FrmPrijava();
             prijava.Show();
         }

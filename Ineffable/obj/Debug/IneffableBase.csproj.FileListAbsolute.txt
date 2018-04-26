@@ -6,6 +6,6 @@ E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\Ineffable\obj\Debug\Ineffable.P
 E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\Ineffable\obj\Debug\IneffableBase.csproj.GenerateResource.Cache
 E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\Ineffable\obj\Debug\Ineffable.exe
 E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\Ineffable\obj\Debug\Ineffable.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\Ineffable\obj\Debug\Ineffable.FrmPocetna.resources
 E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\Ineffable\bin\Debug\Prijava.dll
 E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\Ineffable\bin\Debug\Prijava.pdb
-E:\Faks\3.godina\2.semestar\PI\projekt\Ineffable\Ineffable\obj\Debug\Ineffable.FrmPocetna.resources
