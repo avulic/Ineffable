@@ -1,0 +1,7 @@
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\PrijavaRegistracija\bin\Debug\PrijavaRegistracija.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\PrijavaRegistracija\bin\Debug\PrijavaRegistracija.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\PrijavaRegistracija\obj\Debug\PrijavaRegistracija.csprojResolveAssemblyReference.cache
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\PrijavaRegistracija\obj\Debug\PrijavaRegistracija.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\PrijavaRegistracija\obj\Debug\PrijavaRegistracija.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\PrijavaRegistracija\obj\Debug\PrijavaRegistracija.frmPrijava.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\PrijavaRegistracija\obj\Debug\PrijavaRegistracija.csproj.GenerateResource.Cache
