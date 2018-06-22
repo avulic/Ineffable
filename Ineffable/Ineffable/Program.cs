@@ -16,7 +16,7 @@ namespace Ineffable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPocetna());
+            Application.Run(new frmMain());
         }
     }
 }

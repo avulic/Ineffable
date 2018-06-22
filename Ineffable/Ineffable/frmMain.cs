@@ -1,6 +1,4 @@
-﻿
-using Prijava;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Ineffable
 {
-    public partial class FrmPocetna : Form
+    public partial class frmMain : Form
     {
-        public FrmPocetna()
+        public frmMain()
         {
             InitializeComponent();
-        }
-
-        private void btnPrijava_Click(object sender, EventArgs e)
-        {
-            FrmPrijava prijava = new FrmPrijava();
-            prijava.Show();
         }
     }
 }

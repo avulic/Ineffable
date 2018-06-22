@@ -1,6 +1,6 @@
 ﻿namespace Ineffable
 {
-    partial class FrmPocetna
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,46 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnPrijava = new System.Windows.Forms.Button();
-            this.btnRegistracija = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnPrijava
+            // menuStrip1
             // 
-            this.btnPrijava.Location = new System.Drawing.Point(92, 71);
-            this.btnPrijava.Name = "btnPrijava";
-            this.btnPrijava.Size = new System.Drawing.Size(75, 23);
-            this.btnPrijava.TabIndex = 0;
-            this.btnPrijava.Text = "Prijava";
-            this.btnPrijava.UseVisualStyleBackColor = true;
-            this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(284, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnRegistracija
+            // helpToolStripMenuItem
             // 
-            this.btnRegistracija.Location = new System.Drawing.Point(92, 122);
-            this.btnRegistracija.Name = "btnRegistracija";
-            this.btnRegistracija.Size = new System.Drawing.Size(75, 23);
-            this.btnRegistracija.TabIndex = 1;
-            this.btnRegistracija.Text = "Registracija";
-            this.btnRegistracija.UseVisualStyleBackColor = true;
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
             // 
-            // FrmPocetna
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.btnRegistracija);
-            this.Controls.Add(this.btnPrijava);
-            this.Name = "FrmPocetna";
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "frmMain";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnPrijava;
-        private System.Windows.Forms.Button btnRegistracija;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
     }
 }
 
