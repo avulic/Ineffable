@@ -1,0 +1,16 @@
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.pdb
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\MessagingToolkit.QRCode.dll
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.CopyComplete
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.dll
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.pdb
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmKreirajQRKod.resources
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.GenerateResource.cache
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll.config
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.dll
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.dll
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.xml
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.xml
+D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmRadniNalog.resources
