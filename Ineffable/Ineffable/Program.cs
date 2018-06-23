@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using PrijavaRegistracija;
 namespace Ineffable
 {
     static class Program
@@ -16,7 +16,12 @@ namespace Ineffable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+
+            frmMain mainForm = new frmMain();
+
+            Application.Run(mainForm);
+
+            
         }
     }
 }
