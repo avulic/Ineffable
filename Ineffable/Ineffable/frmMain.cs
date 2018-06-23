@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using PrijavaRegistracija;
 namespace Ineffable
 {
     public partial class frmMain : Form
@@ -15,15 +15,46 @@ namespace Ineffable
         public frmMain()
         {
             InitializeComponent();
-            
+            IsMdiContainer = true;
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
-            IsMdiContainer = true;
+            frmPrijava prijavaForma = new frmPrijava(this);
+            prikaziFormu(prijavaForma);
+            
         }
-
+        protected override void OnMdiChildActivate(EventArgs e)
+        {
+            Form[] mdichld = this.MdiChildren;
+            base.OnMdiChildActivate(e);
+            this.BeginInvoke(new Action(() => {
+                if (mdichld.Length == 0)
+                {
+                    msIzbornik.Visible = true;
+                }
+                else
+                {
+                    foreach (Form item in mdichld)
+                    {
+                        if (item.Name == "frmPrijava")
+                        {
+                            item.Closed += delegate
+                            {
+                                msIzbornik.Visible = true;
+                            };
+                        }
+                    }
+                }
+            }));
+        }
+        void prikaziFormu(Form forma)
+        {
+            forma.MdiParent = this;
+            forma.WindowState = FormWindowState.Maximized;
+            forma.Show();
+            this.Size = forma.Size;
+        }
         int pomak;
         int pomakX;
         int pomakY;
@@ -46,10 +77,7 @@ namespace Ineffable
                 this.SetDesktopLocation(MousePosition.X - pomakX, MousePosition.Y - pomakY);
             }
         }
-        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
+
 
         private void pExit_Paint(object sender, PaintEventArgs e)
         {
@@ -105,5 +133,6 @@ namespace Ineffable
         {
             WindowState = FormWindowState.Minimized;
         }
+
     }
 }
