@@ -15,3 +15,11 @@ E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\obj\Deb
 E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\obj\Debug\Ineffable.frmMain.resources
 E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\obj\Debug\Ineffable.Properties.Resources.resources
 E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\obj\Debug\Ineffable.csproj.GenerateResource.Cache
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\bin\Debug\PrijavaRegistracija.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\bin\Debug\PrijavaRegistracija.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\bin\Debug\EntityFramework.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\bin\Debug\EntityFramework.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\bin\Debug\EntityFramework.SqlServer.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\bin\Debug\EntityFramework.SqlServer.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\bin\Debug\dbModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\1.faza\r18075\Ineffable\Ineffable\bin\Debug\dbModel.pdb
