@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PrijavaRegistracija;
+
 namespace Ineffable
 {
     public partial class frmMain : Form
@@ -48,10 +48,7 @@ namespace Ineffable
         }
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPrijava prijava = new frmPrijava();
-            prijava.MdiParent = this;
-            prijava.WindowState = FormWindowState.Maximized;
-            prijava.Show();
+           
         }
 
         private void pExit_Paint(object sender, PaintEventArgs e)
