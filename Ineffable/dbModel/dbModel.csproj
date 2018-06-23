@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7931BD5C-1BF9-49B2-8DC3-4DAAFAA1980A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dbModel</RootNamespace>
+    <AssemblyName>dbModel</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="IneffableModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>IneffableModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="IneffableModel.edmx.diagram">
+      <DependentUpon>IneffableModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="artikl.cs">
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dobavljac.cs">
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="korisnik.cs">
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="kupac.cs">
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="racun.cs">
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="radni_nalog_servisa.cs">
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rezervacija.cs">
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stavka_racuna.cs">
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uloga.cs">
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zahtjev_za_servis.cs">
+      <DependentUpon>IneffableModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IneffableModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IneffableModel.edmx</DependentUpon>
+      <LastGenOutput>IneffableModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="IneffableModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IneffableModel.edmx</DependentUpon>
+      <LastGenOutput>IneffableModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
