@@ -1,0 +1,13 @@
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.pdb
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmArtikli.resources
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.GenerateResource.Cache
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.dll
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.pdb
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll.config
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.dll
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.xml
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Korisnik\Desktop\s\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmNoviArtikl.resources
