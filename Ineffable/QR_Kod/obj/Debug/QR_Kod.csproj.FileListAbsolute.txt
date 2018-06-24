@@ -14,3 +14,19 @@ D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlS
 D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.xml
 D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.xml
 D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmRadniNalog.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csprojResolveAssemblyReference.cache
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmKreirajQRKod.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmRadniNalog.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.GenerateResource.Cache
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll.config
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\MessagingToolkit.QRCode.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.xml

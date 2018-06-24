@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BPModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,13 +38,9 @@ namespace QR_Kod
                 kontekst.radni_nalog_servisa.Add(noviRadniNalog);
                 kontekst.SaveChanges();
             }
-
             QRKod objekt = new QRKod();
             string oznaka = oznakaNalog.Text;
             objekt.SifrirajQRKod(oznaka, qrKod);
-
-            
-       
         }
 
 
@@ -58,30 +55,16 @@ namespace QR_Kod
             QRKod objekt = new QRKod();
             string oznaka = objekt.DesifrirajQRKod(qrKod);
             frmRadniNalog f = new frmRadniNalog(oznaka);
-            f.ShowDialog();
+            f.ShowDialog(this);
             
         }
 
         private void frmKreirajQRKod_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'ineffableDataSet.korisnik' table. You can move, or remove it, as needed.
+            this.korisnikTableAdapter.FillBy(this.ineffableDataSet.korisnik);
             // TODO: This line of code loads data into the 'ineffableDataSet.kupac' table. You can move, or remove it, as needed.
             this.kupacTableAdapter.Fill(this.ineffableDataSet.kupac);
-            // TODO: This line of code loads data into the 'ineffableDataSet.korisnik' table. You can move, or remove it, as needed.
-            //this.korisnikTableAdapter.Fill(this.ineffableDataSet.korisnik);
-            this.korisnikTableAdapter.FillBy(this.ineffableDataSet.korisnik);
-
-        }
-        
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.korisnikTableAdapter.FillBy(this.ineffableDataSet.korisnik);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
 
         }
     }

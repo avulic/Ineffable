@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BPModel;
 namespace CrudArtikala
 {
     public partial class frmNoviArtikl : Form
@@ -47,12 +47,13 @@ namespace CrudArtikala
         {
             this.Validate();
             this.artiklBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.ineffableBPDataSet);
+            this.tableAdapterManager.UpdateAll(this.ineffableDataSet);
         }
 
         private void frmNoviArtikl_Load(object sender, EventArgs e)
         {
-            this.dobavljacTableAdapter.Fill(this.ineffableBPDataSet.dobavljac);
+            // TODO: This line of code loads data into the 'ineffableDataSet.dobavljac' table. You can move, or remove it, as needed.
+            this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
         }
 
         private void btnSpremi_Click(object sender, EventArgs e)
@@ -84,7 +85,7 @@ namespace CrudArtikala
                     db.SaveChanges();
                 }
             }
-            Close();
+           Close();
         }
     }
 }

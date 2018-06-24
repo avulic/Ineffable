@@ -45,10 +45,10 @@
             this.serviseri = new System.Windows.Forms.ComboBox();
             this.korisnikBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ineffableDataSet = new QR_Kod.IneffableDataSet();
-            this.korisnikTableAdapter = new QR_Kod.IneffableDataSetTableAdapters.korisnikTableAdapter();
             this.kupacNalog = new System.Windows.Forms.ComboBox();
             this.kupacBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kupacTableAdapter = new QR_Kod.IneffableDataSetTableAdapters.kupacTableAdapter();
+            this.korisnikTableAdapter = new QR_Kod.IneffableDataSetTableAdapters.korisnikTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.qrKod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
@@ -58,24 +58,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 56);
+            this.label1.Location = new System.Drawing.Point(9, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 17);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Oznaka:";
             // 
             // oznakaNalog
             // 
-            this.oznakaNalog.Location = new System.Drawing.Point(79, 56);
+            this.oznakaNalog.Location = new System.Drawing.Point(59, 46);
+            this.oznakaNalog.Margin = new System.Windows.Forms.Padding(2);
             this.oznakaNalog.Name = "oznakaNalog";
-            this.oznakaNalog.Size = new System.Drawing.Size(157, 22);
+            this.oznakaNalog.Size = new System.Drawing.Size(119, 20);
             this.oznakaNalog.TabIndex = 1;
             // 
             // gumbKreiraj
             // 
-            this.gumbKreiraj.Location = new System.Drawing.Point(127, 402);
+            this.gumbKreiraj.Location = new System.Drawing.Point(95, 327);
+            this.gumbKreiraj.Margin = new System.Windows.Forms.Padding(2);
             this.gumbKreiraj.Name = "gumbKreiraj";
-            this.gumbKreiraj.Size = new System.Drawing.Size(119, 25);
+            this.gumbKreiraj.Size = new System.Drawing.Size(89, 20);
             this.gumbKreiraj.TabIndex = 2;
             this.gumbKreiraj.Text = "Kreiraj QR kod";
             this.gumbKreiraj.UseVisualStyleBackColor = true;
@@ -83,9 +86,10 @@
             // 
             // qrKod
             // 
-            this.qrKod.Location = new System.Drawing.Point(497, 131);
+            this.qrKod.Location = new System.Drawing.Point(373, 106);
+            this.qrKod.Margin = new System.Windows.Forms.Padding(2);
             this.qrKod.Name = "qrKod";
-            this.qrKod.Size = new System.Drawing.Size(291, 296);
+            this.qrKod.Size = new System.Drawing.Size(218, 240);
             this.qrKod.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.qrKod.TabIndex = 3;
             this.qrKod.TabStop = false;
@@ -93,60 +97,67 @@
             // Osoba
             // 
             this.Osoba.AutoSize = true;
-            this.Osoba.Location = new System.Drawing.Point(12, 93);
+            this.Osoba.Location = new System.Drawing.Point(9, 76);
+            this.Osoba.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Osoba.Name = "Osoba";
-            this.Osoba.Size = new System.Drawing.Size(54, 17);
+            this.Osoba.Size = new System.Drawing.Size(41, 13);
             this.Osoba.TabIndex = 4;
             this.Osoba.Text = "Osoba:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 131);
+            this.label2.Location = new System.Drawing.Point(9, 106);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 17);
+            this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Uređaj:";
             // 
             // uredjajNalog
             // 
-            this.uredjajNalog.Location = new System.Drawing.Point(79, 131);
+            this.uredjajNalog.Location = new System.Drawing.Point(59, 106);
+            this.uredjajNalog.Margin = new System.Windows.Forms.Padding(2);
             this.uredjajNalog.Name = "uredjajNalog";
-            this.uredjajNalog.Size = new System.Drawing.Size(157, 22);
+            this.uredjajNalog.Size = new System.Drawing.Size(119, 20);
             this.uredjajNalog.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 170);
+            this.label3.Location = new System.Drawing.Point(9, 138);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 17);
+            this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "Serviser:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 204);
+            this.label4.Location = new System.Drawing.Point(9, 166);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 17);
+            this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Opis:";
             // 
             // opisNalog
             // 
-            this.opisNalog.Location = new System.Drawing.Point(79, 204);
+            this.opisNalog.Location = new System.Drawing.Point(59, 166);
+            this.opisNalog.Margin = new System.Windows.Forms.Padding(2);
             this.opisNalog.Multiline = true;
             this.opisNalog.Name = "opisNalog";
-            this.opisNalog.Size = new System.Drawing.Size(157, 114);
+            this.opisNalog.Size = new System.Drawing.Size(119, 93);
             this.opisNalog.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(263, 56);
+            this.label5.Location = new System.Drawing.Point(197, 46);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 17);
+            this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 12;
             this.label5.Text = "Status:";
             // 
@@ -162,16 +173,18 @@
             "Na čekanju",
             "Popravljeno",
             "Isporučeno"});
-            this.statusNalog.Location = new System.Drawing.Point(321, 56);
+            this.statusNalog.Location = new System.Drawing.Point(241, 46);
+            this.statusNalog.Margin = new System.Windows.Forms.Padding(2);
             this.statusNalog.Name = "statusNalog";
-            this.statusNalog.Size = new System.Drawing.Size(170, 24);
+            this.statusNalog.Size = new System.Drawing.Size(128, 21);
             this.statusNalog.TabIndex = 13;
             // 
             // skeniraj
             // 
-            this.skeniraj.Location = new System.Drawing.Point(321, 402);
+            this.skeniraj.Location = new System.Drawing.Point(241, 327);
+            this.skeniraj.Margin = new System.Windows.Forms.Padding(2);
             this.skeniraj.Name = "skeniraj";
-            this.skeniraj.Size = new System.Drawing.Size(119, 25);
+            this.skeniraj.Size = new System.Drawing.Size(89, 20);
             this.skeniraj.TabIndex = 14;
             this.skeniraj.Text = "Skeniraj QR kod";
             this.skeniraj.UseVisualStyleBackColor = true;
@@ -182,9 +195,10 @@
             this.serviseri.DataSource = this.korisnikBindingSource;
             this.serviseri.DisplayMember = "ime";
             this.serviseri.FormattingEnabled = true;
-            this.serviseri.Location = new System.Drawing.Point(79, 167);
+            this.serviseri.Location = new System.Drawing.Point(59, 136);
+            this.serviseri.Margin = new System.Windows.Forms.Padding(2);
             this.serviseri.Name = "serviseri";
-            this.serviseri.Size = new System.Drawing.Size(157, 24);
+            this.serviseri.Size = new System.Drawing.Size(119, 21);
             this.serviseri.TabIndex = 15;
             this.serviseri.ValueMember = "korisnik_id";
             // 
@@ -198,18 +212,15 @@
             this.ineffableDataSet.DataSetName = "IneffableDataSet";
             this.ineffableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // korisnikTableAdapter
-            // 
-            this.korisnikTableAdapter.ClearBeforeFill = true;
-            // 
             // kupacNalog
             // 
             this.kupacNalog.DataSource = this.kupacBindingSource;
             this.kupacNalog.DisplayMember = "ime";
             this.kupacNalog.FormattingEnabled = true;
-            this.kupacNalog.Location = new System.Drawing.Point(79, 90);
+            this.kupacNalog.Location = new System.Drawing.Point(59, 73);
+            this.kupacNalog.Margin = new System.Windows.Forms.Padding(2);
             this.kupacNalog.Name = "kupacNalog";
-            this.kupacNalog.Size = new System.Drawing.Size(157, 24);
+            this.kupacNalog.Size = new System.Drawing.Size(119, 21);
             this.kupacNalog.TabIndex = 16;
             this.kupacNalog.ValueMember = "kupac_id";
             // 
@@ -222,11 +233,15 @@
             // 
             this.kupacTableAdapter.ClearBeforeFill = true;
             // 
+            // korisnikTableAdapter
+            // 
+            this.korisnikTableAdapter.ClearBeforeFill = true;
+            // 
             // frmKreirajQRKod
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 450);
+            this.ClientSize = new System.Drawing.Size(611, 367);
             this.Controls.Add(this.kupacNalog);
             this.Controls.Add(this.serviseri);
             this.Controls.Add(this.skeniraj);
@@ -242,6 +257,7 @@
             this.Controls.Add(this.gumbKreiraj);
             this.Controls.Add(this.oznakaNalog);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmKreirajQRKod";
             this.Text = "frmKreirajQRKod";
             this.Load += new System.EventHandler(this.frmKreirajQRKod_Load);
@@ -270,11 +286,11 @@
         private System.Windows.Forms.ComboBox statusNalog;
         private System.Windows.Forms.Button skeniraj;
         private System.Windows.Forms.ComboBox serviseri;
-        private IneffableDataSet ineffableDataSet;
-        private System.Windows.Forms.BindingSource korisnikBindingSource;
-        private IneffableDataSetTableAdapters.korisnikTableAdapter korisnikTableAdapter;
         private System.Windows.Forms.ComboBox kupacNalog;
+        private IneffableDataSet ineffableDataSet;
         private System.Windows.Forms.BindingSource kupacBindingSource;
         private IneffableDataSetTableAdapters.kupacTableAdapter kupacTableAdapter;
+        private System.Windows.Forms.BindingSource korisnikBindingSource;
+        private IneffableDataSetTableAdapters.korisnikTableAdapter korisnikTableAdapter;
     }
 }

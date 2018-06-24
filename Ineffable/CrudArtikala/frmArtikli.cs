@@ -7,28 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BPModel;
 namespace CrudArtikala
 {
     public partial class frmArtikli : Form
     {
-        public frmArtikli()
+        Form parent;
+        public frmArtikli(Form parent)
         {
             InitializeComponent();
+            this.parent = parent;
         }
 
         private void frmArtikli_Load(object sender, EventArgs e)
         {
-            this.dobavljacTableAdapter.Fill(this.ineffableBPDataSet.dobavljac);
-            this.artiklTableAdapter.Fill(this.ineffableBPDataSet.artikl);
+            // TODO: This line of code loads data into the 'ineffableDataSet.dobavljac' table. You can move, or remove it, as needed.
+            this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
+            // TODO: This line of code loads data into the 'ineffableDataSet.artikl' table. You can move, or remove it, as needed.
+            this.artiklTableAdapter.Fill(this.ineffableDataSet.artikl);
         }
 
         private void btnKreiraj_Click(object sender, EventArgs e)
         {
             frmNoviArtikl forma = new frmNoviArtikl();
-            forma.ShowDialog();
-            this.dobavljacTableAdapter.Fill(this.ineffableBPDataSet.dobavljac);
-            this.artiklTableAdapter.Fill(this.ineffableBPDataSet.artikl);
+            forma.ShowDialog(this);
+            this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
+            this.artiklTableAdapter.Fill(this.ineffableDataSet.artikl);
         }
 
         private void btnAzuriraj_Click(object sender, EventArgs e)
@@ -37,9 +41,9 @@ namespace CrudArtikala
             {
                 int idArtikla = int.Parse(dgvArtikli.SelectedRows[0].Cells[0].Value.ToString());
                 frmNoviArtikl forma = new frmNoviArtikl(idArtikla);
-                forma.ShowDialog();
-                this.dobavljacTableAdapter.Fill(this.ineffableBPDataSet.dobavljac);
-                this.artiklTableAdapter.Fill(this.ineffableBPDataSet.artikl);
+                forma.ShowDialog(this);
+                this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
+                this.artiklTableAdapter.Fill(this.ineffableDataSet.artikl);
             }
         }
 
@@ -59,8 +63,8 @@ namespace CrudArtikala
                     }
                 }
             }
-            this.dobavljacTableAdapter.Fill(this.ineffableBPDataSet.dobavljac);
-            this.artiklTableAdapter.Fill(this.ineffableBPDataSet.artikl);
+            this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
+            this.artiklTableAdapter.Fill(this.ineffableDataSet.artikl);
         }
     }
 }

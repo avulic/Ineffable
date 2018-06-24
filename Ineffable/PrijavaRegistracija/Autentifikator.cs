@@ -1,4 +1,4 @@
-﻿using dbModel;
+﻿using BPModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace PrijavaRegistracija
             bool ispravno = false;
             using (IneffableEntities bp = new IneffableEntities())
             {
-                foreach (var item in bp.korisniks)
+                foreach (var item in bp.korisnik)
                 {
                     if (item.korisnicko_ime == korIme)
                     {
@@ -33,7 +33,7 @@ namespace PrijavaRegistracija
                     telefon = telefon,
                     uloga_id = 1
                 };
-                bp.korisniks.Add(korisnik);
+                bp.korisnik.Add(korisnik);
                 bp.SaveChanges();
                 
                 ispravno = true;    
@@ -45,7 +45,7 @@ namespace PrijavaRegistracija
             string korRegistriran = "korime";
             using (IneffableEntities bp = new IneffableEntities())
             {
-                foreach (var korisnik in bp.korisniks)
+                foreach (var korisnik in bp.korisnik)
                 {
                     if (korisnik.korisnicko_ime == korIme)
                     {

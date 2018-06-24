@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BPModel;
 namespace QR_Kod
 {
     public partial class frmRadniNalog : Form
