@@ -67,12 +67,14 @@
             this.msIzbornikArtikli.Name = "msIzbornikArtikli";
             this.msIzbornikArtikli.Size = new System.Drawing.Size(50, 20);
             this.msIzbornikArtikli.Text = "Artikli";
+            this.msIzbornikArtikli.Click += new System.EventHandler(this.msIzbornikArtikli_Click);
             // 
             // msIzbornikServisi
             // 
             this.msIzbornikServisi.Name = "msIzbornikServisi";
             this.msIzbornikServisi.Size = new System.Drawing.Size(52, 20);
             this.msIzbornikServisi.Text = "Servisi";
+            this.msIzbornikServisi.Click += new System.EventHandler(this.msIzbornikServisi_Click);
             // 
             // msIzbornikChat
             // 

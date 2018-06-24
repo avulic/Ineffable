@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PrijavaRegistracija;
+using CrudArtikala;
+using QR_Kod;
 namespace Ineffable
 {
     public partial class frmMain : Form
@@ -134,5 +136,16 @@ namespace Ineffable
             WindowState = FormWindowState.Minimized;
         }
 
+        private void msIzbornikArtikli_Click(object sender, EventArgs e)
+        {
+            frmArtikli artikli = new frmArtikli(this);
+            prikaziFormu(artikli);
+        }
+
+        private void msIzbornikServisi_Click(object sender, EventArgs e)
+        {
+            frmKreirajQRKod kod = new frmKreirajQRKod();
+            prikaziFormu(kod);
+        }
     }
 }
