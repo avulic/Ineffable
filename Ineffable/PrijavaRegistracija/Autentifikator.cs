@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrijavaRegistracija
 {
-    class Autentifikator
+    public class Autentifikator
     {
         public bool registrirajKorisnika(string ime, string prezime, string email, string korIme, string lozinka, string adresa, string telefon)
         {
@@ -39,8 +39,8 @@ namespace PrijavaRegistracija
             }
             return ispravno;
         }
+        public static Korisnik korisnik;
 
-        BPModel.korisnik korisnik;
         public string prijaviKorisnika(string korIme, string lozinka)
         {
             string korRegistriran = "korime";
@@ -53,7 +53,7 @@ namespace PrijavaRegistracija
                         if (item.lozinka == lozinka)
                         {
                             korRegistriran = "";
-                            korisnik = item;
+                            korisnik = new Korisnik(item);
                         }
                         else
                         {
@@ -64,10 +64,9 @@ namespace PrijavaRegistracija
             }
             return korRegistriran;
         }
-
-        public BPModel.korisnik dohvatiPrijavljenogKorisnika()
-        {
-            return this.korisnik;
+        public static Korisnik dohvatiPrijavljenogKorisnika()
+        { 
+            return korisnik;
         }
     }
 }

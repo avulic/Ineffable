@@ -14,18 +14,15 @@ namespace Ineffable
 {
     public partial class frmMain : Form
     {
-        
+        static Korisnik kori = Autentifikator.dohvatiPrijavljenogKorisnika();
         public frmMain()
         {
             InitializeComponent();
-            
         }
-
         private void frmMain_Load(object sender, EventArgs e)
         {
             frmPrijava prijavaForma = new frmPrijava(this);
             prikaziFormu(prijavaForma);
-            
         }
         protected override void OnMdiChildActivate(EventArgs e)
         {
