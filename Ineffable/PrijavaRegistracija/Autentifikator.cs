@@ -20,13 +20,12 @@ namespace PrijavaRegistracija
                     {
                         return ispravno;
                     }
-                    
                 }
                 korisnik korisnik = new korisnik()
                 {
                     ime = ime,
                     prezime = prezime,
-                    korisnicko_ime = ime,
+                    korisnicko_ime = korIme,
                     lozinka = lozinka,
                     email = email,
                     adresa = adresa,
@@ -40,18 +39,21 @@ namespace PrijavaRegistracija
             }
             return ispravno;
         }
+
+        BPModel.korisnik korisnik;
         public string prijaviKorisnika(string korIme, string lozinka)
         {
             string korRegistriran = "korime";
             using (IneffableEntities bp = new IneffableEntities())
             {
-                foreach (var korisnik in bp.korisnik)
+                foreach (var item in bp.korisnik)
                 {
-                    if (korisnik.korisnicko_ime == korIme)
+                    if (item.korisnicko_ime == korIme)
                     {
-                        if (korisnik.lozinka == lozinka)
+                        if (item.lozinka == lozinka)
                         {
                             korRegistriran = "";
+                            korisnik = item;
                         }
                         else
                         {
@@ -61,6 +63,11 @@ namespace PrijavaRegistracija
                 }
             }
             return korRegistriran;
+        }
+
+        public BPModel.korisnik dohvatiPrijavljenogKorisnika()
+        {
+            return this.korisnik;
         }
     }
 }

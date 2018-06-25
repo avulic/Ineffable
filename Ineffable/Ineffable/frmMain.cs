@@ -14,10 +14,11 @@ namespace Ineffable
 {
     public partial class frmMain : Form
     {
+        
         public frmMain()
         {
             InitializeComponent();
-            IsMdiContainer = true;
+            
         }
 
         private void frmMain_Load(object sender, EventArgs e)

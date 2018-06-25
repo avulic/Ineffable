@@ -152,6 +152,7 @@
             this.Controls.Add(this.msIzbornik);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.msIzbornik;
             this.Name = "frmMain";
             this.Text = "Form1";
