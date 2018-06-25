@@ -32,6 +32,7 @@
         <EntityTypeShape EntityType="IneffableModel.poruke" Width="1.5" PointX="8.25" PointY="8.625" />
         <AssociationConnector Association="IneffableModel.FK_poruke_kupac" />
         <AssociationConnector Association="IneffableModel.FK_poruke_radni_nalog_servisa" />
+        <AssociationConnector Association="IneffableModel.FK_kupac_korisnik" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

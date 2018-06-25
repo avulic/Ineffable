@@ -42,11 +42,10 @@
     <EntitySetMapping Name="kupac">
       <EntityTypeMapping TypeName="IneffableModel.kupac">
         <MappingFragment StoreEntitySet="kupac">
+          <ScalarProperty Name="korisnik_id" ColumnName="korisnik_id" />
           <ScalarProperty Name="kupac_id" ColumnName="kupac_id" />
           <ScalarProperty Name="ime" ColumnName="ime" />
           <ScalarProperty Name="prezime" ColumnName="prezime" />
-          <ScalarProperty Name="adresa" ColumnName="adresa" />
-          <ScalarProperty Name="telefon" ColumnName="telefon" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

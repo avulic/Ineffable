@@ -59,12 +59,19 @@
     <Compile Include="frmKomuniciraj.Designer.cs">
       <DependentUpon>frmKomuniciraj.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNoviZahtjev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoviZahtjev.Designer.cs">
+      <DependentUpon>frmNoviZahtjev.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPoruka.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPoruka.Designer.cs">
       <DependentUpon>frmPoruka.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="IneffableDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -85,6 +92,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmKomuniciraj.resx">
       <DependentUpon>frmKomuniciraj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoviZahtjev.resx">
+      <DependentUpon>frmNoviZahtjev.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPoruka.resx">
       <DependentUpon>frmPoruka.cs</DependentUpon>

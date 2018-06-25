@@ -16,11 +16,8 @@ namespace Ineffable
 {
     public partial class frmMain : Form
     {
-
         
-
-        static Korisnik kori = Autentifikator.dohvatiPrijavljenogKorisnika();
-
+        
         public frmMain()
         {
             InitializeComponent();
@@ -121,6 +118,9 @@ namespace Ineffable
         }
 
         int mm = 0;
+
+       
+
         private void panMinMaxMain_Click(object sender, EventArgs e)
         {
             if (mm == 0)
@@ -154,7 +154,9 @@ namespace Ineffable
 
         private void msIzbornikChat_Click(object sender, EventArgs e)
         {
-            frmKomuniciraj komunikacija = new frmKomuniciraj();
+            Korisnik kori = Autentifikator.dohvatiPrijavljenogKorisnika();
+            
+            frmKomuniciraj komunikacija = new frmKomuniciraj(kori.uloga, kori.id);
             prikaziFormu(komunikacija);
         }
     }

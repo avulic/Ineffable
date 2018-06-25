@@ -42,8 +42,7 @@
     <Property Name="kupac_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ime" Type="varchar" MaxLength="50" />
     <Property Name="prezime" Type="varchar" MaxLength="50" />
-    <Property Name="adresa" Type="varchar" MaxLength="50" />
-    <Property Name="telefon" Type="varchar" MaxLength="50" />
+    <Property Name="korisnik_id" Type="int" />
   </EntityType>
   <EntityType Name="poruke">
     <Key>
@@ -148,6 +147,18 @@
       </Principal>
       <Dependent Role="korisnik">
         <PropertyRef Name="uloga_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_kupac_korisnik">
+    <End Role="korisnik" Type="Self.korisnik" Multiplicity="0..1" />
+    <End Role="kupac" Type="Self.kupac" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="korisnik">
+        <PropertyRef Name="korisnik_id" />
+      </Principal>
+      <Dependent Role="kupac">
+        <PropertyRef Name="korisnik_id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -327,6 +338,10 @@
     <AssociationSet Name="FK_korisnik_uloga" Association="Self.FK_korisnik_uloga">
       <End Role="uloga" EntitySet="uloga" />
       <End Role="korisnik" EntitySet="korisnik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_kupac_korisnik" Association="Self.FK_kupac_korisnik">
+      <End Role="korisnik" EntitySet="korisnik" />
+      <End Role="kupac" EntitySet="kupac" />
     </AssociationSet>
     <AssociationSet Name="FK_poruke_kupac" Association="Self.FK_poruke_kupac">
       <End Role="kupac" EntitySet="kupac" />

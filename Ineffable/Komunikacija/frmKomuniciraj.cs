@@ -14,34 +14,44 @@ namespace Komunikacija
     public partial class frmKomuniciraj : Form
     {
         private kupac odabranaOsoba;
+        private string uloga;
+        private int idKorisnika;
+        private int kupacID;
 
-        public frmKomuniciraj()
+        public frmKomuniciraj(string uloga, int idKorisnika)
         {
             InitializeComponent();
+            this.uloga = uloga;
+            this.idKorisnika = idKorisnika;
         }
 
         private void frmKomuniciraj_Load(object sender, EventArgs e)
         {
             this.radni_nalog_servisaTableAdapter1.Fill(this.ineffableDataSet11.radni_nalog_servisa);
-            this.porukeTableAdapter.Fill(this.ineffableDataSet11.poruke);
-            int ulogaKorisnika = 3;
-            int kupacID = 1;
 
-                if (ulogaKorisnika == 2)
+            if (uloga == "Zaposlenik")
                 {
                     lblZaposlenik.Visible = true;
                     lblKorisnik.Visible = false;
                     btnKontaktirajKorisnika.Visible = true;
                     btnZatraziServis.Visible = false;
+                    gbKupca.Visible = false;
                 }
-                if (ulogaKorisnika == 3)
+                if (uloga == "Kupac")
                 {
+                    using (var db = new IneffableEntities())
+                    {
+                        kupac odabraniKupac = db.kupac.FirstOrDefault(s => s.korisnik_id == idKorisnika);
+                        kupacID = odabraniKupac.kupac_id;
+                    }
+                    this.porukeTableAdapter.FillByIDKupca(this.ineffableDataSet11.poruke, kupacID);
+
                     lblZaposlenik.Visible = false;
                     lblKorisnik.Visible = true;
                     btnKontaktirajKorisnika.Visible = false;
                     btnZatraziServis.Visible = true;
                     gbKupca.Visible = true;
-            }
+                }
         }
 
         private void btnKontaktirajKorisnika_Click(object sender, EventArgs e)
@@ -115,7 +125,7 @@ namespace Komunikacija
                 }
             }
             this.radni_nalog_servisaTableAdapter1.Fill(this.ineffableDataSet11.radni_nalog_servisa);
-            this.porukeTableAdapter.Fill(this.ineffableDataSet11.poruke);
+            this.porukeTableAdapter.FillByIDKupca(this.ineffableDataSet11.poruke, kupacID);
         }
 
         private void btnPrekid_Click(object sender, EventArgs e)
@@ -135,7 +145,12 @@ namespace Komunikacija
                 }
             }
             this.radni_nalog_servisaTableAdapter1.Fill(this.ineffableDataSet11.radni_nalog_servisa);
-            this.porukeTableAdapter.Fill(this.ineffableDataSet11.poruke);
+            this.porukeTableAdapter.FillByIDKupca(this.ineffableDataSet11.poruke, kupacID);
+        }
+
+        private void btnZatraziServis_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

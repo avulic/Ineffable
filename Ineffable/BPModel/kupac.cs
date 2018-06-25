@@ -26,8 +26,7 @@ namespace BPModel
         public int kupac_id { get; set; }
         public string ime { get; set; }
         public string prezime { get; set; }
-        public string adresa { get; set; }
-        public string telefon { get; set; }
+        public Nullable<int> korisnik_id { get; set; }
 
         public override string ToString()
         {
@@ -42,5 +41,6 @@ namespace BPModel
         public virtual ICollection<zahtjev_za_servis> zahtjev_za_servis { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<poruke> poruke { get; set; }
+        public virtual korisnik korisnik { get; set; }
     }
 }
