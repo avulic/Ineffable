@@ -71,6 +71,12 @@
     <Compile Include="frmPoruka.Designer.cs">
       <DependentUpon>frmPoruka.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPregledZahjeva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPregledZahjeva.Designer.cs">
+      <DependentUpon>frmPregledZahjeva.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="IneffableDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -81,6 +87,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>IneffableDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -98,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPoruka.resx">
       <DependentUpon>frmPoruka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPregledZahjeva.resx">
+      <DependentUpon>frmPregledZahjeva.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +137,17 @@
     </None>
     <None Include="IneffableDataSet1.xss">
       <DependentUpon>IneffableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet2.xsc">
+      <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet2.xss">
+      <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

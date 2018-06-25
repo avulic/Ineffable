@@ -36,6 +36,7 @@ namespace Komunikacija
                     btnKontaktirajKorisnika.Visible = true;
                     btnZatraziServis.Visible = false;
                     gbKupca.Visible = false;
+                    btnPregledajZahtjeve.Visible = true;
                 }
                 if (uloga == "Kupac")
                 {
@@ -43,6 +44,12 @@ namespace Komunikacija
                     {
                         kupac odabraniKupac = db.kupac.FirstOrDefault(s => s.korisnik_id == idKorisnika);
                         kupacID = odabraniKupac.kupac_id;
+                        if (odabraniKupac.obavijest != "")
+                        {
+                            btnObavijesti.Visible = true;
+                        }
+                       
+                        
                     }
                     this.porukeTableAdapter.FillByIDKupca(this.ineffableDataSet11.poruke, kupacID);
 
@@ -51,6 +58,7 @@ namespace Komunikacija
                     btnKontaktirajKorisnika.Visible = false;
                     btnZatraziServis.Visible = true;
                     gbKupca.Visible = true;
+                    btnPregledajZahtjeve.Visible = false;
                 }
         }
 
@@ -150,7 +158,20 @@ namespace Komunikacija
 
         private void btnZatraziServis_Click(object sender, EventArgs e)
         {
+            frmNoviZahtjev forma = new frmNoviZahtjev(kupacID);
+            forma.ShowDialog(this);
+        }
 
+        private void btnPregledajZahtjeve_Click(object sender, EventArgs e)
+        {
+            frmPregledZahjeva forma = new frmPregledZahjeva();
+            forma.ShowDialog(this);
+        }
+
+        private void btnObavijesti_Click(object sender, EventArgs e)
+        {
+            frmObavijesti forma = new frmObavijesti(kupacID);
+            forma.ShowDialog(this);
         }
     }
 }

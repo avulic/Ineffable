@@ -31,3 +31,4 @@ C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\Komunikacija\bin\Debug
 C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\Komunikacija\bin\Debug\CrudArtikala.pdb
 C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\Komunikacija\bin\Debug\CrudArtikala.dll.config
 C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmNoviZahtjev.resources
+C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmPregledZahjeva.resources

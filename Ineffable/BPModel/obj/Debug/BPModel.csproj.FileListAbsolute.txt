@@ -37,3 +37,5 @@ C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\BPModel\bin\Debug\Enti
 C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\BPModel\obj\Debug\BPModel.dll
 C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\BPModel\obj\Debug\BPModel.pdb
 C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\BPModel\obj\Debug\BPModel.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\BPModel\obj\Debug\BPModel.frmObavijesti.resources
+C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\BPModel\obj\Debug\BPModel.csproj.GenerateResource.Cache

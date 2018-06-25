@@ -68,6 +68,8 @@
             this.porukeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.porukeTableAdapter = new Komunikacija.IneffableDataSet1TableAdapters.porukeTableAdapter();
             this.radni_nalog_servisaTableAdapter1 = new Komunikacija.IneffableDataSet1TableAdapters.radni_nalog_servisaTableAdapter();
+            this.btnPregledajZahtjeve = new System.Windows.Forms.Button();
+            this.btnObavijesti = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServisi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radni_nalog_servisaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
@@ -112,7 +114,7 @@
             // 
             this.btnKontaktirajKorisnika.Location = new System.Drawing.Point(15, 63);
             this.btnKontaktirajKorisnika.Name = "btnKontaktirajKorisnika";
-            this.btnKontaktirajKorisnika.Size = new System.Drawing.Size(174, 23);
+            this.btnKontaktirajKorisnika.Size = new System.Drawing.Size(177, 23);
             this.btnKontaktirajKorisnika.TabIndex = 3;
             this.btnKontaktirajKorisnika.Text = "Kontaktiranje klijenta";
             this.btnKontaktirajKorisnika.UseVisualStyleBackColor = true;
@@ -411,11 +413,34 @@
             // 
             this.radni_nalog_servisaTableAdapter1.ClearBeforeFill = true;
             // 
+            // btnPregledajZahtjeve
+            // 
+            this.btnPregledajZahtjeve.Location = new System.Drawing.Point(15, 34);
+            this.btnPregledajZahtjeve.Name = "btnPregledajZahtjeve";
+            this.btnPregledajZahtjeve.Size = new System.Drawing.Size(177, 23);
+            this.btnPregledajZahtjeve.TabIndex = 6;
+            this.btnPregledajZahtjeve.Text = "Pregled zahtjeva za servisom";
+            this.btnPregledajZahtjeve.UseVisualStyleBackColor = true;
+            this.btnPregledajZahtjeve.Click += new System.EventHandler(this.btnPregledajZahtjeve_Click);
+            // 
+            // btnObavijesti
+            // 
+            this.btnObavijesti.Location = new System.Drawing.Point(615, 63);
+            this.btnObavijesti.Name = "btnObavijesti";
+            this.btnObavijesti.Size = new System.Drawing.Size(186, 23);
+            this.btnObavijesti.TabIndex = 7;
+            this.btnObavijesti.Text = "Obavijest o podnesenom zahtjevu";
+            this.btnObavijesti.UseVisualStyleBackColor = true;
+            this.btnObavijesti.Visible = false;
+            this.btnObavijesti.Click += new System.EventHandler(this.btnObavijesti_Click);
+            // 
             // frmKomuniciraj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 522);
+            this.Controls.Add(this.btnObavijesti);
+            this.Controls.Add(this.btnPregledajZahtjeve);
             this.Controls.Add(this.gbKupca);
             this.Controls.Add(this.gbPitanje);
             this.Controls.Add(this.btnKontaktirajKorisnika);
@@ -483,5 +508,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tekstDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kupacidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn servisidDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button btnPregledajZahtjeve;
+        private System.Windows.Forms.Button btnObavijesti;
     }
 }

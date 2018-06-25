@@ -14,7 +14,6 @@
         <EntityTypeShape EntityType="IneffableModel.rezervacija" Width="1.5" PointX="6" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="IneffableModel.stavka_racuna" Width="1.5" PointX="10.5" PointY="5.375" IsExpanded="true" />
         <EntityTypeShape EntityType="IneffableModel.uloga" Width="1.5" PointX="1.5" PointY="9.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="IneffableModel.zahtjev_za_servis" Width="1.5" PointX="3" PointY="12.375" IsExpanded="true" />
         <AssociationConnector Association="IneffableModel.FK_artikl_dobavljac" ManuallyRouted="false" />
         <AssociationConnector Association="IneffableModel.FK_rezervacija_artikl" ManuallyRouted="false" />
         <AssociationConnector Association="IneffableModel.FK_stavka_racuna_artikl" ManuallyRouted="false" />
@@ -23,7 +22,6 @@
         <AssociationConnector Association="IneffableModel.FK_radni_nalog_servisa_zaposlenik" ManuallyRouted="false" />
         <AssociationConnector Association="IneffableModel.FK_radni_nalog_servisa_kupac" ManuallyRouted="false" />
         <AssociationConnector Association="IneffableModel.FK_rezervacija_kupac" ManuallyRouted="false" />
-        <AssociationConnector Association="IneffableModel.FK_zahtjev_za_servis_kupac" ManuallyRouted="false" />
         <AssociationConnector Association="IneffableModel.FK_racun_radni_nalog_servisa" ManuallyRouted="false" />
         <AssociationConnector Association="IneffableModel.FK_stavka_racuna_racun" ManuallyRouted="false" />
         <EntityTypeShape EntityType="IneffableModel.servis_log" Width="1.5" PointX="5.25" PointY="9.125" />
@@ -33,6 +31,8 @@
         <AssociationConnector Association="IneffableModel.FK_poruke_kupac" />
         <AssociationConnector Association="IneffableModel.FK_poruke_radni_nalog_servisa" />
         <AssociationConnector Association="IneffableModel.FK_kupac_korisnik" />
+        <EntityTypeShape EntityType="IneffableModel.zahtjev_za_servis" Width="1.5" PointX="3" PointY="1.125" />
+        <AssociationConnector Association="IneffableModel.FK_zahtjev_za_servis_kupac" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

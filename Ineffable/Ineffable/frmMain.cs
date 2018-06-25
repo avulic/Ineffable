@@ -142,8 +142,12 @@ namespace Ineffable
 
         private void msIzbornikArtikli_Click(object sender, EventArgs e)
         {
-            frmArtikli artikli = new frmArtikli(this);
-            prikaziFormu(artikli);
+            Korisnik kori = Autentifikator.dohvatiPrijavljenogKorisnika();
+            if (kori.uloga == "Zaposlenik")
+            {
+                frmArtikli artikli = new frmArtikli(this);
+                prikaziFormu(artikli);
+            }
         }
 
         private void msIzbornikServisi_Click(object sender, EventArgs e)

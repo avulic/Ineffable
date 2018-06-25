@@ -43,6 +43,8 @@
     <Property Name="ime" Type="varchar" MaxLength="50" />
     <Property Name="prezime" Type="varchar" MaxLength="50" />
     <Property Name="korisnik_id" Type="int" />
+    <Property Name="obavijest" Type="varchar" MaxLength="55" />
+    <Property Name="obrazlozenje" Type="varchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="poruke">
     <Key>
@@ -125,6 +127,9 @@
     <Property Name="opis" Type="varchar" MaxLength="255" />
     <Property Name="status" Type="varchar" MaxLength="50" />
     <Property Name="kupac_id" Type="int" Nullable="false" />
+    <Property Name="naziv_uredjaja" Type="varchar" MaxLength="255" />
+    <Property Name="tip_uredjaja" Type="varchar" MaxLength="255" />
+    <Property Name="proizvodjac" Type="varchar" MaxLength="255" />
   </EntityType>
   <Association Name="FK_artikl_dobavljac">
     <End Role="dobavljac" Type="Self.dobavljac" Multiplicity="1" />
