@@ -18,8 +18,6 @@ namespace BPModel
         public radni_nalog_servisa()
         {
             this.racun = new HashSet<racun>();
-            this.servis_log = new HashSet<servis_log>();
-            this.poruke = new HashSet<poruke>();
         }
     
         public int servis_id { get; set; }
@@ -30,15 +28,10 @@ namespace BPModel
         public string status { get; set; }
         public Nullable<System.DateTime> vrijeme_kreiranja { get; set; }
         public int osoba_id { get; set; }
-        public string stanje { get; set; }
     
         public virtual korisnik korisnik { get; set; }
         public virtual kupac kupac { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<racun> racun { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<servis_log> servis_log { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<poruke> poruke { get; set; }
     }
 }
