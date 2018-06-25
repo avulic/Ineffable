@@ -178,9 +178,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPrijava";
             this.Text = "Prijava";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmPrijava_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmPrijava_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.frmPrijava_MouseUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
