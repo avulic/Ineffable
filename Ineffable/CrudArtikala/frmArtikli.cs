@@ -21,9 +21,7 @@ namespace CrudArtikala
 
         private void frmArtikli_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'ineffableDataSet.dobavljac' table. You can move, or remove it, as needed.
             this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
-            // TODO: This line of code loads data into the 'ineffableDataSet.artikl' table. You can move, or remove it, as needed.
             this.artiklTableAdapter.Fill(this.ineffableDataSet.artikl);
         }
 

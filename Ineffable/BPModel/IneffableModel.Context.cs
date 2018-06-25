@@ -34,6 +34,8 @@ namespace BPModel
         public virtual DbSet<rezervacija> rezervacija { get; set; }
         public virtual DbSet<stavka_racuna> stavka_racuna { get; set; }
         public virtual DbSet<uloga> uloga { get; set; }
+        public virtual DbSet<servis_log> servis_log { get; set; }
+        public virtual DbSet<poruke> poruke { get; set; }
         public virtual DbSet<zahtjev_za_servis> zahtjev_za_servis { get; set; }
     }
 }

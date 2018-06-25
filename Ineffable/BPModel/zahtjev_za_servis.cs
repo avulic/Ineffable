@@ -19,6 +19,9 @@ namespace BPModel
         public string opis { get; set; }
         public string status { get; set; }
         public int kupac_id { get; set; }
+        public string naziv_uredjaja { get; set; }
+        public string tip_uredjaja { get; set; }
+        public string proizvodjac { get; set; }
     
         public virtual kupac kupac { get; set; }
     }

@@ -10,11 +10,14 @@ using System.Windows.Forms;
 using PrijavaRegistracija;
 using CrudArtikala;
 using QR_Kod;
+using Komunikacija;
+
 namespace Ineffable
 {
     public partial class frmMain : Form
     {
-        static Korisnik kori = Autentifikator.dohvatiPrijavljenogKorisnika();
+        
+        
         public frmMain()
         {
             InitializeComponent();
@@ -115,6 +118,9 @@ namespace Ineffable
         }
 
         int mm = 0;
+
+       
+
         private void panMinMaxMain_Click(object sender, EventArgs e)
         {
             if (mm == 0)
@@ -136,14 +142,26 @@ namespace Ineffable
 
         private void msIzbornikArtikli_Click(object sender, EventArgs e)
         {
-            frmArtikli artikli = new frmArtikli(this);
-            prikaziFormu(artikli);
+            Korisnik kori = Autentifikator.dohvatiPrijavljenogKorisnika();
+            if (kori.uloga == "Zaposlenik")
+            {
+                frmArtikli artikli = new frmArtikli(this);
+                prikaziFormu(artikli);
+            }
         }
 
         private void msIzbornikServisi_Click(object sender, EventArgs e)
         {
             frmKreirajQRKod kod = new frmKreirajQRKod();
             prikaziFormu(kod);
+        }
+
+        private void msIzbornikChat_Click(object sender, EventArgs e)
+        {
+            Korisnik kori = Autentifikator.dohvatiPrijavljenogKorisnika();
+            
+            frmKomuniciraj komunikacija = new frmKomuniciraj(kori.uloga, kori.id);
+            prikaziFormu(komunikacija);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace PrijavaRegistracija
         public  string ime { get; set; }
         public  string prezime { get; set; }
         public  int id { get; set; }
-        public string uloga { get; set; }
+        public  string uloga { get; set; }
 
         public Korisnik(BPModel.korisnik korisnik)
         {

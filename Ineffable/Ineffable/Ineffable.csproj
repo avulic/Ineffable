@@ -71,6 +71,7 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMain.resx">
@@ -103,6 +104,10 @@
     <ProjectReference Include="..\BPModel\BPModel.csproj">
       <Project>{ff9c016d-c9ff-4a1b-a1d5-7c43b0753ca9}</Project>
       <Name>BPModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Komunikacija\Komunikacija.csproj">
+      <Project>{5f570b77-5545-4661-a139-55fbff913af0}</Project>
+      <Name>Komunikacija</Name>
     </ProjectReference>
     <ProjectReference Include="..\PrijavaRegistracija\PrijavaRegistracija.csproj">
       <Project>{b29d18bb-d599-4b18-832e-2ff2d0e0fe64}</Project>

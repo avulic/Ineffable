@@ -81,6 +81,7 @@
             this.msIzbornikChat.Name = "msIzbornikChat";
             this.msIzbornikChat.Size = new System.Drawing.Size(44, 20);
             this.msIzbornikChat.Text = "Chat";
+            this.msIzbornikChat.Click += new System.EventHandler(this.msIzbornikChat_Click);
             // 
             // msIzbornikRezervacija
             // 
