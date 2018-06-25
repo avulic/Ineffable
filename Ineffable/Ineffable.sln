@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ineffable", "Ineffable\Ineffable.csproj", "{F29C3AA5-1BAA-457C-88FC-14A00D5F4E99}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrijavaRegistracija", "PrijavaRegistracija\PrijavaRegistracija.csproj", "{B29D18BB-D599-4B18-832E-2FF2D0E0FE64}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QR_Kod", "QR_Kod\QR_Kod.csproj", "{D1357C2C-8FB4-4E47-8712-1972C39850DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komunikacija", "Komunikacija\Komunikacija.csproj", "{5F570B77-5545-4661-A139-55FBFF913AF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{D1357C2C-8FB4-4E47-8712-1972C39850DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1357C2C-8FB4-4E47-8712-1972C39850DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1357C2C-8FB4-4E47-8712-1972C39850DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F570B77-5545-4661-A139-55FBFF913AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F570B77-5545-4661-A139-55FBFF913AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F570B77-5545-4661-A139-55FBFF913AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F570B77-5545-4661-A139-55FBFF913AF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
