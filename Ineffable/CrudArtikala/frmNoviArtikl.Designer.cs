@@ -35,15 +35,15 @@
             System.Windows.Forms.Label opisLabel;
             System.Windows.Forms.Label nazivLabel;
             this.dobavljac_idComboBox = new System.Windows.Forms.ComboBox();
-            this.dobavljacBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ineffableDataSet = new CrudArtikala.IneffableDataSet();
             this.kolicina_na_skladistuTextBox = new System.Windows.Forms.TextBox();
-            this.artiklBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cijenaTextBox = new System.Windows.Forms.TextBox();
             this.opisTextBox = new System.Windows.Forms.TextBox();
             this.nazivTextBox = new System.Windows.Forms.TextBox();
             this.btnSpremi = new System.Windows.Forms.Button();
+            this.ineffableDataSet = new CrudArtikala.IneffableDataSet();
+            this.dobavljacBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dobavljacTableAdapter = new CrudArtikala.IneffableDataSetTableAdapters.dobavljacTableAdapter();
+            this.artiklBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.artiklTableAdapter = new CrudArtikala.IneffableDataSetTableAdapters.artiklTableAdapter();
             this.tableAdapterManager = new CrudArtikala.IneffableDataSetTableAdapters.TableAdapterManager();
             dobavljac_idLabel = new System.Windows.Forms.Label();
@@ -51,8 +51,8 @@
             cijenaLabel = new System.Windows.Forms.Label();
             opisLabel = new System.Windows.Forms.Label();
             nazivLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.artiklBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,17 +111,6 @@
             this.dobavljac_idComboBox.Size = new System.Drawing.Size(224, 21);
             this.dobavljac_idComboBox.TabIndex = 4;
             this.dobavljac_idComboBox.ValueMember = "dobavljac_id";
-            this.dobavljac_idComboBox.MouseHover += new System.EventHandler(this.dobavljac_idComboBox_MouseHover);
-            // 
-            // dobavljacBindingSource
-            // 
-            this.dobavljacBindingSource.DataMember = "dobavljac";
-            this.dobavljacBindingSource.DataSource = this.ineffableDataSet;
-            // 
-            // ineffableDataSet
-            // 
-            this.ineffableDataSet.DataSetName = "IneffableDataSet";
-            this.ineffableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // kolicina_na_skladistuTextBox
             // 
@@ -130,11 +119,6 @@
             this.kolicina_na_skladistuTextBox.Name = "kolicina_na_skladistuTextBox";
             this.kolicina_na_skladistuTextBox.Size = new System.Drawing.Size(224, 20);
             this.kolicina_na_skladistuTextBox.TabIndex = 6;
-            // 
-            // artiklBindingSource
-            // 
-            this.artiklBindingSource.DataMember = "artikl";
-            this.artiklBindingSource.DataSource = this.ineffableDataSet;
             // 
             // cijenaTextBox
             // 
@@ -171,9 +155,24 @@
             this.btnSpremi.UseVisualStyleBackColor = true;
             this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
             // 
+            // ineffableDataSet
+            // 
+            this.ineffableDataSet.DataSetName = "IneffableDataSet";
+            this.ineffableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dobavljacBindingSource
+            // 
+            this.dobavljacBindingSource.DataMember = "dobavljac";
+            this.dobavljacBindingSource.DataSource = this.ineffableDataSet;
+            // 
             // dobavljacTableAdapter
             // 
             this.dobavljacTableAdapter.ClearBeforeFill = true;
+            // 
+            // artiklBindingSource
+            // 
+            this.artiklBindingSource.DataMember = "artikl";
+            this.artiklBindingSource.DataSource = this.ineffableDataSet;
             // 
             // artiklTableAdapter
             // 
@@ -213,8 +212,8 @@
             this.Name = "frmNoviArtikl";
             this.Text = "frmNoviArtikl";
             this.Load += new System.EventHandler(this.frmNoviArtikl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.artiklBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -38,7 +38,6 @@ namespace CrudArtikala
                     cijenaTextBox.Text = artikl.cijena.ToString();
                     kolicina_na_skladistuTextBox.Text = artikl.kolicina_na_skladistu.ToString();
                     dobavljac_idComboBox.Text = artikl.dobavljac.naziv;
-                    
                 }
             }
 
@@ -53,7 +52,8 @@ namespace CrudArtikala
 
         private void frmNoviArtikl_Load(object sender, EventArgs e)
         {
-            
+            // TODO: This line of code loads data into the 'ineffableDataSet.dobavljac' table. You can move, or remove it, as needed.
+            this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
         }
 
         private void btnSpremi_Click(object sender, EventArgs e)
@@ -86,11 +86,6 @@ namespace CrudArtikala
                 }
             }
            Close();
-        }
-
-        private void dobavljac_idComboBox_MouseHover(object sender, EventArgs e)
-        {
-            this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
         }
     }
 }

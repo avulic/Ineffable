@@ -26,12 +26,6 @@
         <AssociationConnector Association="IneffableModel.FK_zahtjev_za_servis_kupac" ManuallyRouted="false" />
         <AssociationConnector Association="IneffableModel.FK_racun_radni_nalog_servisa" ManuallyRouted="false" />
         <AssociationConnector Association="IneffableModel.FK_stavka_racuna_racun" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="IneffableModel.servis_log" Width="1.5" PointX="5.25" PointY="9.125" />
-        <AssociationConnector Association="IneffableModel.FK_servis_log_korisnik" />
-        <AssociationConnector Association="IneffableModel.FK_servis_log_radni_nalog_servisa" />
-        <EntityTypeShape EntityType="IneffableModel.poruke" Width="1.5" PointX="8.25" PointY="8.625" />
-        <AssociationConnector Association="IneffableModel.FK_poruke_kupac" />
-        <AssociationConnector Association="IneffableModel.FK_poruke_radni_nalog_servisa" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

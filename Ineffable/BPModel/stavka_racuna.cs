@@ -17,6 +17,7 @@ namespace BPModel
         public int racun_id { get; set; }
         public int artikl_id { get; set; }
         public Nullable<int> kolicina { get; set; }
+        public Nullable<double> cijena { get; set; }
     
         public virtual artikl artikl { get; set; }
         public virtual racun racun { get; set; }

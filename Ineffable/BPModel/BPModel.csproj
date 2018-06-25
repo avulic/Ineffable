@@ -79,9 +79,6 @@
     <Compile Include="kupac.cs">
       <DependentUpon>IneffableModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="poruke.cs">
-      <DependentUpon>IneffableModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="racun.cs">
       <DependentUpon>IneffableModel.tt</DependentUpon>
@@ -90,9 +87,6 @@
       <DependentUpon>IneffableModel.tt</DependentUpon>
     </Compile>
     <Compile Include="rezervacija.cs">
-      <DependentUpon>IneffableModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="servis_log.cs">
       <DependentUpon>IneffableModel.tt</DependentUpon>
     </Compile>
     <Compile Include="stavka_racuna.cs">
