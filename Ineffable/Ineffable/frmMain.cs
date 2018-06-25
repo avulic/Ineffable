@@ -10,10 +10,13 @@ using System.Windows.Forms;
 using PrijavaRegistracija;
 using CrudArtikala;
 using QR_Kod;
+using Komunikacija;
+
 namespace Ineffable
 {
     public partial class frmMain : Form
     {
+        Korisnik korisnik = new Korisnik();
         public frmMain()
         {
             InitializeComponent();
@@ -146,6 +149,12 @@ namespace Ineffable
         {
             frmKreirajQRKod kod = new frmKreirajQRKod();
             prikaziFormu(kod);
+        }
+
+        private void msIzbornikChat_Click(object sender, EventArgs e)
+        {
+            frmKomuniciraj komunikacija = new frmKomuniciraj();
+            prikaziFormu(komunikacija);
         }
     }
 }

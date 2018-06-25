@@ -41,6 +41,7 @@
     <NavigationProperty Name="uloga" Relationship="Self.FK_korisnik_uloga" FromRole="korisnik" ToRole="uloga" />
     <NavigationProperty Name="racun" Relationship="Self.FK_racun_zaposlenik" FromRole="korisnik" ToRole="racun" />
     <NavigationProperty Name="radni_nalog_servisa" Relationship="Self.FK_radni_nalog_servisa_zaposlenik" FromRole="korisnik" ToRole="radni_nalog_servisa" />
+    <NavigationProperty Name="servis_log" Relationship="IneffableModel.FK_servis_log_korisnik" FromRole="korisnik" ToRole="servis_log" />
   </EntityType>
   <EntityType Name="kupac">
     <Key>
@@ -54,6 +55,7 @@
     <NavigationProperty Name="radni_nalog_servisa" Relationship="Self.FK_radni_nalog_servisa_kupac" FromRole="kupac" ToRole="radni_nalog_servisa" />
     <NavigationProperty Name="rezervacija" Relationship="Self.FK_rezervacija_kupac" FromRole="kupac" ToRole="rezervacija" />
     <NavigationProperty Name="zahtjev_za_servis" Relationship="Self.FK_zahtjev_za_servis_kupac" FromRole="kupac" ToRole="zahtjev_za_servis" />
+    <NavigationProperty Name="poruke" Relationship="IneffableModel.FK_poruke_kupac" FromRole="kupac" ToRole="poruke" />
   </EntityType>
   <EntityType Name="racun">
     <Key>
@@ -84,6 +86,9 @@
     <NavigationProperty Name="korisnik" Relationship="Self.FK_radni_nalog_servisa_zaposlenik" FromRole="radni_nalog_servisa" ToRole="korisnik" />
     <NavigationProperty Name="kupac" Relationship="Self.FK_radni_nalog_servisa_kupac" FromRole="radni_nalog_servisa" ToRole="kupac" />
     <NavigationProperty Name="racun" Relationship="Self.FK_racun_radni_nalog_servisa" FromRole="radni_nalog_servisa" ToRole="racun" />
+    <NavigationProperty Name="servis_log" Relationship="IneffableModel.FK_servis_log_radni_nalog_servisa" FromRole="radni_nalog_servisa" ToRole="servis_log" />
+    <Property Name="stanje" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="poruke" Relationship="IneffableModel.FK_poruke_radni_nalog_servisa" FromRole="radni_nalog_servisa" ToRole="poruke" />
   </EntityType>
   <EntityType Name="rezervacija">
     <Key>
@@ -105,7 +110,6 @@
     <Property Name="racun_id" Type="Int32" Nullable="false" />
     <Property Name="artikl_id" Type="Int32" Nullable="false" />
     <Property Name="kolicina" Type="Int32" />
-    <Property Name="cijena" Type="Double" />
     <NavigationProperty Name="artikl" Relationship="Self.FK_stavka_racuna_artikl" FromRole="stavka_racuna" ToRole="artikl" />
     <NavigationProperty Name="racun" Relationship="Self.FK_stavka_racuna_racun" FromRole="stavka_racuna" ToRole="racun" />
   </EntityType>
@@ -315,5 +319,96 @@
       <End Role="racun" EntitySet="racun" />
       <End Role="stavka_racuna" EntitySet="stavka_racuna" />
     </AssociationSet>
+    <EntitySet Name="servis_log" EntityType="IneffableModel.servis_log" />
+    <AssociationSet Name="FK_servis_log_korisnik" Association="IneffableModel.FK_servis_log_korisnik">
+      <End Role="korisnik" EntitySet="korisnik" />
+      <End Role="servis_log" EntitySet="servis_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_servis_log_radni_nalog_servisa" Association="IneffableModel.FK_servis_log_radni_nalog_servisa">
+      <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+      <End Role="servis_log" EntitySet="servis_log" />
+    </AssociationSet>
+    <EntitySet Name="poruke" EntityType="IneffableModel.poruke" />
+    <AssociationSet Name="FK_poruke_kupac" Association="IneffableModel.FK_poruke_kupac">
+      <End Role="kupac" EntitySet="kupac" />
+      <End Role="poruke" EntitySet="poruke" />
+    </AssociationSet>
+    <AssociationSet Name="FK_poruke_radni_nalog_servisa" Association="IneffableModel.FK_poruke_radni_nalog_servisa">
+      <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+      <End Role="poruke" EntitySet="poruke" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="servis_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="servis_id" Type="Int32" Nullable="false" />
+    <Property Name="opis_promjene" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="cijena_promjene" Type="Double" />
+    <Property Name="datum_promjene" Type="DateTime" Precision="3" />
+    <Property Name="zaposlenik_id" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="korisnik" Relationship="IneffableModel.FK_servis_log_korisnik" FromRole="servis_log" ToRole="korisnik" />
+    <NavigationProperty Name="radni_nalog_servisa" Relationship="IneffableModel.FK_servis_log_radni_nalog_servisa" FromRole="servis_log" ToRole="radni_nalog_servisa" />
+  </EntityType>
+  <Association Name="FK_servis_log_korisnik">
+    <End Type="IneffableModel.korisnik" Role="korisnik" Multiplicity="1" />
+    <End Type="IneffableModel.servis_log" Role="servis_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="korisnik">
+        <PropertyRef Name="korisnik_id" />
+      </Principal>
+      <Dependent Role="servis_log">
+        <PropertyRef Name="zaposlenik_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_servis_log_radni_nalog_servisa">
+    <End Type="IneffableModel.radni_nalog_servisa" Role="radni_nalog_servisa" Multiplicity="1" />
+    <End Type="IneffableModel.servis_log" Role="servis_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="radni_nalog_servisa">
+        <PropertyRef Name="servis_id" />
+      </Principal>
+      <Dependent Role="servis_log">
+        <PropertyRef Name="servis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="poruke">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tekst" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="kupac_id" Type="Int32" Nullable="false" />
+    <Property Name="servis_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="kupac" Relationship="IneffableModel.FK_poruke_kupac" FromRole="poruke" ToRole="kupac" />
+    <NavigationProperty Name="radni_nalog_servisa" Relationship="IneffableModel.FK_poruke_radni_nalog_servisa" FromRole="poruke" ToRole="radni_nalog_servisa" />
+  </EntityType>
+  <Association Name="FK_poruke_kupac">
+    <End Type="IneffableModel.kupac" Role="kupac" Multiplicity="1" />
+    <End Type="IneffableModel.poruke" Role="poruke" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kupac">
+        <PropertyRef Name="kupac_id" />
+      </Principal>
+      <Dependent Role="poruke">
+        <PropertyRef Name="kupac_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_poruke_radni_nalog_servisa">
+    <End Type="IneffableModel.radni_nalog_servisa" Role="radni_nalog_servisa" Multiplicity="1" />
+    <End Type="IneffableModel.poruke" Role="poruke" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="radni_nalog_servisa">
+        <PropertyRef Name="servis_id" />
+      </Principal>
+      <Dependent Role="poruke">
+        <PropertyRef Name="servis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

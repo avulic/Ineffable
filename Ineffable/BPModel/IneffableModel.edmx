@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="IneffableModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="IneffableModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="artikl">
           <Key>
             <PropertyRef Name="artikl_id" />
@@ -50,6 +50,15 @@
           <Property Name="adresa" Type="varchar" MaxLength="50" />
           <Property Name="telefon" Type="varchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="poruke">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tekst" Type="varchar" MaxLength="255" />
+          <Property Name="kupac_id" Type="int" Nullable="false" />
+          <Property Name="servis_id" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="racun">
           <Key>
             <PropertyRef Name="racun_id" />
@@ -73,6 +82,7 @@
           <Property Name="status" Type="varchar" MaxLength="50" />
           <Property Name="vrijeme_kreiranja" Type="datetime" />
           <Property Name="osoba_id" Type="int" Nullable="false" />
+          <Property Name="stanje" Type="varchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="rezervacija">
           <Key>
@@ -84,6 +94,18 @@
           <Property Name="artikl_id" Type="int" Nullable="false" />
           <Property Name="kupac_id" Type="int" Nullable="false" />
         </EntityType>
+        <EntityType Name="servis_log">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="servis_id" Type="int" Nullable="false" />
+          <Property Name="opis_promjene" Type="varchar" MaxLength="255" />
+          <Property Name="cijena_promjene" Type="float" />
+          <Property Name="datum_promjene" Type="datetime" />
+          <Property Name="zaposlenik_id" Type="int" Nullable="false" />
+          <Property Name="status" Type="varchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="stavka_racuna">
           <Key>
             <PropertyRef Name="racun_id" />
@@ -92,7 +114,6 @@
           <Property Name="racun_id" Type="int" Nullable="false" />
           <Property Name="artikl_id" Type="int" Nullable="false" />
           <Property Name="kolicina" Type="int" />
-          <Property Name="cijena" Type="float" />
         </EntityType>
         <EntityType Name="uloga">
           <Key>
@@ -132,6 +153,30 @@
             </Principal>
             <Dependent Role="korisnik">
               <PropertyRef Name="uloga_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_poruke_kupac">
+          <End Role="kupac" Type="Self.kupac" Multiplicity="1" />
+          <End Role="poruke" Type="Self.poruke" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="kupac">
+              <PropertyRef Name="kupac_id" />
+            </Principal>
+            <Dependent Role="poruke">
+              <PropertyRef Name="kupac_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_poruke_radni_nalog_servisa">
+          <End Role="radni_nalog_servisa" Type="Self.radni_nalog_servisa" Multiplicity="1" />
+          <End Role="poruke" Type="Self.poruke" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="radni_nalog_servisa">
+              <PropertyRef Name="servis_id" />
+            </Principal>
+            <Dependent Role="poruke">
+              <PropertyRef Name="servis_id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -207,6 +252,30 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_servis_log_korisnik">
+          <End Role="korisnik" Type="Self.korisnik" Multiplicity="1" />
+          <End Role="servis_log" Type="Self.servis_log" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnik">
+              <PropertyRef Name="korisnik_id" />
+            </Principal>
+            <Dependent Role="servis_log">
+              <PropertyRef Name="zaposlenik_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_servis_log_radni_nalog_servisa">
+          <End Role="radni_nalog_servisa" Type="Self.radni_nalog_servisa" Multiplicity="1" />
+          <End Role="servis_log" Type="Self.servis_log" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="radni_nalog_servisa">
+              <PropertyRef Name="servis_id" />
+            </Principal>
+            <Dependent Role="servis_log">
+              <PropertyRef Name="servis_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_stavka_racuna_artikl">
           <End Role="artikl" Type="Self.artikl" Multiplicity="1" />
           <End Role="stavka_racuna" Type="Self.stavka_racuna" Multiplicity="*" />
@@ -248,9 +317,11 @@
           <EntitySet Name="dobavljac" EntityType="Self.dobavljac" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="korisnik" EntityType="Self.korisnik" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="kupac" EntityType="Self.kupac" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="poruke" EntityType="Self.poruke" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="racun" EntityType="Self.racun" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="radni_nalog_servisa" EntityType="Self.radni_nalog_servisa" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="rezervacija" EntityType="Self.rezervacija" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="servis_log" EntityType="Self.servis_log" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="stavka_racuna" EntityType="Self.stavka_racuna" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="uloga" EntityType="Self.uloga" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="zahtjev_za_servis" EntityType="Self.zahtjev_za_servis" Schema="dbo" store:Type="Tables" />
@@ -261,6 +332,14 @@
           <AssociationSet Name="FK_korisnik_uloga" Association="Self.FK_korisnik_uloga">
             <End Role="uloga" EntitySet="uloga" />
             <End Role="korisnik" EntitySet="korisnik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_poruke_kupac" Association="Self.FK_poruke_kupac">
+            <End Role="kupac" EntitySet="kupac" />
+            <End Role="poruke" EntitySet="poruke" />
+          </AssociationSet>
+          <AssociationSet Name="FK_poruke_radni_nalog_servisa" Association="Self.FK_poruke_radni_nalog_servisa">
+            <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+            <End Role="poruke" EntitySet="poruke" />
           </AssociationSet>
           <AssociationSet Name="FK_racun_radni_nalog_servisa" Association="Self.FK_racun_radni_nalog_servisa">
             <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
@@ -286,6 +365,14 @@
             <End Role="kupac" EntitySet="kupac" />
             <End Role="rezervacija" EntitySet="rezervacija" />
           </AssociationSet>
+          <AssociationSet Name="FK_servis_log_korisnik" Association="Self.FK_servis_log_korisnik">
+            <End Role="korisnik" EntitySet="korisnik" />
+            <End Role="servis_log" EntitySet="servis_log" />
+          </AssociationSet>
+          <AssociationSet Name="FK_servis_log_radni_nalog_servisa" Association="Self.FK_servis_log_radni_nalog_servisa">
+            <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+            <End Role="servis_log" EntitySet="servis_log" />
+          </AssociationSet>
           <AssociationSet Name="FK_stavka_racuna_artikl" Association="Self.FK_stavka_racuna_artikl">
             <End Role="artikl" EntitySet="artikl" />
             <End Role="stavka_racuna" EntitySet="stavka_racuna" />
@@ -299,8 +386,7 @@
             <End Role="zahtjev_za_servis" EntitySet="zahtjev_za_servis" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="IneffableModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -345,6 +431,7 @@
           <NavigationProperty Name="uloga" Relationship="Self.FK_korisnik_uloga" FromRole="korisnik" ToRole="uloga" />
           <NavigationProperty Name="racun" Relationship="Self.FK_racun_zaposlenik" FromRole="korisnik" ToRole="racun" />
           <NavigationProperty Name="radni_nalog_servisa" Relationship="Self.FK_radni_nalog_servisa_zaposlenik" FromRole="korisnik" ToRole="radni_nalog_servisa" />
+          <NavigationProperty Name="servis_log" Relationship="IneffableModel.FK_servis_log_korisnik" FromRole="korisnik" ToRole="servis_log" />
         </EntityType>
         <EntityType Name="kupac">
           <Key>
@@ -358,6 +445,7 @@
           <NavigationProperty Name="radni_nalog_servisa" Relationship="Self.FK_radni_nalog_servisa_kupac" FromRole="kupac" ToRole="radni_nalog_servisa" />
           <NavigationProperty Name="rezervacija" Relationship="Self.FK_rezervacija_kupac" FromRole="kupac" ToRole="rezervacija" />
           <NavigationProperty Name="zahtjev_za_servis" Relationship="Self.FK_zahtjev_za_servis_kupac" FromRole="kupac" ToRole="zahtjev_za_servis" />
+          <NavigationProperty Name="poruke" Relationship="IneffableModel.FK_poruke_kupac" FromRole="kupac" ToRole="poruke" />
         </EntityType>
         <EntityType Name="racun">
           <Key>
@@ -388,6 +476,9 @@
           <NavigationProperty Name="korisnik" Relationship="Self.FK_radni_nalog_servisa_zaposlenik" FromRole="radni_nalog_servisa" ToRole="korisnik" />
           <NavigationProperty Name="kupac" Relationship="Self.FK_radni_nalog_servisa_kupac" FromRole="radni_nalog_servisa" ToRole="kupac" />
           <NavigationProperty Name="racun" Relationship="Self.FK_racun_radni_nalog_servisa" FromRole="radni_nalog_servisa" ToRole="racun" />
+          <NavigationProperty Name="servis_log" Relationship="IneffableModel.FK_servis_log_radni_nalog_servisa" FromRole="radni_nalog_servisa" ToRole="servis_log" />
+          <Property Name="stanje" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="poruke" Relationship="IneffableModel.FK_poruke_radni_nalog_servisa" FromRole="radni_nalog_servisa" ToRole="poruke" />
         </EntityType>
         <EntityType Name="rezervacija">
           <Key>
@@ -409,7 +500,6 @@
           <Property Name="racun_id" Type="Int32" Nullable="false" />
           <Property Name="artikl_id" Type="Int32" Nullable="false" />
           <Property Name="kolicina" Type="Int32" />
-          <Property Name="cijena" Type="Double" />
           <NavigationProperty Name="artikl" Relationship="Self.FK_stavka_racuna_artikl" FromRole="stavka_racuna" ToRole="artikl" />
           <NavigationProperty Name="racun" Relationship="Self.FK_stavka_racuna_racun" FromRole="stavka_racuna" ToRole="racun" />
         </EntityType>
@@ -619,7 +709,98 @@
             <End Role="racun" EntitySet="racun" />
             <End Role="stavka_racuna" EntitySet="stavka_racuna" />
           </AssociationSet>
+          <EntitySet Name="servis_log" EntityType="IneffableModel.servis_log" />
+          <AssociationSet Name="FK_servis_log_korisnik" Association="IneffableModel.FK_servis_log_korisnik">
+            <End Role="korisnik" EntitySet="korisnik" />
+            <End Role="servis_log" EntitySet="servis_log" />
+          </AssociationSet>
+          <AssociationSet Name="FK_servis_log_radni_nalog_servisa" Association="IneffableModel.FK_servis_log_radni_nalog_servisa">
+            <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+            <End Role="servis_log" EntitySet="servis_log" />
+          </AssociationSet>
+          <EntitySet Name="poruke" EntityType="IneffableModel.poruke" />
+          <AssociationSet Name="FK_poruke_kupac" Association="IneffableModel.FK_poruke_kupac">
+            <End Role="kupac" EntitySet="kupac" />
+            <End Role="poruke" EntitySet="poruke" />
+          </AssociationSet>
+          <AssociationSet Name="FK_poruke_radni_nalog_servisa" Association="IneffableModel.FK_poruke_radni_nalog_servisa">
+            <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+            <End Role="poruke" EntitySet="poruke" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="servis_log">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="servis_id" Type="Int32" Nullable="false" />
+          <Property Name="opis_promjene" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="cijena_promjene" Type="Double" />
+          <Property Name="datum_promjene" Type="DateTime" Precision="3" />
+          <Property Name="zaposlenik_id" Type="Int32" Nullable="false" />
+          <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="korisnik" Relationship="IneffableModel.FK_servis_log_korisnik" FromRole="servis_log" ToRole="korisnik" />
+          <NavigationProperty Name="radni_nalog_servisa" Relationship="IneffableModel.FK_servis_log_radni_nalog_servisa" FromRole="servis_log" ToRole="radni_nalog_servisa" />
+        </EntityType>
+        <Association Name="FK_servis_log_korisnik">
+          <End Type="IneffableModel.korisnik" Role="korisnik" Multiplicity="1" />
+          <End Type="IneffableModel.servis_log" Role="servis_log" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnik">
+              <PropertyRef Name="korisnik_id" />
+            </Principal>
+            <Dependent Role="servis_log">
+              <PropertyRef Name="zaposlenik_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_servis_log_radni_nalog_servisa">
+          <End Type="IneffableModel.radni_nalog_servisa" Role="radni_nalog_servisa" Multiplicity="1" />
+          <End Type="IneffableModel.servis_log" Role="servis_log" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="radni_nalog_servisa">
+              <PropertyRef Name="servis_id" />
+            </Principal>
+            <Dependent Role="servis_log">
+              <PropertyRef Name="servis_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="poruke">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tekst" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="kupac_id" Type="Int32" Nullable="false" />
+          <Property Name="servis_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="kupac" Relationship="IneffableModel.FK_poruke_kupac" FromRole="poruke" ToRole="kupac" />
+          <NavigationProperty Name="radni_nalog_servisa" Relationship="IneffableModel.FK_poruke_radni_nalog_servisa" FromRole="poruke" ToRole="radni_nalog_servisa" />
+        </EntityType>
+        <Association Name="FK_poruke_kupac">
+          <End Type="IneffableModel.kupac" Role="kupac" Multiplicity="1" />
+          <End Type="IneffableModel.poruke" Role="poruke" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="kupac">
+              <PropertyRef Name="kupac_id" />
+            </Principal>
+            <Dependent Role="poruke">
+              <PropertyRef Name="kupac_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_poruke_radni_nalog_servisa">
+          <End Type="IneffableModel.radni_nalog_servisa" Role="radni_nalog_servisa" Multiplicity="1" />
+          <End Type="IneffableModel.poruke" Role="poruke" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="radni_nalog_servisa">
+              <PropertyRef Name="servis_id" />
+            </Principal>
+            <Dependent Role="poruke">
+              <PropertyRef Name="servis_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -690,6 +871,7 @@
           <EntitySetMapping Name="radni_nalog_servisa">
             <EntityTypeMapping TypeName="IneffableModel.radni_nalog_servisa">
               <MappingFragment StoreEntitySet="radni_nalog_servisa">
+                <ScalarProperty Name="stanje" ColumnName="stanje" />
                 <ScalarProperty Name="servis_id" ColumnName="servis_id" />
                 <ScalarProperty Name="oznaka" ColumnName="oznaka" />
                 <ScalarProperty Name="uredjaj" ColumnName="uredjaj" />
@@ -718,7 +900,6 @@
                 <ScalarProperty Name="racun_id" ColumnName="racun_id" />
                 <ScalarProperty Name="artikl_id" ColumnName="artikl_id" />
                 <ScalarProperty Name="kolicina" ColumnName="kolicina" />
-                <ScalarProperty Name="cijena" ColumnName="cijena" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -738,6 +919,29 @@
                 <ScalarProperty Name="opis" ColumnName="opis" />
                 <ScalarProperty Name="status" ColumnName="status" />
                 <ScalarProperty Name="kupac_id" ColumnName="kupac_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="servis_log">
+            <EntityTypeMapping TypeName="IneffableModel.servis_log">
+              <MappingFragment StoreEntitySet="servis_log">
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="zaposlenik_id" ColumnName="zaposlenik_id" />
+                <ScalarProperty Name="datum_promjene" ColumnName="datum_promjene" />
+                <ScalarProperty Name="cijena_promjene" ColumnName="cijena_promjene" />
+                <ScalarProperty Name="opis_promjene" ColumnName="opis_promjene" />
+                <ScalarProperty Name="servis_id" ColumnName="servis_id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="poruke">
+            <EntityTypeMapping TypeName="IneffableModel.poruke">
+              <MappingFragment StoreEntitySet="poruke">
+                <ScalarProperty Name="servis_id" ColumnName="servis_id" />
+                <ScalarProperty Name="kupac_id" ColumnName="kupac_id" />
+                <ScalarProperty Name="tekst" ColumnName="tekst" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

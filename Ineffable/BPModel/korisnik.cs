@@ -19,6 +19,7 @@ namespace BPModel
         {
             this.racun = new HashSet<racun>();
             this.radni_nalog_servisa = new HashSet<radni_nalog_servisa>();
+            this.servis_log = new HashSet<servis_log>();
         }
     
         public int korisnik_id { get; set; }
@@ -36,5 +37,7 @@ namespace BPModel
         public virtual ICollection<racun> racun { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<radni_nalog_servisa> radni_nalog_servisa { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<servis_log> servis_log { get; set; }
     }
 }

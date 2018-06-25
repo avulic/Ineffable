@@ -65,6 +65,7 @@
     <EntitySetMapping Name="radni_nalog_servisa">
       <EntityTypeMapping TypeName="IneffableModel.radni_nalog_servisa">
         <MappingFragment StoreEntitySet="radni_nalog_servisa">
+          <ScalarProperty Name="stanje" ColumnName="stanje" />
           <ScalarProperty Name="servis_id" ColumnName="servis_id" />
           <ScalarProperty Name="oznaka" ColumnName="oznaka" />
           <ScalarProperty Name="uredjaj" ColumnName="uredjaj" />
@@ -93,7 +94,6 @@
           <ScalarProperty Name="racun_id" ColumnName="racun_id" />
           <ScalarProperty Name="artikl_id" ColumnName="artikl_id" />
           <ScalarProperty Name="kolicina" ColumnName="kolicina" />
-          <ScalarProperty Name="cijena" ColumnName="cijena" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -113,6 +113,29 @@
           <ScalarProperty Name="opis" ColumnName="opis" />
           <ScalarProperty Name="status" ColumnName="status" />
           <ScalarProperty Name="kupac_id" ColumnName="kupac_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="servis_log">
+      <EntityTypeMapping TypeName="IneffableModel.servis_log">
+        <MappingFragment StoreEntitySet="servis_log">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="zaposlenik_id" ColumnName="zaposlenik_id" />
+          <ScalarProperty Name="datum_promjene" ColumnName="datum_promjene" />
+          <ScalarProperty Name="cijena_promjene" ColumnName="cijena_promjene" />
+          <ScalarProperty Name="opis_promjene" ColumnName="opis_promjene" />
+          <ScalarProperty Name="servis_id" ColumnName="servis_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="poruke">
+      <EntityTypeMapping TypeName="IneffableModel.poruke">
+        <MappingFragment StoreEntitySet="poruke">
+          <ScalarProperty Name="servis_id" ColumnName="servis_id" />
+          <ScalarProperty Name="kupac_id" ColumnName="kupac_id" />
+          <ScalarProperty Name="tekst" ColumnName="tekst" />
+          <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
