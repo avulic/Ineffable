@@ -42,3 +42,103 @@ C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\CrudArtikala\obj\Debug
 C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.GenerateResource.Cache
 C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.dll
 C:\Users\Korisnik\Desktop\Projekt\branch\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.pdb
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll.config
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.pdb
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\bin\Debug\BPModel.dll
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.dll
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\bin\Debug\BPModel.pdb
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\bin\Debug\BPModel.dll.config
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.xml
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmArtikli.resources
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmNoviArtikl.resources
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.GenerateResource.Cache
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.dll
+C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.pdb
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll.config
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.pdb
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\bin\Debug\BPModel.dll
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.dll
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\bin\Debug\BPModel.pdb
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\bin\Debug\BPModel.dll.config
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.xml
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmArtikli.resources
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmNoviArtikl.resources
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.GenerateResource.cache
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.CoreCompileInputs.cache
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.CopyComplete
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.dll
+C:\Users\Matija\Desktop\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.pdb
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll.config
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.pdb
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\bin\Debug\BPModel.dll
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.dll
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\bin\Debug\BPModel.pdb
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\bin\Debug\BPModel.dll.config
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.xml
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmArtikli.resources
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmNoviArtikl.resources
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.GenerateResource.Cache
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.dll
+C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.pdb
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll.config
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.pdb
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\bin\Debug\BPModel.dll
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.dll
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.dll
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\bin\Debug\BPModel.pdb
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\bin\Debug\BPModel.dll.config
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.xml
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.xml
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmArtikli.resources
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmNoviArtikl.resources
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.GenerateResource.cache
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.CopyComplete
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.dll
+D:\Program Files (x86)\Ineffable\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.pdb
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll.config
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.pdb
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\bin\Debug\BPModel.dll
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\bin\Debug\EntityFramework.dll
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\bin\Debug\BPModel.pdb
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\bin\Debug\BPModel.dll.config
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\bin\Debug\EntityFramework.xml
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmArtikli.resources
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmNoviArtikl.resources
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.GenerateResource.Cache
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.dll
+C:\Users\Korisnik\Desktop\danas\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.pdb
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll.config
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.dll
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\bin\Debug\CrudArtikala.pdb
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\bin\Debug\BPModel.dll
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.dll
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\bin\Debug\BPModel.pdb
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\bin\Debug\BPModel.dll.config
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.xml
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmArtikli.resources
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.frmNoviArtikl.resources
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.csproj.GenerateResource.Cache
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.dll
+C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\CrudArtikala\obj\Debug\CrudArtikala.pdb

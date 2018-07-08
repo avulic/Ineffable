@@ -61,6 +61,12 @@
     <Compile Include="frmKreirajQRKod.Designer.cs">
       <DependentUpon>frmKreirajQRKod.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrikaziLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrikaziLog.Designer.cs">
+      <DependentUpon>frmPrikaziLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRadniNalog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,36 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>IneffableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSetJedini.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSetJedini.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSetZadnji.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSetZadnji.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -93,6 +129,72 @@
     <None Include="IneffableDataSet.xss">
       <DependentUpon>IneffableDataSet.xsd</DependentUpon>
     </None>
+    <None Include="IneffableDataSet1.xsc">
+      <DependentUpon>IneffableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet1.xss">
+      <DependentUpon>IneffableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet2.xsc">
+      <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet2.xss">
+      <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet3.xsc">
+      <DependentUpon>IneffableDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet3.xss">
+      <DependentUpon>IneffableDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet4.xsc">
+      <DependentUpon>IneffableDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet4.xss">
+      <DependentUpon>IneffableDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSetJedini.xsc">
+      <DependentUpon>IneffableDataSetJedini.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSetJedini.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSetJedini.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSetJedini.xss">
+      <DependentUpon>IneffableDataSetJedini.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSetZadnji.xsc">
+      <DependentUpon>IneffableDataSetZadnji.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSetZadnji.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSetZadnji.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSetZadnji.xss">
+      <DependentUpon>IneffableDataSetZadnji.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -102,6 +204,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmKreirajQRKod.resx">
       <DependentUpon>frmKreirajQRKod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrikaziLog.resx">
+      <DependentUpon>frmPrikaziLog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRadniNalog.resx">
       <DependentUpon>frmRadniNalog.cs</DependentUpon>

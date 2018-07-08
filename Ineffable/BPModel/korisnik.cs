@@ -32,6 +32,7 @@ namespace BPModel
         public int uloga_id { get; set; }
         public string adresa { get; set; }
         public string telefon { get; set; }
+        public string spol { get; set; }
     
         public virtual uloga uloga { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

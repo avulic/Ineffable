@@ -36,7 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtVrsta = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtProizvodac = new System.Windows.Forms.TextBox();
+            this.cbProizvodjac = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtOpis
@@ -107,19 +107,46 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Proizvođač:";
             // 
-            // txtProizvodac
+            // cbProizvodjac
             // 
-            this.txtProizvodac.Location = new System.Drawing.Point(12, 144);
-            this.txtProizvodac.Name = "txtProizvodac";
-            this.txtProizvodac.Size = new System.Drawing.Size(350, 20);
-            this.txtProizvodac.TabIndex = 8;
+            this.cbProizvodjac.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbProizvodjac.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbProizvodjac.FormattingEnabled = true;
+            this.cbProizvodjac.Items.AddRange(new object[] {
+            "Acer",
+            "Asus",
+            "Dell",
+            "HP",
+            "Lenovo",
+            "Apple",
+            "Instar",
+            "GIGABYTE",
+            "INTEL",
+            "MSGW",
+            "Fujitsu",
+            "Feniks",
+            "HPInc Computing",
+            "HTC",
+            "Huawei",
+            "LG",
+            "NOA",
+            "Nokia",
+            "Samsung",
+            "Xiaomi",
+            "ZTE",
+            "Vivax",
+            "Sony Mobile"});
+            this.cbProizvodjac.Location = new System.Drawing.Point(12, 144);
+            this.cbProizvodjac.Name = "cbProizvodjac";
+            this.cbProizvodjac.Size = new System.Drawing.Size(350, 21);
+            this.cbProizvodjac.TabIndex = 9;
             // 
             // frmNoviZahtjev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 405);
-            this.Controls.Add(this.txtProizvodac);
+            this.Controls.Add(this.cbProizvodjac);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtVrsta);
             this.Controls.Add(this.label3);
@@ -129,7 +156,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtOpis);
             this.Name = "frmNoviZahtjev";
-            this.Text = "frmNoviZahtjev";
+            this.Text = "Novi zahtjev za servisom";
             this.Load += new System.EventHandler(this.frmNoviZahtjev_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -146,6 +173,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtVrsta;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtProizvodac;
+        private System.Windows.Forms.ComboBox cbProizvodjac;
     }
 }

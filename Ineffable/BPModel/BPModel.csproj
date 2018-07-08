@@ -60,12 +60,6 @@
     <Compile Include="dobavljac.cs">
       <DependentUpon>IneffableModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="frmObavijesti.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmObavijesti.Designer.cs">
-      <DependentUpon>frmObavijesti.cs</DependentUpon>
-    </Compile>
     <Compile Include="IneffableDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -165,11 +159,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="frmObavijesti.resx">
-      <DependentUpon>frmObavijesti.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

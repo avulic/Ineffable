@@ -69,7 +69,7 @@
             this.Controls.Add(this.lblPoruka);
             this.Controls.Add(this.txtPoruka);
             this.Name = "frmPoruka";
-            this.Text = "frmPoruka";
+            this.Text = "Poruka";
             this.Load += new System.EventHandler(this.frmPoruka_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

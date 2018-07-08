@@ -14,6 +14,12 @@ namespace BPModel
     
     public partial class zahtjev_za_servis
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public zahtjev_za_servis()
+        {
+            this.radni_nalog_servisa = new HashSet<radni_nalog_servisa>();
+        }
+    
         public int zahtjev_id { get; set; }
         public Nullable<System.DateTime> datum_podnosenja { get; set; }
         public string opis { get; set; }
@@ -22,7 +28,12 @@ namespace BPModel
         public string naziv_uredjaja { get; set; }
         public string tip_uredjaja { get; set; }
         public string proizvodjac { get; set; }
+        public string obavijest { get; set; }
+        public string obrazlozenje { get; set; }
+        public string procitano { get; set; }
     
         public virtual kupac kupac { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<radni_nalog_servisa> radni_nalog_servisa { get; set; }
     }
 }

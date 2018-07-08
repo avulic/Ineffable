@@ -33,6 +33,7 @@
         <AssociationConnector Association="IneffableModel.FK_kupac_korisnik" />
         <EntityTypeShape EntityType="IneffableModel.zahtjev_za_servis" Width="1.5" PointX="3" PointY="1.125" />
         <AssociationConnector Association="IneffableModel.FK_zahtjev_za_servis_kupac" />
+        <AssociationConnector Association="IneffableModel.FK_radni_nalog_servisa_zahtjev_za_servis" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -27,8 +27,7 @@ namespace BPModel
         public string ime { get; set; }
         public string prezime { get; set; }
         public Nullable<int> korisnik_id { get; set; }
-        public string obavijest { get; set; }
-        public string obrazlozenje { get; set; }
+        public string spol { get; set; }
 
         public override string ToString()
         {

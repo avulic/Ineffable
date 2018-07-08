@@ -34,6 +34,7 @@
     <Property Name="uloga_id" Type="int" Nullable="false" />
     <Property Name="adresa" Type="varchar" MaxLength="50" />
     <Property Name="telefon" Type="varchar" MaxLength="50" />
+    <Property Name="spol" Type="char" MaxLength="10" />
   </EntityType>
   <EntityType Name="kupac">
     <Key>
@@ -43,8 +44,7 @@
     <Property Name="ime" Type="varchar" MaxLength="50" />
     <Property Name="prezime" Type="varchar" MaxLength="50" />
     <Property Name="korisnik_id" Type="int" />
-    <Property Name="obavijest" Type="varchar" MaxLength="55" />
-    <Property Name="obrazlozenje" Type="varchar" MaxLength="255" />
+    <Property Name="spol" Type="char" MaxLength="10" />
   </EntityType>
   <EntityType Name="poruke">
     <Key>
@@ -79,6 +79,7 @@
     <Property Name="vrijeme_kreiranja" Type="datetime" />
     <Property Name="osoba_id" Type="int" Nullable="false" />
     <Property Name="stanje" Type="varchar" MaxLength="10" />
+    <Property Name="zahtjev_id" Type="int" />
   </EntityType>
   <EntityType Name="rezervacija">
     <Key>
@@ -130,6 +131,9 @@
     <Property Name="naziv_uredjaja" Type="varchar" MaxLength="255" />
     <Property Name="tip_uredjaja" Type="varchar" MaxLength="255" />
     <Property Name="proizvodjac" Type="varchar" MaxLength="255" />
+    <Property Name="obavijest" Type="varchar" MaxLength="255" />
+    <Property Name="obrazlozenje" Type="varchar" MaxLength="255" />
+    <Property Name="procitano" Type="varchar" MaxLength="10" />
   </EntityType>
   <Association Name="FK_artikl_dobavljac">
     <End Role="dobavljac" Type="Self.dobavljac" Multiplicity="1" />
@@ -227,6 +231,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_radni_nalog_servisa_zahtjev_za_servis">
+    <End Role="zahtjev_za_servis" Type="Self.zahtjev_za_servis" Multiplicity="0..1" />
+    <End Role="radni_nalog_servisa" Type="Self.radni_nalog_servisa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="zahtjev_za_servis">
+        <PropertyRef Name="zahtjev_id" />
+      </Principal>
+      <Dependent Role="radni_nalog_servisa">
+        <PropertyRef Name="zahtjev_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_radni_nalog_servisa_zaposlenik">
     <End Role="korisnik" Type="Self.korisnik" Multiplicity="1" />
     <End Role="radni_nalog_servisa" Type="Self.radni_nalog_servisa" Multiplicity="*" />
@@ -299,7 +315,19 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_stavka_racuna_racun">
+  <Association Name="FK_StavkaArtikl">
+    <End Role="artikl" Type="Self.artikl" Multiplicity="1" />
+    <End Role="stavka_racuna" Type="Self.stavka_racuna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="artikl">
+        <PropertyRef Name="artikl_id" />
+      </Principal>
+      <Dependent Role="stavka_racuna">
+        <PropertyRef Name="artikl_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StavkaRacun">
     <End Role="racun" Type="Self.racun" Multiplicity="1" />
     <End Role="stavka_racuna" Type="Self.stavka_racuna" Multiplicity="*" />
     <ReferentialConstraint>
@@ -368,6 +396,10 @@
       <End Role="kupac" EntitySet="kupac" />
       <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
     </AssociationSet>
+    <AssociationSet Name="FK_radni_nalog_servisa_zahtjev_za_servis" Association="Self.FK_radni_nalog_servisa_zahtjev_za_servis">
+      <End Role="zahtjev_za_servis" EntitySet="zahtjev_za_servis" />
+      <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+    </AssociationSet>
     <AssociationSet Name="FK_radni_nalog_servisa_zaposlenik" Association="Self.FK_radni_nalog_servisa_zaposlenik">
       <End Role="korisnik" EntitySet="korisnik" />
       <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
@@ -392,7 +424,11 @@
       <End Role="artikl" EntitySet="artikl" />
       <End Role="stavka_racuna" EntitySet="stavka_racuna" />
     </AssociationSet>
-    <AssociationSet Name="FK_stavka_racuna_racun" Association="Self.FK_stavka_racuna_racun">
+    <AssociationSet Name="FK_StavkaArtikl" Association="Self.FK_StavkaArtikl">
+      <End Role="artikl" EntitySet="artikl" />
+      <End Role="stavka_racuna" EntitySet="stavka_racuna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StavkaRacun" Association="Self.FK_StavkaRacun">
       <End Role="racun" EntitySet="racun" />
       <End Role="stavka_racuna" EntitySet="stavka_racuna" />
     </AssociationSet>

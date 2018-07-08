@@ -43,6 +43,7 @@
     <NavigationProperty Name="radni_nalog_servisa" Relationship="Self.FK_radni_nalog_servisa_zaposlenik" FromRole="korisnik" ToRole="radni_nalog_servisa" />
     <NavigationProperty Name="servis_log" Relationship="IneffableModel.FK_servis_log_korisnik" FromRole="korisnik" ToRole="servis_log" />
     <NavigationProperty Name="kupac" Relationship="IneffableModel.FK_kupac_korisnik" FromRole="korisnik" ToRole="kupac" />
+    <Property Name="spol" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
   </EntityType>
   <EntityType Name="kupac">
     <Key>
@@ -57,8 +58,7 @@
     <Property Name="korisnik_id" Type="Int32" />
     <NavigationProperty Name="korisnik" Relationship="IneffableModel.FK_kupac_korisnik" FromRole="kupac" ToRole="korisnik" />
     <NavigationProperty Name="zahtjev_za_servis" Relationship="IneffableModel.FK_zahtjev_za_servis_kupac" FromRole="kupac" ToRole="zahtjev_za_servis" />
-    <Property Name="obavijest" Type="String" MaxLength="55" FixedLength="false" Unicode="false" />
-    <Property Name="obrazlozenje" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="spol" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
   </EntityType>
   <EntityType Name="racun">
     <Key>
@@ -92,6 +92,8 @@
     <NavigationProperty Name="servis_log" Relationship="IneffableModel.FK_servis_log_radni_nalog_servisa" FromRole="radni_nalog_servisa" ToRole="servis_log" />
     <Property Name="stanje" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="poruke" Relationship="IneffableModel.FK_poruke_radni_nalog_servisa" FromRole="radni_nalog_servisa" ToRole="poruke" />
+    <Property Name="zahtjev_id" Type="Int32" />
+    <NavigationProperty Name="zahtjev_za_servis" Relationship="IneffableModel.FK_radni_nalog_servisa_zahtjev_za_servis" FromRole="radni_nalog_servisa" ToRole="zahtjev_za_servis" />
   </EntityType>
   <EntityType Name="rezervacija">
     <Key>
@@ -321,6 +323,10 @@
       <End Role="kupac" EntitySet="kupac" />
       <End Role="zahtjev_za_servis" EntitySet="zahtjev_za_servis" />
     </AssociationSet>
+    <AssociationSet Name="FK_radni_nalog_servisa_zahtjev_za_servis" Association="IneffableModel.FK_radni_nalog_servisa_zahtjev_za_servis">
+      <End Role="zahtjev_za_servis" EntitySet="zahtjev_za_servis" />
+      <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="servis_log">
     <Key>
@@ -420,6 +426,10 @@
     <Property Name="tip_uredjaja" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="proizvodjac" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="kupac" Relationship="IneffableModel.FK_zahtjev_za_servis_kupac" FromRole="zahtjev_za_servis" ToRole="kupac" />
+    <Property Name="obavijest" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="obrazlozenje" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="procitano" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="radni_nalog_servisa" Relationship="IneffableModel.FK_radni_nalog_servisa_zahtjev_za_servis" FromRole="zahtjev_za_servis" ToRole="radni_nalog_servisa" />
   </EntityType>
   <Association Name="FK_zahtjev_za_servis_kupac">
     <End Type="IneffableModel.kupac" Role="kupac" Multiplicity="1" />
@@ -430,6 +440,18 @@
       </Principal>
       <Dependent Role="zahtjev_za_servis">
         <PropertyRef Name="kupac_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_radni_nalog_servisa_zahtjev_za_servis">
+    <End Type="IneffableModel.zahtjev_za_servis" Role="zahtjev_za_servis" Multiplicity="0..1" />
+    <End Type="IneffableModel.radni_nalog_servisa" Role="radni_nalog_servisa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="zahtjev_za_servis">
+        <PropertyRef Name="zahtjev_id" />
+      </Principal>
+      <Dependent Role="radni_nalog_servisa">
+        <PropertyRef Name="zahtjev_id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

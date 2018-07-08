@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -55,9 +56,24 @@ namespace CrudArtikala
                     using (var db = new IneffableEntities())
                     {
                         artikl odabraniArtikl = db.artikl.FirstOrDefault(s => s.artikl_id == idArtikla);
-                        db.artikl.Attach(odabraniArtikl);
-                        db.artikl.Remove(odabraniArtikl);
-                        db.SaveChanges();
+
+                        var count1 = db.stavka_racuna.Where(s => s.artikl_id == idArtikla).Count();
+                        var count2 = db.rezervacija.Where(s => s.artikl_id == idArtikla).Count();
+                        if (count2 > 0)
+                        {
+                            MessageBox.Show("Artikl nije moguće izbrisati jer je rezerviran.");
+                        }
+                        if (count1 > 0)
+                        {
+                            MessageBox.Show("Artikl nije moguće izbrisati jer se nalazi na računu.");
+                        }
+                        if (count1 == 0 || count2 == 0)
+                        {
+                            db.artikl.Attach(odabraniArtikl);
+                            db.artikl.Remove(odabraniArtikl);
+                            db.SaveChanges();
+                            MessageBox.Show("Artikl uspješno izbrisan");
+                        }
                     }
                 }
             }

@@ -45,9 +45,20 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
     <Reference Include="QR_Kod, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\QR_Kod\bin\Debug\QR_Kod.dll</HintPath>
+    </Reference>
+    <Reference Include="Racuni">
+      <HintPath>..\Racuni\bin\Debug\Racuni.dll</HintPath>
+    </Reference>
+    <Reference Include="RezervacijaArtikala, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />

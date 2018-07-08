@@ -39,21 +39,29 @@ namespace Komunikacija
             int kupacID = odabranaOsoba.kupac_id;
             int servisID = idServisa;
 
-            using (var db = new IneffableEntities())
+            if (message == "")
             {
-                poruke novaPoruka = new poruke
-                {
-                    tekst = message,
-                    kupac_id = kupacID,
-                    servis_id = servisID
-                };
-                db.poruke.Add(novaPoruka);
-
-                radni_nalog_servisa odabraniNalog = db.radni_nalog_servisa.FirstOrDefault(r => r.servis_id == servisID);
-                odabraniNalog.stanje = "neaktivan";
-                db.SaveChanges();
+                MessageBox.Show("Niste unijeli poruku!");
             }
-            Close();
+            else
+            {
+                using (var db = new IneffableEntities())
+                {
+                    poruke novaPoruka = new poruke
+                    {
+                        tekst = message,
+                        kupac_id = kupacID,
+                        servis_id = servisID
+                    };
+                    db.poruke.Add(novaPoruka);
+
+                    radni_nalog_servisa odabraniNalog = db.radni_nalog_servisa.FirstOrDefault(r => r.servis_id == servisID);
+                    odabraniNalog.stanje = "neaktivan";
+                    db.SaveChanges();
+                    MessageBox.Show("Poruka uspješno poslana!");
+                }
+                Close();
+            }
         }
     }
 }

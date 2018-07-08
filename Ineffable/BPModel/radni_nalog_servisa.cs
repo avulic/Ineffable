@@ -31,6 +31,7 @@ namespace BPModel
         public Nullable<System.DateTime> vrijeme_kreiranja { get; set; }
         public int osoba_id { get; set; }
         public string stanje { get; set; }
+        public Nullable<int> zahtjev_id { get; set; }
     
         public virtual korisnik korisnik { get; set; }
         public virtual kupac kupac { get; set; }
@@ -40,5 +41,6 @@ namespace BPModel
         public virtual ICollection<servis_log> servis_log { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<poruke> poruke { get; set; }
+        public virtual zahtjev_za_servis zahtjev_za_servis { get; set; }
     }
 }

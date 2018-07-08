@@ -8444,7 +8444,7 @@ SELECT servis_id, oznaka, uredjaj, zaposlenik_id, opis, status, vrijeme_kreiranj
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = "SELECT        servis_id, oznaka, uredjaj, zaposlenik_id, opis, status, vrijeme_kr" +
                 "eiranja, osoba_id\r\nFROM            radni_nalog_servisa\r\nWHERE        (osoba_id =" +
-                " @osoba_id) AND (stanje <> \'neaktivan\')";
+                " @osoba_id) AND (stanje = \'aktivan\')";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@osoba_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "osoba_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();

@@ -27,6 +27,7 @@
     <EntitySetMapping Name="korisnik">
       <EntityTypeMapping TypeName="IneffableModel.korisnik">
         <MappingFragment StoreEntitySet="korisnik">
+          <ScalarProperty Name="spol" ColumnName="spol" />
           <ScalarProperty Name="korisnik_id" ColumnName="korisnik_id" />
           <ScalarProperty Name="ime" ColumnName="ime" />
           <ScalarProperty Name="prezime" ColumnName="prezime" />
@@ -42,8 +43,7 @@
     <EntitySetMapping Name="kupac">
       <EntityTypeMapping TypeName="IneffableModel.kupac">
         <MappingFragment StoreEntitySet="kupac">
-          <ScalarProperty Name="obrazlozenje" ColumnName="obrazlozenje" />
-          <ScalarProperty Name="obavijest" ColumnName="obavijest" />
+          <ScalarProperty Name="spol" ColumnName="spol" />
           <ScalarProperty Name="korisnik_id" ColumnName="korisnik_id" />
           <ScalarProperty Name="kupac_id" ColumnName="kupac_id" />
           <ScalarProperty Name="ime" ColumnName="ime" />
@@ -66,6 +66,7 @@
     <EntitySetMapping Name="radni_nalog_servisa">
       <EntityTypeMapping TypeName="IneffableModel.radni_nalog_servisa">
         <MappingFragment StoreEntitySet="radni_nalog_servisa">
+          <ScalarProperty Name="zahtjev_id" ColumnName="zahtjev_id" />
           <ScalarProperty Name="stanje" ColumnName="stanje" />
           <ScalarProperty Name="servis_id" ColumnName="servis_id" />
           <ScalarProperty Name="oznaka" ColumnName="oznaka" />
@@ -132,6 +133,9 @@
     <EntitySetMapping Name="zahtjev_za_servis">
       <EntityTypeMapping TypeName="IneffableModel.zahtjev_za_servis">
         <MappingFragment StoreEntitySet="zahtjev_za_servis">
+          <ScalarProperty Name="procitano" ColumnName="procitano" />
+          <ScalarProperty Name="obrazlozenje" ColumnName="obrazlozenje" />
+          <ScalarProperty Name="obavijest" ColumnName="obavijest" />
           <ScalarProperty Name="proizvodjac" ColumnName="proizvodjac" />
           <ScalarProperty Name="tip_uredjaja" ColumnName="tip_uredjaja" />
           <ScalarProperty Name="naziv_uredjaja" ColumnName="naziv_uredjaja" />

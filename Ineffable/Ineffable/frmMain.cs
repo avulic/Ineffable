@@ -11,13 +11,16 @@ using PrijavaRegistracija;
 using CrudArtikala;
 using QR_Kod;
 using Komunikacija;
+using RezervacijaArtikala;
+using Racuni;
+using BPModel;
 
 namespace Ineffable
 {
     public partial class frmMain : Form
     {
-        
-        
+
+        int brojRedaka;
         public frmMain()
         {
             InitializeComponent();
@@ -26,6 +29,12 @@ namespace Ineffable
         {
             frmPrijava prijavaForma = new frmPrijava(this);
             prikaziFormu(prijavaForma);
+
+            using (IneffableEntities kontekst = new IneffableEntities())
+            {
+                var baza = from r in kontekst.rezervacija select r;
+                brojRedaka = baza.Count();
+            }
         }
         protected override void OnMdiChildActivate(EventArgs e)
         {
@@ -152,8 +161,12 @@ namespace Ineffable
 
         private void msIzbornikServisi_Click(object sender, EventArgs e)
         {
-            frmKreirajQRKod kod = new frmKreirajQRKod();
-            prikaziFormu(kod);
+            Korisnik koram = Autentifikator.dohvatiPrijavljenogKorisnika();
+            if (koram.uloga == "Zaposlenik")
+            {
+                frmKreirajQRKod f = new frmKreirajQRKod(0);
+                prikaziFormu(f);
+            }
         }
 
         private void msIzbornikChat_Click(object sender, EventArgs e)
@@ -163,5 +176,53 @@ namespace Ineffable
             frmKomuniciraj komunikacija = new frmKomuniciraj(kori.uloga, kori.id);
             prikaziFormu(komunikacija);
         }
+
+        private void msIzbornikRezervacija_Click(object sender, EventArgs e)
+        {
+            Korisnik koram = Autentifikator.dohvatiPrijavljenogKorisnika();
+            if (koram.uloga == "Zaposlenik")
+            {
+                int broj;
+                using (IneffableEntities kontekst = new IneffableEntities())
+                {
+                    var baza = from r in kontekst.rezervacija select r;
+                    broj = baza.Count();
+                }
+                if (broj != brojRedaka)
+                {
+                    MessageBox.Show("Promjena kod rezervacija");
+                    brojRedaka = broj;
+                }
+                frmPregledRezervacija f = new frmPregledRezervacija();
+                prikaziFormu(f);
+            }
+            else if (koram.uloga == "Kupac")
+            {
+                int korisnik_id = koram.id;
+                frmRezervacija f = new frmRezervacija(korisnik_id);
+                prikaziFormu(f);
+            }
+        }
+
+        private void kreirajRačunToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Korisnik koram = Autentifikator.dohvatiPrijavljenogKorisnika();
+            if (koram.uloga == "Zaposlenik")
+            {
+                frmNoviRacun f = new frmNoviRacun();
+                prikaziFormu(f);
+            }
+        }
+
+        private void pregledajRačuneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Korisnik koram = Autentifikator.dohvatiPrijavljenogKorisnika();
+            if (koram.uloga == "Zaposlenik")
+            {
+                frmRacuni f = new frmRacuni();
+                prikaziFormu(f);
+            }
+        }
+
     }
 }

@@ -51,52 +51,66 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnPosaljiPoruku = new System.Windows.Forms.Button();
             this.gbPitanje = new System.Windows.Forms.GroupBox();
-            this.radni_nalog_servisaTableAdapter = new Komunikacija.IneffableDataSetTableAdapters.radni_nalog_servisaTableAdapter();
-            this.tableAdapterManager = new Komunikacija.IneffableDataSetTableAdapters.TableAdapterManager();
             this.gbKupca = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblPorukeServisera = new System.Windows.Forms.Label();
             this.btnPrekid = new System.Windows.Forms.Button();
             this.btnPrihvati = new System.Windows.Forms.Button();
             this.dgvPoruke = new System.Windows.Forms.DataGridView();
-            this.ineffableDataSet1 = new CrudArtikala.IneffableDataSet();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tekstDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kupacidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.servisidDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.radninalogservisaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ineffableDataSet5 = new Komunikacija.IneffableDataSet5();
+            this.tekstDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.servis_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kupacidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.porukeBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.radni_nalog_servisaTableAdapter = new Komunikacija.IneffableDataSetTableAdapters.radni_nalog_servisaTableAdapter();
+            this.tableAdapterManager = new Komunikacija.IneffableDataSetTableAdapters.TableAdapterManager();
+            this.porukeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.radninalogservisaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ineffableDataSet11 = new Komunikacija.IneffableDataSet1();
             this.porukeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ineffableDataSet1 = new CrudArtikala.IneffableDataSet();
             this.porukeTableAdapter = new Komunikacija.IneffableDataSet1TableAdapters.porukeTableAdapter();
             this.radni_nalog_servisaTableAdapter1 = new Komunikacija.IneffableDataSet1TableAdapters.radni_nalog_servisaTableAdapter();
             this.btnPregledajZahtjeve = new System.Windows.Forms.Button();
-            this.btnObavijesti = new System.Windows.Forms.Button();
+            this.btnMojiServisi = new System.Windows.Forms.Button();
+            this.btnZavrseniServisi = new System.Windows.Forms.Button();
+            this.porukeTableAdapter1 = new Komunikacija.IneffableDataSet5TableAdapters.porukeTableAdapter();
+            this.radni_nalog_servisaTableAdapter2 = new Komunikacija.IneffableDataSet5TableAdapters.radni_nalog_servisaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServisi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radni_nalog_servisaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
             this.gbPitanje.SuspendLayout();
             this.gbKupca.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPoruke)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radninalogservisaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porukeBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porukeBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radninalogservisaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.porukeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblKorisnik
             // 
             this.lblKorisnik.AutoSize = true;
+            this.lblKorisnik.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblKorisnik.Location = new System.Drawing.Point(12, 9);
             this.lblKorisnik.Name = "lblKorisnik";
-            this.lblKorisnik.Size = new System.Drawing.Size(38, 13);
+            this.lblKorisnik.Size = new System.Drawing.Size(46, 16);
             this.lblKorisnik.TabIndex = 0;
             this.lblKorisnik.Text = "Kupac";
             // 
             // lblZaposlenik
             // 
             this.lblZaposlenik.AutoSize = true;
+            this.lblZaposlenik.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblZaposlenik.Location = new System.Drawing.Point(12, 9);
             this.lblZaposlenik.Name = "lblZaposlenik";
-            this.lblZaposlenik.Size = new System.Drawing.Size(59, 13);
+            this.lblZaposlenik.Size = new System.Drawing.Size(75, 16);
             this.lblZaposlenik.TabIndex = 1;
             this.lblZaposlenik.Text = "Zaposlenik";
             // 
@@ -116,7 +130,7 @@
             this.btnKontaktirajKorisnika.Name = "btnKontaktirajKorisnika";
             this.btnKontaktirajKorisnika.Size = new System.Drawing.Size(177, 23);
             this.btnKontaktirajKorisnika.TabIndex = 3;
-            this.btnKontaktirajKorisnika.Text = "Kontaktiranje klijenta";
+            this.btnKontaktirajKorisnika.Text = "Kontaktiraj klijenta";
             this.btnKontaktirajKorisnika.UseVisualStyleBackColor = true;
             this.btnKontaktirajKorisnika.Click += new System.EventHandler(this.btnKontaktirajKorisnika_Click);
             // 
@@ -132,6 +146,8 @@
             // 
             // cbKupci
             // 
+            this.cbKupci.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbKupci.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbKupci.FormattingEnabled = true;
             this.cbKupci.Location = new System.Drawing.Point(19, 42);
             this.cbKupci.Name = "cbKupci";
@@ -144,9 +160,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(16, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 13);
+            this.label1.Size = new System.Drawing.Size(293, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Odaberite klijenta kako bi vam se prikazali svi njegovi radni nalozi.";
+            this.label1.Text = "Odaberite klijenta kako bi vam se prikazali svi njegovi servisi.";
             // 
             // dgvServisi
             // 
@@ -194,6 +210,7 @@
             this.zaposlenikidDataGridViewTextBoxColumn.DataPropertyName = "zaposlenik_id";
             this.zaposlenikidDataGridViewTextBoxColumn.HeaderText = "Zaposlenik";
             this.zaposlenikidDataGridViewTextBoxColumn.Name = "zaposlenikidDataGridViewTextBoxColumn";
+            this.zaposlenikidDataGridViewTextBoxColumn.Visible = false;
             // 
             // opisDataGridViewTextBoxColumn
             // 
@@ -273,45 +290,26 @@
             this.gbPitanje.TabStop = false;
             this.gbPitanje.Visible = false;
             // 
-            // radni_nalog_servisaTableAdapter
-            // 
-            this.radni_nalog_servisaTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.artiklTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.dobavljacTableAdapter = null;
-            this.tableAdapterManager.korisnikTableAdapter = null;
-            this.tableAdapterManager.kupacTableAdapter = null;
-            this.tableAdapterManager.racunTableAdapter = null;
-            this.tableAdapterManager.radni_nalog_servisaTableAdapter = this.radni_nalog_servisaTableAdapter;
-            this.tableAdapterManager.rezervacijaTableAdapter = null;
-            this.tableAdapterManager.stavka_racunaTableAdapter = null;
-            this.tableAdapterManager.ulogaTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Komunikacija.IneffableDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.zahtjev_za_servisTableAdapter = null;
-            // 
             // gbKupca
             // 
-            this.gbKupca.Controls.Add(this.label4);
+            this.gbKupca.Controls.Add(this.lblPorukeServisera);
             this.gbKupca.Controls.Add(this.btnPrekid);
             this.gbKupca.Controls.Add(this.btnPrihvati);
             this.gbKupca.Controls.Add(this.dgvPoruke);
-            this.gbKupca.Location = new System.Drawing.Point(12, 92);
+            this.gbKupca.Location = new System.Drawing.Point(15, 91);
             this.gbKupca.Name = "gbKupca";
             this.gbKupca.Size = new System.Drawing.Size(789, 419);
             this.gbKupca.TabIndex = 5;
             this.gbKupca.TabStop = false;
             // 
-            // label4
+            // lblPorukeServisera
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Poruke servisera vaših uređaja:";
+            this.lblPorukeServisera.AutoSize = true;
+            this.lblPorukeServisera.Location = new System.Drawing.Point(9, 21);
+            this.lblPorukeServisera.Name = "lblPorukeServisera";
+            this.lblPorukeServisera.Size = new System.Drawing.Size(156, 13);
+            this.lblPorukeServisera.TabIndex = 3;
+            this.lblPorukeServisera.Text = "Poruke servisera vaših uređaja:";
             // 
             // btnPrekid
             // 
@@ -340,28 +338,49 @@
             this.dgvPoruke.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPoruke.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
+            this.servisidDataGridViewTextBoxColumn1,
             this.tekstDataGridViewTextBoxColumn,
-            this.kupacidDataGridViewTextBoxColumn,
-            this.servisidDataGridViewTextBoxColumn1});
-            this.dgvPoruke.DataSource = this.porukeBindingSource;
-            this.dgvPoruke.Location = new System.Drawing.Point(9, 42);
+            this.servis_id,
+            this.kupacidDataGridViewTextBoxColumn});
+            this.dgvPoruke.DataSource = this.porukeBindingSource2;
+            this.dgvPoruke.Location = new System.Drawing.Point(12, 42);
             this.dgvPoruke.MultiSelect = false;
             this.dgvPoruke.Name = "dgvPoruke";
             this.dgvPoruke.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPoruke.Size = new System.Drawing.Size(739, 175);
             this.dgvPoruke.TabIndex = 0;
             // 
-            // ineffableDataSet1
-            // 
-            this.ineffableDataSet1.DataSetName = "IneffableDataSet";
-            this.ineffableDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Visible = false;
+            this.idDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // servisidDataGridViewTextBoxColumn1
+            // 
+            this.servisidDataGridViewTextBoxColumn1.DataPropertyName = "servis_id";
+            this.servisidDataGridViewTextBoxColumn1.DataSource = this.radninalogservisaBindingSource1;
+            this.servisidDataGridViewTextBoxColumn1.DisplayMember = "uredjaj";
+            this.servisidDataGridViewTextBoxColumn1.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.servisidDataGridViewTextBoxColumn1.HeaderText = "Naziv uređaja";
+            this.servisidDataGridViewTextBoxColumn1.Name = "servisidDataGridViewTextBoxColumn1";
+            this.servisidDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.servisidDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.servisidDataGridViewTextBoxColumn1.ValueMember = "servis_id";
+            this.servisidDataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // radninalogservisaBindingSource1
+            // 
+            this.radninalogservisaBindingSource1.DataMember = "radni_nalog_servisa";
+            this.radninalogservisaBindingSource1.DataSource = this.ineffableDataSet5;
+            // 
+            // ineffableDataSet5
+            // 
+            this.ineffableDataSet5.DataSetName = "IneffableDataSet5";
+            this.ineffableDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tekstDataGridViewTextBoxColumn
             // 
@@ -370,6 +389,13 @@
             this.tekstDataGridViewTextBoxColumn.Name = "tekstDataGridViewTextBoxColumn";
             this.tekstDataGridViewTextBoxColumn.Width = 400;
             // 
+            // servis_id
+            // 
+            this.servis_id.DataPropertyName = "servis_id";
+            this.servis_id.HeaderText = "servis_id";
+            this.servis_id.Name = "servis_id";
+            this.servis_id.Visible = false;
+            // 
             // kupacidDataGridViewTextBoxColumn
             // 
             this.kupacidDataGridViewTextBoxColumn.DataPropertyName = "kupac_id";
@@ -377,18 +403,29 @@
             this.kupacidDataGridViewTextBoxColumn.Name = "kupacidDataGridViewTextBoxColumn";
             this.kupacidDataGridViewTextBoxColumn.Visible = false;
             // 
-            // servisidDataGridViewTextBoxColumn1
+            // porukeBindingSource2
             // 
-            this.servisidDataGridViewTextBoxColumn1.DataPropertyName = "servis_id";
-            this.servisidDataGridViewTextBoxColumn1.DataSource = this.radninalogservisaBindingSource;
-            this.servisidDataGridViewTextBoxColumn1.DisplayMember = "uredjaj";
-            this.servisidDataGridViewTextBoxColumn1.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.servisidDataGridViewTextBoxColumn1.HeaderText = "Uređaj na servisu";
-            this.servisidDataGridViewTextBoxColumn1.Name = "servisidDataGridViewTextBoxColumn1";
-            this.servisidDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.servisidDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.servisidDataGridViewTextBoxColumn1.ValueMember = "servis_id";
-            this.servisidDataGridViewTextBoxColumn1.Width = 200;
+            this.porukeBindingSource2.DataMember = "poruke";
+            this.porukeBindingSource2.DataSource = this.ineffableDataSet5;
+            // 
+            // radni_nalog_servisaTableAdapter
+            // 
+            this.radni_nalog_servisaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.artiklTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.dobavljacTableAdapter = null;
+            this.tableAdapterManager.korisnikTableAdapter = null;
+            this.tableAdapterManager.kupacTableAdapter = null;
+            this.tableAdapterManager.racunTableAdapter = null;
+            this.tableAdapterManager.radni_nalog_servisaTableAdapter = this.radni_nalog_servisaTableAdapter;
+            this.tableAdapterManager.rezervacijaTableAdapter = null;
+            this.tableAdapterManager.stavka_racunaTableAdapter = null;
+            this.tableAdapterManager.ulogaTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Komunikacija.IneffableDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.zahtjev_za_servisTableAdapter = null;
             // 
             // radninalogservisaBindingSource
             // 
@@ -404,6 +441,11 @@
             // 
             this.porukeBindingSource.DataMember = "poruke";
             this.porukeBindingSource.DataSource = this.ineffableDataSet11;
+            // 
+            // ineffableDataSet1
+            // 
+            this.ineffableDataSet1.DataSetName = "IneffableDataSet";
+            this.ineffableDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // porukeTableAdapter
             // 
@@ -423,30 +465,48 @@
             this.btnPregledajZahtjeve.UseVisualStyleBackColor = true;
             this.btnPregledajZahtjeve.Click += new System.EventHandler(this.btnPregledajZahtjeve_Click);
             // 
-            // btnObavijesti
+            // btnMojiServisi
             // 
-            this.btnObavijesti.Location = new System.Drawing.Point(615, 63);
-            this.btnObavijesti.Name = "btnObavijesti";
-            this.btnObavijesti.Size = new System.Drawing.Size(186, 23);
-            this.btnObavijesti.TabIndex = 7;
-            this.btnObavijesti.Text = "Obavijest o podnesenom zahtjevu";
-            this.btnObavijesti.UseVisualStyleBackColor = true;
-            this.btnObavijesti.Visible = false;
-            this.btnObavijesti.Click += new System.EventHandler(this.btnObavijesti_Click);
+            this.btnMojiServisi.Location = new System.Drawing.Point(15, 63);
+            this.btnMojiServisi.Name = "btnMojiServisi";
+            this.btnMojiServisi.Size = new System.Drawing.Size(177, 23);
+            this.btnMojiServisi.TabIndex = 7;
+            this.btnMojiServisi.Text = "Moji servisi";
+            this.btnMojiServisi.UseVisualStyleBackColor = true;
+            this.btnMojiServisi.Click += new System.EventHandler(this.btnMojiServisi_Click);
+            // 
+            // btnZavrseniServisi
+            // 
+            this.btnZavrseniServisi.Location = new System.Drawing.Point(210, 34);
+            this.btnZavrseniServisi.Name = "btnZavrseniServisi";
+            this.btnZavrseniServisi.Size = new System.Drawing.Size(177, 23);
+            this.btnZavrseniServisi.TabIndex = 8;
+            this.btnZavrseniServisi.Text = "Pregled završenih servisa";
+            this.btnZavrseniServisi.UseVisualStyleBackColor = true;
+            this.btnZavrseniServisi.Click += new System.EventHandler(this.btnZavrseniServisi_Click);
+            // 
+            // porukeTableAdapter1
+            // 
+            this.porukeTableAdapter1.ClearBeforeFill = true;
+            // 
+            // radni_nalog_servisaTableAdapter2
+            // 
+            this.radni_nalog_servisaTableAdapter2.ClearBeforeFill = true;
             // 
             // frmKomuniciraj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 522);
-            this.Controls.Add(this.btnObavijesti);
+            this.Controls.Add(this.btnZavrseniServisi);
+            this.Controls.Add(this.btnMojiServisi);
             this.Controls.Add(this.btnPregledajZahtjeve);
-            this.Controls.Add(this.gbKupca);
             this.Controls.Add(this.gbPitanje);
             this.Controls.Add(this.btnKontaktirajKorisnika);
             this.Controls.Add(this.btnZatraziServis);
             this.Controls.Add(this.lblZaposlenik);
             this.Controls.Add(this.lblKorisnik);
+            this.Controls.Add(this.gbKupca);
             this.Name = "frmKomuniciraj";
             this.Text = "Komunikacija";
             this.Load += new System.EventHandler(this.frmKomuniciraj_Load);
@@ -458,10 +518,14 @@
             this.gbKupca.ResumeLayout(false);
             this.gbKupca.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPoruke)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radninalogservisaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porukeBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porukeBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radninalogservisaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.porukeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -485,14 +549,6 @@
         private System.Windows.Forms.BindingSource radni_nalog_servisaBindingSource;
         private IneffableDataSetTableAdapters.radni_nalog_servisaTableAdapter radni_nalog_servisaTableAdapter;
         private IneffableDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridViewTextBoxColumn servisidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oznakaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uredjajDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zaposlenikidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn opisDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vrijemekreiranjaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn osobaidDataGridViewTextBoxColumn;
         private System.Windows.Forms.GroupBox gbKupca;
         private CrudArtikala.IneffableDataSet ineffableDataSet1;
         private System.Windows.Forms.DataGridView dgvPoruke;
@@ -501,14 +557,30 @@
         private IneffableDataSet1TableAdapters.porukeTableAdapter porukeTableAdapter;
         private System.Windows.Forms.BindingSource radninalogservisaBindingSource;
         private IneffableDataSet1TableAdapters.radni_nalog_servisaTableAdapter radni_nalog_servisaTableAdapter1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblPorukeServisera;
         private System.Windows.Forms.Button btnPrekid;
         private System.Windows.Forms.Button btnPrihvati;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tekstDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kupacidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewComboBoxColumn servisidDataGridViewTextBoxColumn1;
         private System.Windows.Forms.Button btnPregledajZahtjeve;
-        private System.Windows.Forms.Button btnObavijesti;
+        private System.Windows.Forms.Button btnMojiServisi;
+        private System.Windows.Forms.BindingSource porukeBindingSource1;
+        private IneffableDataSet5TableAdapters.porukeTableAdapter porukeTableAdapter1;
+        private IneffableDataSet5 ineffableDataSet5;
+        private System.Windows.Forms.BindingSource porukeBindingSource2;
+        private System.Windows.Forms.BindingSource radninalogservisaBindingSource1;
+        private IneffableDataSet5TableAdapters.radni_nalog_servisaTableAdapter radni_nalog_servisaTableAdapter2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn servisidDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tekstDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn servis_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kupacidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn servisidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oznakaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn uredjajDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zaposlenikidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn opisDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vrijemekreiranjaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn osobaidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnZavrseniServisi;
     }
 }

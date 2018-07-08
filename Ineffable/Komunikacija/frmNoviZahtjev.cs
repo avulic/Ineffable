@@ -25,15 +25,16 @@ namespace Komunikacija
         {
             string naziv = txtNaziv.Text;
             string vrsta = txtVrsta.Text;
-            string proizvodjac = txtProizvodac.Text;
             string opis = txtOpis.Text;
 
-            if (naziv == "" || vrsta == "" || proizvodjac == "" || opis == "")
+            if (naziv == "" || vrsta == "" || cbProizvodjac.SelectedIndex == -1 || opis == "")
             {
                 MessageBox.Show("Niste popunili sva polja.");
             }
             else
             {
+                string proizvodjac = cbProizvodjac.SelectedItem.ToString();
+
                 using (var db = new IneffableEntities())
                 {
                     zahtjev_za_servis noviZahtjev = new zahtjev_za_servis
@@ -49,8 +50,9 @@ namespace Komunikacija
                     db.zahtjev_za_servis.Add(noviZahtjev);
                     db.SaveChanges();
                 }
+                Close();
             }
-            Close();
+            
         }
 
         private void frmNoviZahtjev_Load(object sender, EventArgs e)

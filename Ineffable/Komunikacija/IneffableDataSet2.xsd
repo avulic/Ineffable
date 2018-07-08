@@ -157,7 +157,19 @@ SELECT zahtjev_id, datum_podnosenja, opis, status, kupac_id, naziv_uredjaja, tip
               <Mapping SourceColumn="tip_uredjaja" DataSetColumn="tip_uredjaja" />
               <Mapping SourceColumn="proizvodjac" DataSetColumn="proizvodjac" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="IneffableConnectionString (Settings)" DbObjectName="Ineffable.dbo.zahtjev_za_servis" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByStatus3" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillByStatus3" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillByStatus3">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        zahtjev_id, datum_podnosenja, opis, status, kupac_id, naziv_uredjaja, tip_uredjaja, proizvodjac
+FROM            zahtjev_za_servis
+WHERE        (status = 'blokiran')
+AND obavijest IS NULL</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />

@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QR_Kod", "QR_Kod\QR_Kod.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komunikacija", "Komunikacija\Komunikacija.csproj", "{5F570B77-5545-4661-A139-55FBFF913AF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Racuni", "Racuni\Racuni.csproj", "{4614114F-35C3-459D-91A9-19A10D191563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RezervacijaArtikala", "RezervacijaArtikala\RezervacijaArtikala.csproj", "{3FE131F1-4363-4324-9D8B-4DFE398E56CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,8 +49,19 @@ Global
 		{5F570B77-5545-4661-A139-55FBFF913AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F570B77-5545-4661-A139-55FBFF913AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F570B77-5545-4661-A139-55FBFF913AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4614114F-35C3-459D-91A9-19A10D191563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4614114F-35C3-459D-91A9-19A10D191563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4614114F-35C3-459D-91A9-19A10D191563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4614114F-35C3-459D-91A9-19A10D191563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE131F1-4363-4324-9D8B-4DFE398E56CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE131F1-4363-4324-9D8B-4DFE398E56CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE131F1-4363-4324-9D8B-4DFE398E56CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE131F1-4363-4324-9D8B-4DFE398E56CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {615110E5-DE93-4727-BA33-D1446AEDB1E0}
 	EndGlobalSection
 EndGlobal

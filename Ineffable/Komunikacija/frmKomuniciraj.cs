@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BPModel;
+using System.Threading;
 
 namespace Komunikacija
 {
@@ -27,6 +28,7 @@ namespace Komunikacija
 
         private void frmKomuniciraj_Load(object sender, EventArgs e)
         {
+            this.radni_nalog_servisaTableAdapter2.Fill(this.ineffableDataSet5.radni_nalog_servisa);
             this.radni_nalog_servisaTableAdapter1.Fill(this.ineffableDataSet11.radni_nalog_servisa);
 
             if (uloga == "Zaposlenik")
@@ -37,29 +39,50 @@ namespace Komunikacija
                     btnZatraziServis.Visible = false;
                     gbKupca.Visible = false;
                     btnPregledajZahtjeve.Visible = true;
-                }
-                if (uloga == "Kupac")
-                {
-                    using (var db = new IneffableEntities())
-                    {
-                        kupac odabraniKupac = db.kupac.FirstOrDefault(s => s.korisnik_id == idKorisnika);
-                        kupacID = odabraniKupac.kupac_id;
-                        if (odabraniKupac.obavijest != "")
-                        {
-                            btnObavijesti.Visible = true;
-                        }
-                       
-                        
-                    }
-                    this.porukeTableAdapter.FillByIDKupca(this.ineffableDataSet11.poruke, kupacID);
-
+                    btnMojiServisi.Visible = false;
+                    btnZavrseniServisi.Visible = true;
+            }
+            if (uloga == "Kupac")
+            {
                     lblZaposlenik.Visible = false;
                     lblKorisnik.Visible = true;
                     btnKontaktirajKorisnika.Visible = false;
                     btnZatraziServis.Visible = true;
                     gbKupca.Visible = true;
                     btnPregledajZahtjeve.Visible = false;
-                }
+                    btnMojiServisi.Visible = true;
+                    btnZavrseniServisi.Visible = false;
+
+                    using (var db = new IneffableEntities())
+                    {
+                        kupac odabraniKupac = db.kupac.FirstOrDefault(s => s.korisnik_id == idKorisnika);
+                        kupacID = odabraniKupac.kupac_id;
+
+                        var count1 = db.poruke.Where(s => s.kupac_id == kupacID).Count();
+                        if (count1 > 0)
+                        {
+                            dgvPoruke.Visible = true;
+                            this.porukeTableAdapter1.FillByKupacID(this.ineffableDataSet5.poruke, kupacID);
+                        }
+                        else
+                        {
+                            dgvPoruke.Visible = false;
+                            lblPorukeServisera.Text = "Nema novih poruka servisera.";
+                            btnPrihvati.Visible = false;
+                            btnPrekid.Visible = false;
+                        }
+
+                        var count = db.zahtjev_za_servis.Where(o => o.procitano == null && o.kupac_id == kupacID).Count();
+                        if (count > 0)
+                        {
+                            if (MessageBox.Show("Imate nove obavijesti o zahtjevima za servis. Želite li ih pogledati?", "", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                            {
+                                frmObavijesti formaObavijesti = new frmObavijesti(kupacID);
+                                formaObavijesti.ShowDialog(this);
+                            }
+                        }
+                    }
+            }
         }
 
         private void btnKontaktirajKorisnika_Click(object sender, EventArgs e)
@@ -96,10 +119,10 @@ namespace Komunikacija
 
         private void btnPosaljiPoruku_Click(object sender, EventArgs e)
         {
-            odabranaOsoba = (kupac)cbKupci.SelectedItem;
-            int osobaID = odabranaOsoba.kupac_id;
             if (dgvServisi.SelectedRows.Count > 0)
             {
+                odabranaOsoba = (kupac)cbKupci.SelectedItem;
+                int osobaID = odabranaOsoba.kupac_id;
                 int idServisa = int.Parse(dgvServisi.SelectedRows[0].Cells[0].Value.ToString());
                 if (idServisa > 0)
                 {
@@ -120,6 +143,7 @@ namespace Komunikacija
             {
                 int idPoruke = int.Parse(dgvPoruke.SelectedRows[0].Cells[0].Value.ToString());
                 int idServisa = int.Parse(dgvPoruke.SelectedRows[0].Cells[3].Value.ToString());
+
                 using (var db = new IneffableEntities())
                 {
                     poruke odabranaPoruka = db.poruke.FirstOrDefault(s => s.id == idPoruke);
@@ -133,7 +157,7 @@ namespace Komunikacija
                 }
             }
             this.radni_nalog_servisaTableAdapter1.Fill(this.ineffableDataSet11.radni_nalog_servisa);
-            this.porukeTableAdapter.FillByIDKupca(this.ineffableDataSet11.poruke, kupacID);
+            this.porukeTableAdapter1.FillByKupacID(this.ineffableDataSet5.poruke, kupacID);
         }
 
         private void btnPrekid_Click(object sender, EventArgs e)
@@ -153,7 +177,7 @@ namespace Komunikacija
                 }
             }
             this.radni_nalog_servisaTableAdapter1.Fill(this.ineffableDataSet11.radni_nalog_servisa);
-            this.porukeTableAdapter.FillByIDKupca(this.ineffableDataSet11.poruke, kupacID);
+            this.porukeTableAdapter1.FillByKupacID(this.ineffableDataSet5.poruke, kupacID);
         }
 
         private void btnZatraziServis_Click(object sender, EventArgs e)
@@ -164,13 +188,43 @@ namespace Komunikacija
 
         private void btnPregledajZahtjeve_Click(object sender, EventArgs e)
         {
-            frmPregledZahjeva forma = new frmPregledZahjeva();
-            forma.ShowDialog(this);
+            using (var db = new IneffableEntities())
+            {
+                var count = db.zahtjev_za_servis.Where(o => o.procitano == null && o.status == "blokiran").Count();
+                if (count > 0)
+                {
+                    frmPregledZahjeva forma = new frmPregledZahjeva();
+                    forma.ShowDialog(this);
+                }
+                else
+                {
+                    MessageBox.Show("Nema novih zahtjeva za servisom.");
+                }
+            }
         }
 
-        private void btnObavijesti_Click(object sender, EventArgs e)
+        private void btnMojiServisi_Click(object sender, EventArgs e)
         {
-            frmObavijesti forma = new frmObavijesti(kupacID);
+            using (var db = new IneffableEntities())
+            {
+                kupac odabraniKupac = db.kupac.FirstOrDefault(s => s.korisnik_id == idKorisnika);
+                kupacID = odabraniKupac.kupac_id;
+                var count = db.radni_nalog_servisa.Where(o => o.osoba_id == kupacID).Count();
+                if (count > 0)
+                {
+                    frmMojiServisi forma = new frmMojiServisi(kupacID);
+                    forma.ShowDialog(this);
+                }
+                else
+                {
+                    MessageBox.Show("Nemate niti jedan uređaj na servisu.");
+                }
+            }
+        }
+
+        private void btnZavrseniServisi_Click(object sender, EventArgs e)
+        {
+            frmZavrseniServisi forma = new frmZavrseniServisi(idKorisnika);
             forma.ShowDialog(this);
         }
     }
