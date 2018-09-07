@@ -33,3 +33,21 @@ D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\Rezerva
 D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.CopyComplete
 D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.dll
 D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll.config
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll.config
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.xml
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmPregledRezervacija.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmRezervacija.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.GenerateResource.cache
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.CoreCompileInputs.cache
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.CopyComplete
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.dll

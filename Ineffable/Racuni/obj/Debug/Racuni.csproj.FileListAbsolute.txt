@@ -68,3 +68,21 @@ D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csproj.CoreCo
 D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csproj.CopyComplete
 D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.dll
 D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\Racuni.dll.config
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\Racuni.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\Racuni.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.xml
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.frmNoviRacun.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.frmRacuni.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.GenerateResource.cache
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.CoreCompileInputs.cache
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.CopyComplete
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\BPModel.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\BPModel.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\BPModel.dll.config
