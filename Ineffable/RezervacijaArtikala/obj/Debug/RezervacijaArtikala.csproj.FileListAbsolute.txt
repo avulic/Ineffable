@@ -33,3 +33,16 @@ D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\Rezerva
 D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.CopyComplete
 D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.dll
 D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.pdb
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll.config
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.pdb
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.pdb
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll.config
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.xml
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmPregledRezervacija.resources
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmRezervacija.resources
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.GenerateResource.Cache
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.dll
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.pdb

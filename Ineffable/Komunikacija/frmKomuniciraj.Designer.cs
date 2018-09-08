@@ -78,6 +78,7 @@
             this.btnZavrseniServisi = new System.Windows.Forms.Button();
             this.porukeTableAdapter1 = new Komunikacija.IneffableDataSet5TableAdapters.porukeTableAdapter();
             this.radni_nalog_servisaTableAdapter2 = new Komunikacija.IneffableDataSet5TableAdapters.radni_nalog_servisaTableAdapter();
+            this.lblZavrseniServisi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServisi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radni_nalog_servisaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
@@ -493,11 +494,20 @@
             // 
             this.radni_nalog_servisaTableAdapter2.ClearBeforeFill = true;
             // 
+            // lblZavrseniServisi
+            // 
+            this.lblZavrseniServisi.AutoSize = true;
+            this.lblZavrseniServisi.Location = new System.Drawing.Point(393, 39);
+            this.lblZavrseniServisi.Name = "lblZavrseniServisi";
+            this.lblZavrseniServisi.Size = new System.Drawing.Size(0, 13);
+            this.lblZavrseniServisi.TabIndex = 9;
+            // 
             // frmKomuniciraj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 522);
+            this.Controls.Add(this.lblZavrseniServisi);
             this.Controls.Add(this.btnZavrseniServisi);
             this.Controls.Add(this.btnMojiServisi);
             this.Controls.Add(this.btnPregledajZahtjeve);
@@ -582,5 +592,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn vrijemekreiranjaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn osobaidDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnZavrseniServisi;
+        private System.Windows.Forms.Label lblZavrseniServisi;
     }
 }

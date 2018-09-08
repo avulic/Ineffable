@@ -80,5 +80,10 @@ namespace CrudArtikala
             this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
             this.artiklTableAdapter.Fill(this.ineffableDataSet.artikl);
         }
+
+        private void frmArtikli_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            
+        }
     }
 }

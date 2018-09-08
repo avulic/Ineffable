@@ -24,7 +24,6 @@ namespace Komunikacija
         private void frmObavijesti_Load(object sender, EventArgs e)
         {
             this.zahtjev_za_servisTableAdapter.FillByKupacID(this.ineffableDataSet3.zahtjev_za_servis, kupacID);
-
         }
 
         private void btnUredu_Click(object sender, EventArgs e)

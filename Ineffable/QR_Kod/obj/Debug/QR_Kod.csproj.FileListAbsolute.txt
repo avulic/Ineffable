@@ -125,3 +125,21 @@ D:\Program Files (x86)\Ineffable\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.CoreCo
 D:\Program Files (x86)\Ineffable\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.CopyComplete
 D:\Program Files (x86)\Ineffable\Ineffable\QR_Kod\obj\Debug\QR_Kod.dll
 D:\Program Files (x86)\Ineffable\Ineffable\QR_Kod\obj\Debug\QR_Kod.pdb
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll.config
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.pdb
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.dll
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.dll
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.pdb
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.dll.config
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.xml
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmKreirajQRKod.resources
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmPrikaziLog.resources
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmRadniNalog.resources
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.GenerateResource.Cache
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.dll
+C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.pdb

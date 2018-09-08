@@ -30,6 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvArtikli = new System.Windows.Forms.DataGridView();
+            this.artiklidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.opisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cijenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kolicinanaskladistuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dobavljacidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dobavljacBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ineffableDataSet = new CrudArtikala.IneffableDataSet();
             this.artiklBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -40,12 +46,6 @@
             this.artiklTableAdapter = new CrudArtikala.IneffableDataSetTableAdapters.artiklTableAdapter();
             this.tableAdapterManager = new CrudArtikala.IneffableDataSetTableAdapters.TableAdapterManager();
             this.dobavljacTableAdapter = new CrudArtikala.IneffableDataSetTableAdapters.dobavljacTableAdapter();
-            this.artiklidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.opisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cijenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kolicinanaskladistuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dobavljacidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArtikli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
@@ -70,6 +70,49 @@
             this.dgvArtikli.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvArtikli.Size = new System.Drawing.Size(641, 252);
             this.dgvArtikli.TabIndex = 0;
+            // 
+            // artiklidDataGridViewTextBoxColumn
+            // 
+            this.artiklidDataGridViewTextBoxColumn.DataPropertyName = "artikl_id";
+            this.artiklidDataGridViewTextBoxColumn.HeaderText = "Artikl ID";
+            this.artiklidDataGridViewTextBoxColumn.Name = "artiklidDataGridViewTextBoxColumn";
+            this.artiklidDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nazivDataGridViewTextBoxColumn
+            // 
+            this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
+            this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
+            this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
+            // 
+            // opisDataGridViewTextBoxColumn
+            // 
+            this.opisDataGridViewTextBoxColumn.DataPropertyName = "opis";
+            this.opisDataGridViewTextBoxColumn.HeaderText = "Opis";
+            this.opisDataGridViewTextBoxColumn.Name = "opisDataGridViewTextBoxColumn";
+            // 
+            // cijenaDataGridViewTextBoxColumn
+            // 
+            this.cijenaDataGridViewTextBoxColumn.DataPropertyName = "cijena";
+            this.cijenaDataGridViewTextBoxColumn.HeaderText = "Cijena u kunama";
+            this.cijenaDataGridViewTextBoxColumn.Name = "cijenaDataGridViewTextBoxColumn";
+            // 
+            // kolicinanaskladistuDataGridViewTextBoxColumn
+            // 
+            this.kolicinanaskladistuDataGridViewTextBoxColumn.DataPropertyName = "kolicina_na_skladistu";
+            this.kolicinanaskladistuDataGridViewTextBoxColumn.HeaderText = "Količina na skladištu";
+            this.kolicinanaskladistuDataGridViewTextBoxColumn.Name = "kolicinanaskladistuDataGridViewTextBoxColumn";
+            // 
+            // dobavljacidDataGridViewTextBoxColumn
+            // 
+            this.dobavljacidDataGridViewTextBoxColumn.DataPropertyName = "dobavljac_id";
+            this.dobavljacidDataGridViewTextBoxColumn.DataSource = this.dobavljacBindingSource;
+            this.dobavljacidDataGridViewTextBoxColumn.DisplayMember = "naziv";
+            this.dobavljacidDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.dobavljacidDataGridViewTextBoxColumn.HeaderText = "Dobavljač";
+            this.dobavljacidDataGridViewTextBoxColumn.Name = "dobavljacidDataGridViewTextBoxColumn";
+            this.dobavljacidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dobavljacidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dobavljacidDataGridViewTextBoxColumn.ValueMember = "dobavljac_id";
             // 
             // dobavljacBindingSource
             // 
@@ -150,49 +193,6 @@
             // 
             this.dobavljacTableAdapter.ClearBeforeFill = true;
             // 
-            // artiklidDataGridViewTextBoxColumn
-            // 
-            this.artiklidDataGridViewTextBoxColumn.DataPropertyName = "artikl_id";
-            this.artiklidDataGridViewTextBoxColumn.HeaderText = "Artikl ID";
-            this.artiklidDataGridViewTextBoxColumn.Name = "artiklidDataGridViewTextBoxColumn";
-            this.artiklidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nazivDataGridViewTextBoxColumn
-            // 
-            this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
-            this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
-            this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
-            // 
-            // opisDataGridViewTextBoxColumn
-            // 
-            this.opisDataGridViewTextBoxColumn.DataPropertyName = "opis";
-            this.opisDataGridViewTextBoxColumn.HeaderText = "Opis";
-            this.opisDataGridViewTextBoxColumn.Name = "opisDataGridViewTextBoxColumn";
-            // 
-            // cijenaDataGridViewTextBoxColumn
-            // 
-            this.cijenaDataGridViewTextBoxColumn.DataPropertyName = "cijena";
-            this.cijenaDataGridViewTextBoxColumn.HeaderText = "Cijena u kunama";
-            this.cijenaDataGridViewTextBoxColumn.Name = "cijenaDataGridViewTextBoxColumn";
-            // 
-            // kolicinanaskladistuDataGridViewTextBoxColumn
-            // 
-            this.kolicinanaskladistuDataGridViewTextBoxColumn.DataPropertyName = "kolicina_na_skladistu";
-            this.kolicinanaskladistuDataGridViewTextBoxColumn.HeaderText = "Količina na skladištu";
-            this.kolicinanaskladistuDataGridViewTextBoxColumn.Name = "kolicinanaskladistuDataGridViewTextBoxColumn";
-            // 
-            // dobavljacidDataGridViewTextBoxColumn
-            // 
-            this.dobavljacidDataGridViewTextBoxColumn.DataPropertyName = "dobavljac_id";
-            this.dobavljacidDataGridViewTextBoxColumn.DataSource = this.dobavljacBindingSource;
-            this.dobavljacidDataGridViewTextBoxColumn.DisplayMember = "naziv";
-            this.dobavljacidDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.dobavljacidDataGridViewTextBoxColumn.HeaderText = "Dobavljač";
-            this.dobavljacidDataGridViewTextBoxColumn.Name = "dobavljacidDataGridViewTextBoxColumn";
-            this.dobavljacidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dobavljacidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dobavljacidDataGridViewTextBoxColumn.ValueMember = "dobavljac_id";
-            // 
             // frmArtikli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +206,7 @@
             this.Name = "frmArtikli";
             this.Text = "Popis artikala";
             this.Load += new System.EventHandler(this.frmArtikli_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmArtikli_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArtikli)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).EndInit();

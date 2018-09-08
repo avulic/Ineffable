@@ -44,17 +44,16 @@ namespace Komunikacija
                     odabraniZahtjev.status = "odobren";
                     db.SaveChanges();
                 }
+                this.kupacTableAdapter.Fill(this.ineffableDataSet2.kupac);
+                this.zahtjev_za_servisTableAdapter.FillByStatus3(this.ineffableDataSet2.zahtjev_za_servis);
+
+                frmKreirajQRKod f = new frmKreirajQRKod(idZahtjeva);
+                f.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Odaberite zahtjev.");
             }
-            this.kupacTableAdapter.Fill(this.ineffableDataSet2.kupac);
-            this.zahtjev_za_servisTableAdapter.FillByStatus3(this.ineffableDataSet2.zahtjev_za_servis);
-
-            frmKreirajQRKod f = new frmKreirajQRKod(idZahtjeva);
-            f.ShowDialog();
-
         }
 
         private void btnPotvrdi_Click(object sender, EventArgs e)

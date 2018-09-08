@@ -53,6 +53,7 @@ namespace Komunikacija
                     Port = 587,
                     EnableSsl = true,
                     DeliveryMethod = SmtpDeliveryMethod.Network,
+                    UseDefaultCredentials = false,
                     Credentials = new NetworkCredential(adresaPosiljatelja.Address, lozinkaPosiljatelja)
                 };
 

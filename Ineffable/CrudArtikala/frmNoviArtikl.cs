@@ -60,11 +60,13 @@ namespace CrudArtikala
             {
                 cijenaTextBox.ForeColor = Color.Green;
                 lblGreska1.Visible = false;
+                btnSpremi.Enabled = true;
             }
             else
             {
                 cijenaTextBox.ForeColor = Color.Red;
                 lblGreska1.Visible = true;
+                btnSpremi.Enabled = false;
             }
         }
 
@@ -75,11 +77,13 @@ namespace CrudArtikala
             {
                 kolicina_na_skladistuTextBox.ForeColor = Color.Green;
                 lblGreska2.Visible = false;
+                btnSpremi.Enabled = true;
             }
             else
             {
                 kolicina_na_skladistuTextBox.ForeColor = Color.Red;
                 lblGreska2.Visible = true;
+                btnSpremi.Enabled = false;
             }
         }
 

@@ -41,6 +41,21 @@ namespace Komunikacija
                     btnPregledajZahtjeve.Visible = true;
                     btnMojiServisi.Visible = false;
                     btnZavrseniServisi.Visible = true;
+                    lblZavrseniServisi.Visible = true;
+                using (var db = new IneffableEntities())
+                {
+                    var brojZavrsenihServisa = db.radni_nalog_servisa.Where(b => b.status == "Popravljeno").Count();
+                    if (brojZavrsenihServisa == 0)
+                    {
+                        lblZavrseniServisi.ForeColor = Color.Red;
+                        lblZavrseniServisi.Text = "Nema završenih servisa.";
+                    }
+                    if (brojZavrsenihServisa > 0)
+                    {
+                        lblZavrseniServisi.ForeColor = Color.Green;
+                        lblZavrseniServisi.Text = brojZavrsenihServisa.ToString();
+                    }
+                }
             }
             if (uloga == "Kupac")
             {
@@ -52,6 +67,7 @@ namespace Komunikacija
                     btnPregledajZahtjeve.Visible = false;
                     btnMojiServisi.Visible = true;
                     btnZavrseniServisi.Visible = false;
+                    lblZavrseniServisi.Visible = false;
 
                     using (var db = new IneffableEntities())
                     {
@@ -72,7 +88,7 @@ namespace Komunikacija
                             btnPrekid.Visible = false;
                         }
 
-                        var count = db.zahtjev_za_servis.Where(o => o.procitano == null && o.kupac_id == kupacID).Count();
+                        var count = db.zahtjev_za_servis.Where(o => o.procitano == null  && o.kupac_id == kupacID && o.obavijest != null).Count();
                         if (count > 0)
                         {
                             if (MessageBox.Show("Imate nove obavijesti o zahtjevima za servis. Želite li ih pogledati?", "", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
@@ -190,7 +206,7 @@ namespace Komunikacija
         {
             using (var db = new IneffableEntities())
             {
-                var count = db.zahtjev_za_servis.Where(o => o.procitano == null && o.status == "blokiran").Count();
+                var count = db.zahtjev_za_servis.Where(o => o.obavijest == null && o.status == "blokiran").Count();
                 if (count > 0)
                 {
                     frmPregledZahjeva forma = new frmPregledZahjeva();
@@ -227,5 +243,6 @@ namespace Komunikacija
             frmZavrseniServisi forma = new frmZavrseniServisi(idKorisnika);
             forma.ShowDialog(this);
         }
+
     }
 }
