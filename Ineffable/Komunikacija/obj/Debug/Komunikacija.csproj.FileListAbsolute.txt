@@ -56,7 +56,6 @@ C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\Komunikacija\obj\Debug\Kom
 C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmObavijesti.resources
 C:\Users\Korisnik\Desktop\Projekt\pi\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmMojiServisi.resources
 C:\Users\Matija\Desktop\Ineffable\Ineffable\Komunikacija\bin\Debug\Komunikacija.dll.config
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Komunikacija\bin\Debug\Komunikacija.dll
 C:\Users\Matija\Desktop\Ineffable\Ineffable\Komunikacija\bin\Debug\Komunikacija.pdb
 C:\Users\Matija\Desktop\Ineffable\Ineffable\Komunikacija\bin\Debug\BPModel.dll
 C:\Users\Matija\Desktop\Ineffable\Ineffable\Komunikacija\bin\Debug\CrudArtikala.dll
@@ -202,6 +201,7 @@ C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacij
 C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.csproj.GenerateResource.Cache
 C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.dll
 C:\Users\Korisnik\Desktop\s3\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.pdb
+<<<<<<< HEAD
 C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Komunikacija\bin\Debug\Komunikacija.dll.config
 C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Komunikacija\bin\Debug\Komunikacija.dll
 C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Komunikacija\bin\Debug\Komunikacija.pdb
@@ -231,3 +231,36 @@ C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Komunikacija\obj\Debug\Komunikac
 C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.csproj.GenerateResource.Cache
 C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.dll
 C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.pdb
+=======
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\Komunikacija.dll.config
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\Komunikacija.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\Komunikacija.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\BPModel.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\CrudArtikala.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\EntityFramework.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\QR_Kod.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\BPModel.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\BPModel.dll.config
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\CrudArtikala.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\CrudArtikala.dll.config
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\EntityFramework.xml
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\QR_Kod.pdb
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\bin\Debug\QR_Kod.dll.config
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.csprojResolveAssemblyReference.cache
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmEmailPoruka.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmKomuniciraj.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmMojiServisi.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmNoviZahtjev.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmObavijesti.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmPoruka.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmPregledZahjeva.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.frmZavrseniServisi.resources
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.csproj.GenerateResource.cache
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.csproj.CoreCompileInputs.cache
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.csproj.CopyComplete
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.dll
+C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Komunikacija\obj\Debug\Komunikacija.pdb
+>>>>>>> 34c48fd3cc59675e7bd0e9fb3accda4f5646b232

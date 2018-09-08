@@ -104,6 +104,24 @@ namespace QR_Kod
             }
 
         }
-
+       
+        private void oznakaNalog_TextChanged(object sender, EventArgs e)
+        {
+            using (var kontekst = new IneffableEntities())
+            {
+                string oznaka3 = oznakaNalog.Text;
+                var oznaka = kontekst.radni_nalog_servisa.Any(r => r.oznaka == oznaka3);
+                if (oznaka)
+                {
+                    labelaProvjera.Text = "Upisana oznaka već postoji";
+                    gumbKreiraj.Enabled = false;
+                }
+                else
+                {
+                    labelaProvjera.Text = "";
+                    gumbKreiraj.Enabled = true;
+                }
+            }
+        }
     }
 }

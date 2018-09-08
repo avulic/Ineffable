@@ -50,6 +50,7 @@
             this.ineffableDataSet4 = new QR_Kod.IneffableDataSet4();
             this.korisnikTableAdapter = new QR_Kod.IneffableDataSetTableAdapters.korisnikTableAdapter();
             this.kupacTableAdapter = new QR_Kod.IneffableDataSet4TableAdapters.kupacTableAdapter();
+            this.labelaProvjera = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.qrKod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
@@ -73,6 +74,7 @@
             this.oznakaNalog.Name = "oznakaNalog";
             this.oznakaNalog.Size = new System.Drawing.Size(157, 22);
             this.oznakaNalog.TabIndex = 1;
+            this.oznakaNalog.TextChanged += new System.EventHandler(this.oznakaNalog_TextChanged);
             // 
             // gumbKreiraj
             // 
@@ -244,11 +246,20 @@
             // 
             this.kupacTableAdapter.ClearBeforeFill = true;
             // 
+            // labelaProvjera
+            // 
+            this.labelaProvjera.AutoSize = true;
+            this.labelaProvjera.Location = new System.Drawing.Point(86, 28);
+            this.labelaProvjera.Name = "labelaProvjera";
+            this.labelaProvjera.Size = new System.Drawing.Size(0, 17);
+            this.labelaProvjera.TabIndex = 17;
+            // 
             // frmKreirajQRKod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 452);
+            this.Controls.Add(this.labelaProvjera);
             this.Controls.Add(this.kupacNalog);
             this.Controls.Add(this.serviseri);
             this.Controls.Add(this.skeniraj);
@@ -301,5 +312,6 @@
         private IneffableDataSet4 ineffableDataSet4;
         private System.Windows.Forms.BindingSource kupacBindingSource;
         private IneffableDataSet4TableAdapters.kupacTableAdapter kupacTableAdapter;
+        private System.Windows.Forms.Label labelaProvjera;
     }
 }
