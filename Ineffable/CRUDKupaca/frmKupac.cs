@@ -50,6 +50,8 @@ namespace CRUDKupaca
 
             crud.azurirajKupca(kupac);
             MessageBox.Show("Uspješno izmjenjene informacije");
+            this.Dispose();
+            this.Close();
         }
 
         private void frmKupac_Load(object sender, EventArgs e)

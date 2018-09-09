@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BPModel;
+
 namespace PrijavaRegistracija
 {
     public class Korisnik
@@ -20,7 +21,7 @@ namespace PrijavaRegistracija
         public string email { get; set; }
         public int uloga_id { get; set; }
         public int kupac_id { get; set; }
-        public IntPtr avatar { get; set; }
+        public System.Drawing.Bitmap avatar { get; set; }
 
         public Korisnik(BPModel.korisnik korisnik)
         {

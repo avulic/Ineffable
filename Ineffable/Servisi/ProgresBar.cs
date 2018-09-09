@@ -100,21 +100,18 @@ namespace Servisi
                 }
             }
         }
-
         private void pbZaprimljeno_Click(object sender, EventArgs e)
         {
             lbCijenaFaze.Text = servis.log.cijenaPromjene["Zaprimljeno"].ToString();
             tbOpisFaze.Text = servis.log.opis["Zaprimljeno"];
             lbFaza.Text = "Zaprimljeno";
         }
-
         private void pbPregledano_Click(object sender, EventArgs e)
         {
             lbCijenaFaze.Text = servis.log.cijenaPromjene["Pregledano"].ToString();
             tbOpisFaze.Text = servis.log.opis["Pregledano"];
             lbFaza.Text = "Pregledano";
         }
-
         private void pbKvar_Click(object sender, EventArgs e)
         {
             if (servis.log.opis.ContainsKey("Kvar utvrden"))
@@ -130,7 +127,6 @@ namespace Servisi
                 lbFaza.Text = "Kvar nije utvrden";
             }
         }
-
         private void pbPopravak_Click(object sender, EventArgs e)
         {
             lbCijenaFaze.Text = servis.log.cijenaPromjene["Popravak u tijeku"].ToString();
@@ -138,7 +134,6 @@ namespace Servisi
             lbFaza.Text = "Popravak u tijeku";
 
         }
-
         private void pbCekanje_Click(object sender, EventArgs e)
         {
             lbCijenaFaze.Text = servis.log.cijenaPromjene["Na cekanju"].ToString();
@@ -146,7 +141,6 @@ namespace Servisi
             lbFaza.Text = "Na cekanju";
 
         }
-
         private void pbPopravljeno_Click(object sender, EventArgs e)
         {
             lbCijenaFaze.Text = servis.log.cijenaPromjene["Popravljeno"].ToString();
@@ -154,7 +148,6 @@ namespace Servisi
             lbFaza.Text = "Popravljeno";
 
         }
-
         private void pbIsporuceno_Click(object sender, EventArgs e)
         {
             lbCijenaFaze.Text = servis.log.cijenaPromjene["Isporuceno"].ToString();

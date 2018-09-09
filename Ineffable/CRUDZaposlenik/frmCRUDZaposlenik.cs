@@ -8,59 +8,52 @@ using System.Reflection;
 using System.Windows.Forms;
 using PrijavaRegistracija;
 using System.Threading;
-
 namespace CRUDZaposlenik
 {
     public partial class frmCRUDZaposlenik : Form
     {
-        List<Korisnik> zaposlenici = new List<Korisnik>();
-        List<PictureBox> panelZaposlenika = new List<PictureBox>();
-        PictureBox zaposlenikSlika;
+        List<Korisnik> korisnici = new List<Korisnik>();
+        List<Zaposlenik> panelZaposlenika = new List<Zaposlenik>();
         CRUD crud = new CRUD();
         Form parent;
-        Korisnik korisnik;
+        Zaposlenik zaposlenikSlika;
 
         public frmCRUDZaposlenik(Form parent, Korisnik kori)
         {
             InitializeComponent();
             this.parent = parent;
-            korisnik = kori;
         }
-
+        public frmCRUDZaposlenik()
+        {
+            InitializeComponent();
+        }
         private void frmCRUDZaposlenik_Load(object sender, EventArgs e)
         {
-            zaposlenici = crud.dohvatiZaposlenike();
             prikaziZaposlenike();
             posloziSadrzajPanela();
         }
-
-        private void prikaziZaposlenike()
+        public void prikaziZaposlenike()
         {
-            foreach (var zaposlenik in zaposlenici)
+            korisnici = crud.dohvatiZaposlenike();
+            panelZaposlenika.Clear();
+            if (tableLayoutPanel1.Controls.Count > 0)
             {
-                tableLayoutPanel1.Controls.Add(kreirajIkonu(zaposlenik));
-
+                tableLayoutPanel1.Controls.Clear();
+            }
+            foreach (Korisnik korisnik in korisnici)
+            {
+                zaposlenikSlika = new Zaposlenik(korisnik);
+                zaposlenikSlika.Size = new Size(140,140);
                 panelZaposlenika.Add(zaposlenikSlika);
+                tableLayoutPanel1.Controls.Add(zaposlenikSlika);
             }
             parent.ResizeEnd += new EventHandler(tableLayoutPanel1_Resize);
         }
-
         private void tableLayoutPanel1_Resize(object sender, EventArgs e)
         {
             posloziSadrzajPanela();
         }
-
-        private void zaposlenikSlika_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                int index = panelZaposlenika.IndexOf(sender as PictureBox);
-                frmZaposlenik zaposlenikPrikaz = new frmZaposlenik(zaposlenici[index]);
-                zaposlenikPrikaz.ShowDialog(this);
-            }
-        }
-
-        private void posloziSadrzajPanela()
+        public void posloziSadrzajPanela()
         {
             bool jos = true;
             while (jos == true)
@@ -93,52 +86,6 @@ namespace CRUDZaposlenik
                 }
             }
         }
-
-        private PaintEventHandler dodajTekstIspdSlike() {
-            return new PaintEventHandler((sender, e) =>
-            {
-                e.Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-                int index = panelZaposlenika.IndexOf(sender as PictureBox);
-
-                string text = zaposlenici[index].ime[0] + "." + " " + zaposlenici[index].prezime;
-
-                SizeF textSize = e.Graphics.MeasureString(text, Font);
-                PointF locationToDraw = new PointF();
-                locationToDraw.X = (zaposlenikSlika.Width) - (textSize.Width);
-                locationToDraw.Y = (zaposlenikSlika.Height) - (textSize.Height);
-
-                e.Graphics.DrawString(text, Font, Brushes.White, locationToDraw);
-
-            });
-        }
-       
-        private PictureBox kreirajIkonu(Korisnik zaposlenik)
-        {
-            zaposlenikSlika = new PictureBox();
-            zaposlenikSlika.Size = new System.Drawing.Size(128, 128);
-            if (zaposlenik.spol == "m")
-            {
-                zaposlenikSlika.BackgroundImage = CRUDZaposlenik.Properties.Resources.if_male3_403019;
-                zaposlenik.avatar = CRUDZaposlenik.Properties.Resources.if_male3_403019.GetHbitmap();
-            }
-            else if (zaposlenik.spol == "z")
-            {
-                zaposlenikSlika.BackgroundImage = CRUDZaposlenik.Properties.Resources.if_female1_403023;
-                zaposlenik.avatar = CRUDZaposlenik.Properties.Resources.if_female1_403023.GetHicon();
-            }
-            else
-            {
-                zaposlenikSlika.BackgroundImage = CRUDZaposlenik.Properties.Resources.x_user;
-                zaposlenik.avatar = CRUDZaposlenik.Properties.Resources.x_user.GetHbitmap();
-            }
-            
-
-            zaposlenikSlika.MouseClick += zaposlenikSlika_MouseClick;
-            zaposlenikSlika.Paint += dodajTekstIspdSlike();
-
-            return zaposlenikSlika;
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             frmRegistracija registracija = new frmRegistracija(parent);
@@ -149,11 +96,12 @@ namespace CRUDZaposlenik
             registracija.Controls.Find("lbReg", true)[0].Text = "Novi korisnik";
             registracija.Controls.Find("cbUloge", true)[0].Enabled = true;
             registracija.ShowDialog();
+            prikaziZaposlenike();
+            posloziSadrzajPanela();
         }
-
         private void textBox1_Click(object sender, EventArgs e)
         {
-            zaposlenici = crud.dohvatiZaposlenike();
+         /*   zaposlenici = crud.dohvatiZaposlenike();
             var source = new AutoCompleteStringCollection();
             foreach (var item in zaposlenici)
             {
@@ -163,11 +111,16 @@ namespace CRUDZaposlenik
             tbPretraga.AutoCompleteCustomSource = source;
             tbPretraga.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             tbPretraga.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            */
         }
+<<<<<<< HEAD
 
         private void frmCRUDZaposlenik_HelpRequested(object sender, HelpEventArgs hlpevent)
         {
             Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "pregled_zaposlenika.htm");
         }
+=======
+        
+>>>>>>> a1c15e73756acbc904846c71d144c59689c328eb
     }
 }

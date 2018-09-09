@@ -17,26 +17,24 @@ namespace CRUDKupaca
         {
             InitializeComponent();
         }
-
         private void frmKupci_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'ineffableDataSetKupci.korisnik' table. You can move, or remove it, as needed.
-            this.korisnikTableAdapter.Fill(this.ineffableDataSetKupci.korisnik);
-            // TODO: This line of code loads data into the 'ineffableDataSetKupci.kupac' table. You can move, or remove it, as needed.
-            this.kupacTableAdapter.Fill(this.ineffableDataSetKupci.kupac);
-
+            azurirajPodatke();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAturiraj_Click(object sender, EventArgs e)
         {
             if (dgvKupci.SelectedRows.Count > 0)
             {
                 int kupac_id = int.Parse(dgvKupci.SelectedRows[0].Cells[5].Value.ToString());
                 frmKupac kupac = new frmKupac(kupac_id);
                 kupac.ShowDialog();
+                if (kupac.IsDisposed == true)
+                {
+                    azurirajPodatke();
+                }
             }
         }
-
         private void btnIzbrisiKupca_Click(object sender, EventArgs e)
         {
             if (dgvKupci.SelectedRows.Count > 0)
@@ -45,10 +43,18 @@ namespace CRUDKupaca
                 crud.izbrisiKupca(kupac_id);
             }
         }
+<<<<<<< HEAD
 
         private void frmKupci_HelpRequested(object sender, HelpEventArgs hlpevent)
         {
             Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "pregled_kupaca.htm");
+=======
+        private void azurirajPodatke()
+        {
+            this.korisnikTableAdapter.Fill(this.ineffableDataSetKupci.korisnik);
+            // TODO: This line of code loads data into the 'ineffableDataSetKupci.kupac' table. You can move, or remove it, as needed.
+            this.kupacTableAdapter.Fill(this.ineffableDataSetKupci.kupac);
+>>>>>>> a1c15e73756acbc904846c71d144c59689c328eb
         }
     }
 }

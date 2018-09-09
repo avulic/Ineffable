@@ -106,6 +106,7 @@ E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\CRUDZaposle
 E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\CRUDZaposlenik\bin\Debug\PrijavaRegistracija.pdb
 E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\CRUDZaposlenik\bin\Debug\EntityFramework.xml
 E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\CRUDZaposlenik\bin\Debug\EntityFramework.SqlServer.xml
+<<<<<<< HEAD
 C:\Users\Korisnik\Desktop\99\r18075\Ineffable\CRUDZaposlenik\bin\Debug\CRUDZaposlenik.dll.config
 C:\Users\Korisnik\Desktop\99\r18075\Ineffable\CRUDZaposlenik\bin\Debug\CRUDZaposlenik.dll
 C:\Users\Korisnik\Desktop\99\r18075\Ineffable\CRUDZaposlenik\bin\Debug\CRUDZaposlenik.pdb
@@ -126,3 +127,6 @@ C:\Users\Korisnik\Desktop\99\r18075\Ineffable\CRUDZaposlenik\obj\Debug\CRUDZapos
 C:\Users\Korisnik\Desktop\99\r18075\Ineffable\CRUDZaposlenik\obj\Debug\CRUDZaposlenik.csproj.GenerateResource.Cache
 C:\Users\Korisnik\Desktop\99\r18075\Ineffable\CRUDZaposlenik\obj\Debug\CRUDZaposlenik.dll
 C:\Users\Korisnik\Desktop\99\r18075\Ineffable\CRUDZaposlenik\obj\Debug\CRUDZaposlenik.pdb
+=======
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\CRUDZaposlenik\obj\Debug\CRUDZaposlenik.Zaposlenik.resources
+>>>>>>> a1c15e73756acbc904846c71d144c59689c328eb

@@ -80,6 +80,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Zaposlenik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Zaposlenik.Designer.cs">
+      <DependentUpon>Zaposlenik.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmCRUDZaposlenik.resx">
@@ -91,6 +97,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zaposlenik.resx">
+      <DependentUpon>Zaposlenik.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
