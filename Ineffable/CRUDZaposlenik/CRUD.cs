@@ -10,11 +10,13 @@ namespace CRUDZaposlenik
     class CRUD
     {
         Korisnik zaposlenik;
-        List<Korisnik> zaposlenici = new List<Korisnik>();
+        List<Korisnik> zaposlenici;
         public List<Korisnik> dohvatiZaposlenike()
         {
             using (IneffableEntities bp = new IneffableEntities())
             {
+                zaposlenici = null;
+                zaposlenici = new List<Korisnik>();
                 foreach (var item in bp.korisnik)
                 {
                     if (item.uloga_id == 1 || item.uloga_id == 2)

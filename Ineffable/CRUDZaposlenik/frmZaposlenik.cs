@@ -31,7 +31,21 @@ namespace CRUDZaposlenik
 
         private void postaviAvatar()
         {
-            pbAvatar.BackgroundImage = Image.FromHbitmap(zaposlenik.avatar);
+            if (zaposlenik.spol == "musko")
+            {
+                pbAvatar.BackgroundImage = null;
+                pbAvatar.BackgroundImage = CRUDZaposlenik.Properties.Resources.if_male3_403019;
+            }
+            else if (zaposlenik.spol == "zensko")
+            {
+                pbAvatar.BackgroundImage = null;
+                pbAvatar.BackgroundImage = CRUDZaposlenik.Properties.Resources.if_female1_403023;
+            }
+            else
+            {
+                pbAvatar.BackgroundImage = null;
+                pbAvatar.BackgroundImage = CRUDZaposlenik.Properties.Resources.x_user;
+            }
         }
 
         private void izbrisi_Click(object sender, EventArgs e)
@@ -40,6 +54,8 @@ namespace CRUDZaposlenik
             {
                 crud.izbrisiZaposlenika(zaposlenik);
                 MessageBox.Show("Zaposlenik izbrisan");
+                this.Dispose();
+                this.Close();
             }
             catch (Exception)
             {

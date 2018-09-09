@@ -43,7 +43,7 @@
             this.kupacTableAdapter = new CRUDKupaca.IneffableDataSetKupciTableAdapters.kupacTableAdapter();
             this.korisnikTableAdapter = new CRUDKupaca.IneffableDataSetKupciTableAdapters.korisnikTableAdapter();
             this.lbKupci = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAzuriraj = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKupci)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSetKupci)).BeginInit();
@@ -53,6 +53,7 @@
             // dgvKupci
             // 
             this.dgvKupci.AllowUserToAddRows = false;
+            this.dgvKupci.AllowUserToDeleteRows = false;
             this.dgvKupci.AutoGenerateColumns = false;
             this.dgvKupci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKupci.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -67,6 +68,7 @@
             this.dgvKupci.Location = new System.Drawing.Point(12, 56);
             this.dgvKupci.MultiSelect = false;
             this.dgvKupci.Name = "dgvKupci";
+            this.dgvKupci.ReadOnly = true;
             this.dgvKupci.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKupci.Size = new System.Drawing.Size(600, 181);
             this.dgvKupci.TabIndex = 0;
@@ -162,15 +164,15 @@
             this.lbKupci.TabIndex = 1;
             this.lbKupci.Text = "Kupci";
             // 
-            // button1
+            // btnAzuriraj
             // 
-            this.button1.Location = new System.Drawing.Point(469, 296);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Ažuriraj odabranog kupca";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAzuriraj.Location = new System.Drawing.Point(469, 296);
+            this.btnAzuriraj.Name = "btnAzuriraj";
+            this.btnAzuriraj.Size = new System.Drawing.Size(143, 23);
+            this.btnAzuriraj.TabIndex = 2;
+            this.btnAzuriraj.Text = "Ažuriraj odabranog kupca";
+            this.btnAzuriraj.UseVisualStyleBackColor = true;
+            this.btnAzuriraj.Click += new System.EventHandler(this.btnAturiraj_Click);
             // 
             // frmKupci
             // 
@@ -178,7 +180,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(626, 349);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.lbKupci);
             this.Controls.Add(this.dgvKupci);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -211,6 +213,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn korisnikidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn spolDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label lbKupci;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAzuriraj;
     }
 }

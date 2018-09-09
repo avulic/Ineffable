@@ -28,8 +28,6 @@ namespace CRUDKupaca
 
                 bp.SaveChanges();
             }
-
-            
         }
 
         public Korisnik dohvatiKupca(int kupac_id)
@@ -52,11 +50,12 @@ namespace CRUDKupaca
         {
             using (IneffableEntities bp = new IneffableEntities())
             {
-                var korisnik = bp.kupac.Find(kupac.id); 
+                var korisnik = bp.kupac.Find(kupac.kupac_id); 
 
                 korisnik.ime = kupac.ime;
                 korisnik.prezime = kupac.prezime;
                 korisnik.spol = kupac.spol;
+                bp.SaveChanges();
             }
         }
         public void izbrisiKupca(int kupacId)

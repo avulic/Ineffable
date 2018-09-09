@@ -106,3 +106,4 @@ E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\CRUDZaposle
 E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\CRUDZaposlenik\bin\Debug\PrijavaRegistracija.pdb
 E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\CRUDZaposlenik\bin\Debug\EntityFramework.xml
 E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\CRUDZaposlenik\bin\Debug\EntityFramework.SqlServer.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\CRUDZaposlenik\obj\Debug\CRUDZaposlenik.Zaposlenik.resources
