@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Komunikacija;
-
+using CRUDZaposlenik;
 namespace Ineffable
 {
     static class Program
@@ -17,9 +16,9 @@ namespace Ineffable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            
             frmMain mainForm = new frmMain();
-
+            
             Application.Run(mainForm);
 
             

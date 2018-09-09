@@ -1,106 +1,15 @@
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\bin\Debug\Racuni.dll
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\bin\Debug\Racuni.pdb
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.CoreCompileInputs.cache
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\obj\Debug\Racuni.dll
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\obj\Debug\Racuni.pdb
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\obj\Debug\Racuni.frmNoviRacun.resources
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.GenerateResource.cache
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\bin\Debug\Racuni.dll.config
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\obj\Debug\Racuni.csprojResolveAssemblyReference.cache
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\bin\Debug\BPModel.dll
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.dll
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\bin\Debug\BPModel.pdb
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\bin\Debug\BPModel.dll.config
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.xml
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.CopyComplete
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\Racuni\obj\Debug\Racuni.frmRacuni.resources
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\bin\Debug\Racuni.dll.config
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\bin\Debug\Racuni.dll
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\bin\Debug\Racuni.pdb
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\bin\Debug\BPModel.dll
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.dll
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\bin\Debug\BPModel.pdb
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\bin\Debug\BPModel.dll.config
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.xml
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csprojResolveAssemblyReference.cache
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.frmNoviRacun.resources
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.frmRacuni.resources
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csproj.GenerateResource.cache
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csproj.CoreCompileInputs.cache
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csproj.CopyComplete
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.dll
-C:\Users\Matija\Desktop\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.pdb
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\bin\Debug\Racuni.dll.config
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\bin\Debug\Racuni.dll
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\bin\Debug\Racuni.pdb
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\bin\Debug\BPModel.dll
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.dll
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\bin\Debug\BPModel.pdb
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\bin\Debug\BPModel.dll.config
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.xml
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csprojResolveAssemblyReference.cache
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.frmNoviRacun.resources
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.frmRacuni.resources
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csproj.GenerateResource.Cache
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.dll
-C:\Users\Korisnik\Desktop\ovdje\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.pdb
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\bin\Debug\Racuni.dll.config
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\bin\Debug\Racuni.dll
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\bin\Debug\Racuni.pdb
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\bin\Debug\BPModel.dll
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.dll
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.dll
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\bin\Debug\BPModel.pdb
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\bin\Debug\BPModel.dll.config
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.xml
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.xml
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csprojResolveAssemblyReference.cache
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.frmNoviRacun.resources
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.frmRacuni.resources
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csproj.GenerateResource.cache
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csproj.CoreCompileInputs.cache
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.csproj.CopyComplete
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.dll
-D:\Program Files (x86)\Ineffable\Ineffable\Racuni\obj\Debug\Racuni.pdb
-<<<<<<< HEAD
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\bin\Debug\Racuni.dll.config
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\bin\Debug\Racuni.dll
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\bin\Debug\Racuni.pdb
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.dll
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\bin\Debug\BPModel.pdb
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\bin\Debug\BPModel.dll.config
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.xml
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\obj\Debug\Racuni.csprojResolveAssemblyReference.cache
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\obj\Debug\Racuni.frmNoviRacun.resources
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\obj\Debug\Racuni.frmRacuni.resources
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.GenerateResource.Cache
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\obj\Debug\Racuni.dll
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\Racuni\obj\Debug\Racuni.pdb
-=======
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\Racuni.dll.config
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\Racuni.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\Racuni.pdb
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.xml
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.csprojResolveAssemblyReference.cache
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.frmNoviRacun.resources
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.frmRacuni.resources
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.GenerateResource.cache
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.CoreCompileInputs.cache
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.CopyComplete
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\obj\Debug\Racuni.pdb
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\BPModel.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\BPModel.pdb
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\Racuni\bin\Debug\BPModel.dll.config
->>>>>>> 34c48fd3cc59675e7bd0e9fb3accda4f5646b232
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\bin\Debug\Racuni.dll.config
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\bin\Debug\Racuni.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\bin\Debug\Racuni.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\bin\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\bin\Debug\BPModel.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\bin\Debug\EntityFramework.SqlServer.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\obj\Debug\Racuni.csprojResolveAssemblyReference.cache
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\obj\Debug\Racuni.frmNoviRacun.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\obj\Debug\Racuni.frmRacuni.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\obj\Debug\Racuni.csproj.GenerateResource.Cache
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\obj\Debug\Racuni.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\Racuni\obj\Debug\Racuni.pdb

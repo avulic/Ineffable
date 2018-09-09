@@ -44,28 +44,19 @@ namespace Komunikacija
                     odabraniZahtjev.status = "odobren";
                     db.SaveChanges();
                 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 34c48fd3cc59675e7bd0e9fb3accda4f5646b232
                 this.kupacTableAdapter.Fill(this.ineffableDataSet2.kupac);
                 this.zahtjev_za_servisTableAdapter.FillByStatus3(this.ineffableDataSet2.zahtjev_za_servis);
 
                 frmKreirajQRKod f = new frmKreirajQRKod(idZahtjeva);
-<<<<<<< HEAD
-=======
                 f.FormBorderStyle = FormBorderStyle.Fixed3D;
->>>>>>> 34c48fd3cc59675e7bd0e9fb3accda4f5646b232
                 f.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Odaberite zahtjev.");
             }
-<<<<<<< HEAD
-=======
 
->>>>>>> 34c48fd3cc59675e7bd0e9fb3accda4f5646b232
         }
 
         private void btnPotvrdi_Click(object sender, EventArgs e)

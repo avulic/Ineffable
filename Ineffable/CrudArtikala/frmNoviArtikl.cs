@@ -55,7 +55,8 @@ namespace CrudArtikala
 
         private void cijenaTextBox_TextChanged_1(object sender, EventArgs e)
         {
-            var isFloat = float.TryParse(cijenaTextBox.Text, out float n);
+            float n;
+            var isFloat = float.TryParse(cijenaTextBox.Text, out n);
             if (isFloat)
             {
                 cijenaTextBox.ForeColor = Color.Green;
@@ -72,7 +73,8 @@ namespace CrudArtikala
 
         private void kolicina_na_skladistuTextBox_TextChanged_1(object sender, EventArgs e)
         {
-            var isNumber = int.TryParse(kolicina_na_skladistuTextBox.Text, out int n);
+            int n;
+            var isNumber = int.TryParse(kolicina_na_skladistuTextBox.Text, out n);
             if (isNumber)
             {
                 kolicina_na_skladistuTextBox.ForeColor = Color.Green;

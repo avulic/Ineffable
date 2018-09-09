@@ -1,69 +1,15 @@
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.pdb
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.CoreCompileInputs.cache
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.dll
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.pdb
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.dll
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.pdb
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll.config
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.xml
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmPregledRezervacija.resources
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmRezervacija.resources
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.GenerateResource.cache
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.CopyComplete
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll.config
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Matija\Desktop\PI - projekt\branch\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.xml
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll.config
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.pdb
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.dll
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.dll
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.pdb
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll.config
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.xml
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.xml
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csprojResolveAssemblyReference.cache
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmPregledRezervacija.resources
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmRezervacija.resources
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.GenerateResource.cache
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.CoreCompileInputs.cache
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.CopyComplete
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.dll
-D:\Program Files (x86)\Ineffable\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.pdb
-<<<<<<< HEAD
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll.config
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.pdb
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.pdb
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll.config
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.xml
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csprojResolveAssemblyReference.cache
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmPregledRezervacija.resources
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmRezervacija.resources
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.GenerateResource.Cache
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.dll
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.pdb
-=======
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll.config
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.pdb
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.pdb
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll.config
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.xml
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csprojResolveAssemblyReference.cache
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmPregledRezervacija.resources
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmRezervacija.resources
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.GenerateResource.cache
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.CoreCompileInputs.cache
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.CopyComplete
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.pdb
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.dll
->>>>>>> 34c48fd3cc59675e7bd0e9fb3accda4f5646b232
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll.config
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\bin\Debug\BPModel.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\bin\Debug\EntityFramework.SqlServer.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csprojResolveAssemblyReference.cache
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmPregledRezervacija.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.frmRezervacija.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.csproj.GenerateResource.Cache
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\RezervacijaArtikala\obj\Debug\RezervacijaArtikala.pdb

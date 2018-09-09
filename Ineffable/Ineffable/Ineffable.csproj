@@ -45,20 +45,9 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\MessagingToolkit.QRCode.dll</HintPath>
-    </Reference>
     <Reference Include="QR_Kod, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\QR_Kod\bin\Debug\QR_Kod.dll</HintPath>
-    </Reference>
-    <Reference Include="Racuni">
-      <HintPath>..\Racuni\bin\Debug\Racuni.dll</HintPath>
-    </Reference>
-    <Reference Include="RezervacijaArtikala, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\RezervacijaArtikala\bin\Debug\RezervacijaArtikala.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -82,7 +71,6 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMain.resx">
@@ -97,6 +85,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -116,6 +105,14 @@
       <Project>{ff9c016d-c9ff-4a1b-a1d5-7c43b0753ca9}</Project>
       <Name>BPModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CRUDKupaca\CRUDKupaca.csproj">
+      <Project>{6712085d-beca-49f2-a465-bfe609a9ce5b}</Project>
+      <Name>CRUDKupaca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRUDZaposlenik\CRUDZaposlenik.csproj">
+      <Project>{d5be895b-95cb-4463-9bd7-c77be23cb1ff}</Project>
+      <Name>CRUDZaposlenik</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Komunikacija\Komunikacija.csproj">
       <Project>{5f570b77-5545-4661-a139-55fbff913af0}</Project>
       <Name>Komunikacija</Name>
@@ -123,6 +120,18 @@
     <ProjectReference Include="..\PrijavaRegistracija\PrijavaRegistracija.csproj">
       <Project>{b29d18bb-d599-4b18-832e-2ff2d0e0fe64}</Project>
       <Name>PrijavaRegistracija</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Racuni\Racuni.csproj">
+      <Project>{4614114f-35c3-459d-91a9-19a10d191563}</Project>
+      <Name>Racuni</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RezervacijaArtikala\RezervacijaArtikala.csproj">
+      <Project>{3FE131F1-4363-4324-9D8B-4DFE398E56CE}</Project>
+      <Name>RezervacijaArtikala</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servisi\Servisi.csproj">
+      <Project>{5cd068ea-7321-4019-ae48-8d21e171d446}</Project>
+      <Name>Servisi</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

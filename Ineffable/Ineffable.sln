@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ineffable", "Ineffable\Ineffable.csproj", "{F29C3AA5-1BAA-457C-88FC-14A00D5F4E99}"
 EndProject
@@ -15,9 +15,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QR_Kod", "QR_Kod\QR_Kod.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komunikacija", "Komunikacija\Komunikacija.csproj", "{5F570B77-5545-4661-A139-55FBFF913AF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RezervacijaArtikala", "RezervacijaArtikala\RezervacijaArtikala.csproj", "{3FE131F1-4363-4324-9D8B-4DFE398E56CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDKupaca", "CRUDKupaca\CRUDKupaca.csproj", "{6712085D-BECA-49F2-A465-BFE609A9CE5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDZaposlenik", "CRUDZaposlenik\CRUDZaposlenik.csproj", "{D5BE895B-95CB-4463-9BD7-C77BE23CB1FF}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Racuni", "Racuni\Racuni.csproj", "{4614114F-35C3-459D-91A9-19A10D191563}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RezervacijaArtikala", "RezervacijaArtikala\RezervacijaArtikala.csproj", "{3FE131F1-4363-4324-9D8B-4DFE398E56CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servisi", "Servisi\Servisi.csproj", "{5CD068EA-7321-4019-AE48-8D21E171D446}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,14 +55,26 @@ Global
 		{5F570B77-5545-4661-A139-55FBFF913AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F570B77-5545-4661-A139-55FBFF913AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F570B77-5545-4661-A139-55FBFF913AF0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4614114F-35C3-459D-91A9-19A10D191563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4614114F-35C3-459D-91A9-19A10D191563}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4614114F-35C3-459D-91A9-19A10D191563}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4614114F-35C3-459D-91A9-19A10D191563}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3FE131F1-4363-4324-9D8B-4DFE398E56CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3FE131F1-4363-4324-9D8B-4DFE398E56CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FE131F1-4363-4324-9D8B-4DFE398E56CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FE131F1-4363-4324-9D8B-4DFE398E56CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6712085D-BECA-49F2-A465-BFE609A9CE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6712085D-BECA-49F2-A465-BFE609A9CE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6712085D-BECA-49F2-A465-BFE609A9CE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6712085D-BECA-49F2-A465-BFE609A9CE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5BE895B-95CB-4463-9BD7-C77BE23CB1FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5BE895B-95CB-4463-9BD7-C77BE23CB1FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5BE895B-95CB-4463-9BD7-C77BE23CB1FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5BE895B-95CB-4463-9BD7-C77BE23CB1FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4614114F-35C3-459D-91A9-19A10D191563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4614114F-35C3-459D-91A9-19A10D191563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4614114F-35C3-459D-91A9-19A10D191563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4614114F-35C3-459D-91A9-19A10D191563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CD068EA-7321-4019-AE48-8D21E171D446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD068EA-7321-4019-AE48-8D21E171D446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD068EA-7321-4019-AE48-8D21E171D446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD068EA-7321-4019-AE48-8D21E171D446}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,7 +13,7 @@ namespace PrijavaRegistracija
     public partial class frmPrijava : Form
     {
         Form parent;
-       
+        Korisnik kori { get; set; }
         public frmPrijava(Form parent)
         {
             InitializeComponent();
@@ -38,8 +38,11 @@ namespace PrijavaRegistracija
             {
                 Autentifikator autentifikator = new Autentifikator();
                 string korisniknadjen = autentifikator.prijaviKorisnika(korIme, lozinka);
+                Korisnik kori = Autentifikator.dohvatiPrijavljenogKorisnika();
                 if (korisniknadjen == "")
                 {
+                    parent.MainMenuStrip.Visible = true;
+                    
                     this.Close();
                 }
                 else if (korisniknadjen == "lozinka")
@@ -54,10 +57,14 @@ namespace PrijavaRegistracija
         }
         private void Registracija_Click(object sender, EventArgs e)
         {
-            frmRegistracija registracija = new frmRegistracija(parent);
-            registracija.MdiParent = parent;
-            registracija.WindowState = FormWindowState.Maximized;
-            registracija.Show();
+            frmRegistracija forma = new frmRegistracija(parent, this);
+            
+            forma.TopLevel = false;
+            forma.Parent = parent;
+            parent.Size = forma.Size;
+            forma.Dock = DockStyle.Fill;
+            this.Hide();
+            forma.Show();
         }
     }
 }

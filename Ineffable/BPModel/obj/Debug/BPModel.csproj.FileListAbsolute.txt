@@ -91,27 +91,34 @@ C:\Users\Korisnik\Desktop\danas\Ineffable\BPModel\bin\Debug\EntityFramework.SqlS
 C:\Users\Korisnik\Desktop\danas\Ineffable\BPModel\obj\Debug\BPModel.csprojResolveAssemblyReference.cache
 C:\Users\Korisnik\Desktop\danas\Ineffable\BPModel\obj\Debug\BPModel.dll
 C:\Users\Korisnik\Desktop\danas\Ineffable\BPModel\obj\Debug\BPModel.pdb
-<<<<<<< HEAD
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\BPModel\bin\Debug\BPModel.dll.config
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\BPModel\bin\Debug\BPModel.dll
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\BPModel\bin\Debug\BPModel.pdb
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.dll
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.xml
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\BPModel\obj\Debug\BPModel.csprojResolveAssemblyReference.cache
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\BPModel\obj\Debug\BPModel.dll
-C:\Users\Korisnik\Desktop\novo\r18075\Ineffable\BPModel\obj\Debug\BPModel.pdb
-=======
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\bin\Debug\BPModel.dll.config
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\bin\Debug\BPModel.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\bin\Debug\BPModel.pdb
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.xml
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\obj\Debug\BPModel.csproj.CoreCompileInputs.cache
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\obj\Debug\BPModel.csproj.CopyComplete
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\obj\Debug\BPModel.dll
-C:\Users\Matija\Desktop\PI - PROJEKT - JESEN\r18075\Ineffable\BPModel\obj\Debug\BPModel.pdb
->>>>>>> 34c48fd3cc59675e7bd0e9fb3accda4f5646b232
+E:\Faks\3.godina\2.semestar\PI\projekt\master\r18075\Ineffable\BPModel\obj\Debug\BPModel.csprojResolveAssemblyReference.cache
+E:\Faks\3.godina\2.semestar\PI\projekt\r18075\Ineffable\BPModel\bin\Debug\BPModel.dll.config
+E:\Faks\3.godina\2.semestar\PI\projekt\r18075\Ineffable\BPModel\bin\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\r18075\Ineffable\BPModel\bin\Debug\BPModel.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\r18075\Ineffable\BPModel\obj\Debug\BPModel.csprojResolveAssemblyReference.cache
+E:\Faks\3.godina\2.semestar\PI\projekt\r18075\Ineffable\BPModel\obj\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\r18075\Ineffable\BPModel\obj\Debug\BPModel.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\beta\r18075\Ineffable\BPModel\bin\Debug\BPModel.dll.config
+E:\Faks\3.godina\2.semestar\PI\projekt\beta\r18075\Ineffable\BPModel\bin\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\beta\r18075\Ineffable\BPModel\bin\Debug\BPModel.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\beta\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\beta\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\beta\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\beta\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\beta\r18075\Ineffable\BPModel\obj\Debug\BPModel.csprojResolveAssemblyReference.cache
+E:\Faks\3.godina\2.semestar\PI\projekt\beta\r18075\Ineffable\BPModel\obj\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\beta\r18075\Ineffable\BPModel\obj\Debug\BPModel.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\bin\Debug\BPModel.dll.config
+E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\bin\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\bin\Debug\BPModel.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\obj\Debug\BPModel.csprojResolveAssemblyReference.cache
+E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\obj\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\obj\Debug\BPModel.pdb
