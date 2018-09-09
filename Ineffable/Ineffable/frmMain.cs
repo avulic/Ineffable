@@ -233,10 +233,5 @@ namespace Ineffable
             frmPregledServisa servisi = new frmPregledServisa(this, kori);
             prikaziFormu(servisi);
         }
-
-        private void frmMain_HelpRequested(object sender, HelpEventArgs hlpevent)
-        {
-            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "pocetni_zaslon.htm");
-        }
     }
 }

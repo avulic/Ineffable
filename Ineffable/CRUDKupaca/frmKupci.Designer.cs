@@ -44,6 +44,8 @@
             this.korisnikTableAdapter = new CRUDKupaca.IneffableDataSetKupciTableAdapters.korisnikTableAdapter();
             this.lbKupci = new System.Windows.Forms.Label();
             this.btnAzuriraj = new System.Windows.Forms.Button();
+            this.btnKreirajKupca = new System.Windows.Forms.Button();
+            this.btnIzbrisiKupca = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKupci)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSetKupci)).BeginInit();
@@ -89,6 +91,7 @@
             this.adresa.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.adresa.HeaderText = "Adresa";
             this.adresa.Name = "adresa";
+            this.adresa.ReadOnly = true;
             this.adresa.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.adresa.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.adresa.ValueMember = "korisnik_id";
@@ -111,6 +114,7 @@
             this.telefon.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.telefon.HeaderText = "Telefon";
             this.telefon.Name = "telefon";
+            this.telefon.ReadOnly = true;
             this.telefon.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.telefon.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.telefon.ValueMember = "korisnik_id";
@@ -120,18 +124,21 @@
             this.imeDataGridViewTextBoxColumn.DataPropertyName = "ime";
             this.imeDataGridViewTextBoxColumn.HeaderText = "Ime";
             this.imeDataGridViewTextBoxColumn.Name = "imeDataGridViewTextBoxColumn";
+            this.imeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // prezimeDataGridViewTextBoxColumn
             // 
             this.prezimeDataGridViewTextBoxColumn.DataPropertyName = "prezime";
             this.prezimeDataGridViewTextBoxColumn.HeaderText = "Prezime";
             this.prezimeDataGridViewTextBoxColumn.Name = "prezimeDataGridViewTextBoxColumn";
+            this.prezimeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // korisnikidDataGridViewTextBoxColumn
             // 
             this.korisnikidDataGridViewTextBoxColumn.DataPropertyName = "korisnik_id";
             this.korisnikidDataGridViewTextBoxColumn.HeaderText = "korisnik_id";
             this.korisnikidDataGridViewTextBoxColumn.Name = "korisnikidDataGridViewTextBoxColumn";
+            this.korisnikidDataGridViewTextBoxColumn.ReadOnly = true;
             this.korisnikidDataGridViewTextBoxColumn.Visible = false;
             // 
             // spolDataGridViewTextBoxColumn
@@ -139,6 +146,7 @@
             this.spolDataGridViewTextBoxColumn.DataPropertyName = "spol";
             this.spolDataGridViewTextBoxColumn.HeaderText = "Spol";
             this.spolDataGridViewTextBoxColumn.Name = "spolDataGridViewTextBoxColumn";
+            this.spolDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // kupacBindingSource
             // 
@@ -174,12 +182,34 @@
             this.btnAzuriraj.UseVisualStyleBackColor = true;
             this.btnAzuriraj.Click += new System.EventHandler(this.btnAturiraj_Click);
             // 
+            // btnKreirajKupca
+            // 
+            this.btnKreirajKupca.Location = new System.Drawing.Point(17, 284);
+            this.btnKreirajKupca.Name = "btnKreirajKupca";
+            this.btnKreirajKupca.Size = new System.Drawing.Size(75, 23);
+            this.btnKreirajKupca.TabIndex = 3;
+            this.btnKreirajKupca.Text = "Novi kupac";
+            this.btnKreirajKupca.UseVisualStyleBackColor = true;
+            this.btnKreirajKupca.Click += new System.EventHandler(this.btnKreirajKupca_Click);
+            // 
+            // btnIzbrisiKupca
+            // 
+            this.btnIzbrisiKupca.Location = new System.Drawing.Point(469, 323);
+            this.btnIzbrisiKupca.Name = "btnIzbrisiKupca";
+            this.btnIzbrisiKupca.Size = new System.Drawing.Size(75, 23);
+            this.btnIzbrisiKupca.TabIndex = 4;
+            this.btnIzbrisiKupca.Text = "Izbrisi";
+            this.btnIzbrisiKupca.UseVisualStyleBackColor = true;
+            this.btnIzbrisiKupca.Click += new System.EventHandler(this.btnIzbrisiKupca_Click_1);
+            // 
             // frmKupci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(626, 349);
+            this.Controls.Add(this.btnIzbrisiKupca);
+            this.Controls.Add(this.btnKreirajKupca);
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.lbKupci);
             this.Controls.Add(this.dgvKupci);
@@ -188,7 +218,6 @@
             this.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.Text = "frmKupci";
             this.Load += new System.EventHandler(this.frmKupci_Load);
-            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmKupci_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKupci)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSetKupci)).EndInit();
@@ -215,5 +244,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn spolDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label lbKupci;
         private System.Windows.Forms.Button btnAzuriraj;
+        private System.Windows.Forms.Button btnKreirajKupca;
+        private System.Windows.Forms.Button btnIzbrisiKupca;
     }
 }

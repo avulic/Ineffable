@@ -131,7 +131,6 @@
             this.Name = "frmEmailPoruka";
             this.Text = "Nova email poruka";
             this.Load += new System.EventHandler(this.frmEmailPoruka_Load);
-            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmEmailPoruka_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -113,11 +113,6 @@ namespace CRUDZaposlenik
             tbPretraga.AutoCompleteSource = AutoCompleteSource.CustomSource;
             */
         }
-
-        private void frmCRUDZaposlenik_HelpRequested(object sender, HelpEventArgs hlpevent)
-        {
-            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "pregled_zaposlenika.htm");
-        }
         
     }
 }

@@ -83,7 +83,7 @@ namespace CrudArtikala
 
         private void frmArtikli_HelpRequested(object sender, HelpEventArgs hlpevent)
         {
-            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "crud_artikala.htm");
+            
         }
     }
 }

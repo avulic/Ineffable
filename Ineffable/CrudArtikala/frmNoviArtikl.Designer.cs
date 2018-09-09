@@ -242,7 +242,6 @@
             this.Name = "frmNoviArtikl";
             this.Text = "Unos novog artikla";
             this.Load += new System.EventHandler(this.frmNoviArtikl_Load);
-            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmNoviArtikl_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.artiklBindingSource)).EndInit();

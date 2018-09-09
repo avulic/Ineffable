@@ -140,16 +140,6 @@ namespace CrudArtikala
             this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
         }
 
-        private void frmNoviArtikl_HelpRequested(object sender, HelpEventArgs hlpevent)
-        {
-            if (kolicina_na_skladistuTextBox.Text == "")
-            {
-                Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "kreiranje_artikla.htm");
-            }
-            else
-            {
-                Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "azuriranje_artikla.htm");
-            }
-        }
+            
     }
 }

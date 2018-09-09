@@ -158,7 +158,6 @@
             this.Name = "frmNoviZahtjev";
             this.Text = "Novi zahtjev za servisom";
             this.Load += new System.EventHandler(this.frmNoviZahtjev_Load);
-            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmNoviZahtjev_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

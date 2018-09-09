@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IneffableModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="artikl">
+    <Key>
+      <PropertyRef Name="artikl_id" />
+    </Key>
+    <Property Name="artikl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="opis" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="cijena" Type="Double" />
+    <Property Name="kolicina_na_skladistu" Type="Int32" />
+    <Property Name="dobavljac_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="dobavljac" Relationship="Self.FK_artikl_dobavljac" FromRole="artikl" ToRole="dobavljac" />
+    <NavigationProperty Name="rezervacijas" Relationship="Self.FK_rezervacija_artikl" FromRole="artikl" ToRole="rezervacija" />
+    <NavigationProperty Name="stavka_racuna" Relationship="Self.FK_stavka_racuna_artikl" FromRole="artikl" ToRole="stavka_racuna" />
+  </EntityType>
+  <EntityType Name="dobavljac">
+    <Key>
+      <PropertyRef Name="dobavljac_id" />
+    </Key>
+    <Property Name="dobavljac_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="adresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="artikls" Relationship="Self.FK_artikl_dobavljac" FromRole="dobavljac" ToRole="artikl" />
+  </EntityType>
+  <EntityType Name="korisnik">
+    <Key>
+      <PropertyRef Name="korisnik_id" />
+    </Key>
+    <Property Name="korisnik_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="prezime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="korisnicko_ime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lozinka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="uloga_id" Type="Int32" Nullable="false" />
+    <Property Name="adresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="uloga" Relationship="Self.FK_korisnik_uloga" FromRole="korisnik" ToRole="uloga" />
+    <NavigationProperty Name="racuns" Relationship="Self.FK_racun_zaposlenik" FromRole="korisnik" ToRole="racun" />
+    <NavigationProperty Name="radni_nalog_servisa" Relationship="Self.FK_radni_nalog_servisa_zaposlenik" FromRole="korisnik" ToRole="radni_nalog_servisa" />
+  </EntityType>
+  <EntityType Name="kupac">
+    <Key>
+      <PropertyRef Name="kupac_id" />
+    </Key>
+    <Property Name="kupac_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="prezime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="adresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="radni_nalog_servisa" Relationship="Self.FK_radni_nalog_servisa_kupac" FromRole="kupac" ToRole="radni_nalog_servisa" />
+    <NavigationProperty Name="rezervacijas" Relationship="Self.FK_rezervacija_kupac" FromRole="kupac" ToRole="rezervacija" />
+    <NavigationProperty Name="zahtjev_za_servis" Relationship="Self.FK_zahtjev_za_servis_kupac" FromRole="kupac" ToRole="zahtjev_za_servis" />
+  </EntityType>
+  <EntityType Name="racun">
+    <Key>
+      <PropertyRef Name="racun_id" />
+    </Key>
+    <Property Name="racun_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="datum" Type="DateTime" Precision="0" />
+    <Property Name="vrijeme" Type="Time" Precision="7" />
+    <Property Name="iznos" Type="Double" />
+    <Property Name="zaposlenik_id" Type="Int32" Nullable="false" />
+    <Property Name="servis_id" Type="Int32" />
+    <NavigationProperty Name="korisnik" Relationship="Self.FK_racun_zaposlenik" FromRole="racun" ToRole="korisnik" />
+    <NavigationProperty Name="radni_nalog_servisa" Relationship="Self.FK_racun_radni_nalog_servisa" FromRole="racun" ToRole="radni_nalog_servisa" />
+    <NavigationProperty Name="stavka_racuna" Relationship="Self.FK_stavka_racuna_racun" FromRole="racun" ToRole="stavka_racuna" />
+  </EntityType>
+  <EntityType Name="radni_nalog_servisa">
+    <Key>
+      <PropertyRef Name="servis_id" />
+    </Key>
+    <Property Name="servis_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="oznaka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="uredjaj" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="zaposlenik_id" Type="Int32" Nullable="false" />
+    <Property Name="opis" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vrijeme_kreiranja" Type="DateTime" Precision="3" />
+    <Property Name="osoba_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="korisnik" Relationship="Self.FK_radni_nalog_servisa_zaposlenik" FromRole="radni_nalog_servisa" ToRole="korisnik" />
+    <NavigationProperty Name="kupac" Relationship="Self.FK_radni_nalog_servisa_kupac" FromRole="radni_nalog_servisa" ToRole="kupac" />
+    <NavigationProperty Name="racuns" Relationship="Self.FK_racun_radni_nalog_servisa" FromRole="radni_nalog_servisa" ToRole="racun" />
+  </EntityType>
+  <EntityType Name="rezervacija">
+    <Key>
+      <PropertyRef Name="rezervacija_id" />
+    </Key>
+    <Property Name="rezervacija_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vrijeme_rezervacije" Type="DateTime" Precision="3" />
+    <Property Name="kolicina" Type="Int32" />
+    <Property Name="artikl_id" Type="Int32" Nullable="false" />
+    <Property Name="kupac_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="artikl" Relationship="Self.FK_rezervacija_artikl" FromRole="rezervacija" ToRole="artikl" />
+    <NavigationProperty Name="kupac" Relationship="Self.FK_rezervacija_kupac" FromRole="rezervacija" ToRole="kupac" />
+  </EntityType>
+  <EntityType Name="stavka_racuna">
+    <Key>
+      <PropertyRef Name="racun_id" />
+      <PropertyRef Name="artikl_id" />
+    </Key>
+    <Property Name="racun_id" Type="Int32" Nullable="false" />
+    <Property Name="artikl_id" Type="Int32" Nullable="false" />
+    <Property Name="kolicina" Type="Int32" />
+    <Property Name="cijena" Type="Double" />
+    <NavigationProperty Name="artikl" Relationship="Self.FK_stavka_racuna_artikl" FromRole="stavka_racuna" ToRole="artikl" />
+    <NavigationProperty Name="racun" Relationship="Self.FK_stavka_racuna_racun" FromRole="stavka_racuna" ToRole="racun" />
+  </EntityType>
+  <EntityType Name="uloga">
+    <Key>
+      <PropertyRef Name="uloga_id" />
+    </Key>
+    <Property Name="uloga_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="korisniks" Relationship="Self.FK_korisnik_uloga" FromRole="uloga" ToRole="korisnik" />
+  </EntityType>
+  <EntityType Name="zahtjev_za_servis">
+    <Key>
+      <PropertyRef Name="zahtjev_id" />
+    </Key>
+    <Property Name="zahtjev_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="datum_podnosenja" Type="DateTime" Precision="3" />
+    <Property Name="opis" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="kupac_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="kupac" Relationship="Self.FK_zahtjev_za_servis_kupac" FromRole="zahtjev_za_servis" ToRole="kupac" />
+  </EntityType>
+  <Association Name="FK_artikl_dobavljac">
+    <End Role="dobavljac" Type="Self.dobavljac" Multiplicity="1" />
+    <End Role="artikl" Type="Self.artikl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dobavljac">
+        <PropertyRef Name="dobavljac_id" />
+      </Principal>
+      <Dependent Role="artikl">
+        <PropertyRef Name="dobavljac_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_rezervacija_artikl">
+    <End Role="artikl" Type="Self.artikl" Multiplicity="1" />
+    <End Role="rezervacija" Type="Self.rezervacija" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="artikl">
+        <PropertyRef Name="artikl_id" />
+      </Principal>
+      <Dependent Role="rezervacija">
+        <PropertyRef Name="artikl_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_stavka_racuna_artikl">
+    <End Role="artikl" Type="Self.artikl" Multiplicity="1" />
+    <End Role="stavka_racuna" Type="Self.stavka_racuna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="artikl">
+        <PropertyRef Name="artikl_id" />
+      </Principal>
+      <Dependent Role="stavka_racuna">
+        <PropertyRef Name="artikl_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_korisnik_uloga">
+    <End Role="uloga" Type="Self.uloga" Multiplicity="1" />
+    <End Role="korisnik" Type="Self.korisnik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="uloga">
+        <PropertyRef Name="uloga_id" />
+      </Principal>
+      <Dependent Role="korisnik">
+        <PropertyRef Name="uloga_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_racun_zaposlenik">
+    <End Role="korisnik" Type="Self.korisnik" Multiplicity="1" />
+    <End Role="racun" Type="Self.racun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="korisnik">
+        <PropertyRef Name="korisnik_id" />
+      </Principal>
+      <Dependent Role="racun">
+        <PropertyRef Name="zaposlenik_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_radni_nalog_servisa_zaposlenik">
+    <End Role="korisnik" Type="Self.korisnik" Multiplicity="1" />
+    <End Role="radni_nalog_servisa" Type="Self.radni_nalog_servisa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="korisnik">
+        <PropertyRef Name="korisnik_id" />
+      </Principal>
+      <Dependent Role="radni_nalog_servisa">
+        <PropertyRef Name="zaposlenik_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_radni_nalog_servisa_kupac">
+    <End Role="kupac" Type="Self.kupac" Multiplicity="1" />
+    <End Role="radni_nalog_servisa" Type="Self.radni_nalog_servisa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kupac">
+        <PropertyRef Name="kupac_id" />
+      </Principal>
+      <Dependent Role="radni_nalog_servisa">
+        <PropertyRef Name="osoba_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_rezervacija_kupac">
+    <End Role="kupac" Type="Self.kupac" Multiplicity="1" />
+    <End Role="rezervacija" Type="Self.rezervacija" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kupac">
+        <PropertyRef Name="kupac_id" />
+      </Principal>
+      <Dependent Role="rezervacija">
+        <PropertyRef Name="kupac_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_zahtjev_za_servis_kupac">
+    <End Role="kupac" Type="Self.kupac" Multiplicity="1" />
+    <End Role="zahtjev_za_servis" Type="Self.zahtjev_za_servis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kupac">
+        <PropertyRef Name="kupac_id" />
+      </Principal>
+      <Dependent Role="zahtjev_za_servis">
+        <PropertyRef Name="kupac_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_racun_radni_nalog_servisa">
+    <End Role="radni_nalog_servisa" Type="Self.radni_nalog_servisa" Multiplicity="0..1" />
+    <End Role="racun" Type="Self.racun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="radni_nalog_servisa">
+        <PropertyRef Name="servis_id" />
+      </Principal>
+      <Dependent Role="racun">
+        <PropertyRef Name="servis_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_stavka_racuna_racun">
+    <End Role="racun" Type="Self.racun" Multiplicity="1" />
+    <End Role="stavka_racuna" Type="Self.stavka_racuna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="racun">
+        <PropertyRef Name="racun_id" />
+      </Principal>
+      <Dependent Role="stavka_racuna">
+        <PropertyRef Name="racun_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="IneffableEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="artikls" EntityType="Self.artikl" />
+    <EntitySet Name="dobavljacs" EntityType="Self.dobavljac" />
+    <EntitySet Name="korisniks" EntityType="Self.korisnik" />
+    <EntitySet Name="kupacs" EntityType="Self.kupac" />
+    <EntitySet Name="racuns" EntityType="Self.racun" />
+    <EntitySet Name="radni_nalog_servisa" EntityType="Self.radni_nalog_servisa" />
+    <EntitySet Name="rezervacijas" EntityType="Self.rezervacija" />
+    <EntitySet Name="stavka_racuna" EntityType="Self.stavka_racuna" />
+    <EntitySet Name="ulogas" EntityType="Self.uloga" />
+    <EntitySet Name="zahtjev_za_servis" EntityType="Self.zahtjev_za_servis" />
+    <AssociationSet Name="FK_artikl_dobavljac" Association="Self.FK_artikl_dobavljac">
+      <End Role="dobavljac" EntitySet="dobavljacs" />
+      <End Role="artikl" EntitySet="artikls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_rezervacija_artikl" Association="Self.FK_rezervacija_artikl">
+      <End Role="artikl" EntitySet="artikls" />
+      <End Role="rezervacija" EntitySet="rezervacijas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_stavka_racuna_artikl" Association="Self.FK_stavka_racuna_artikl">
+      <End Role="artikl" EntitySet="artikls" />
+      <End Role="stavka_racuna" EntitySet="stavka_racuna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_korisnik_uloga" Association="Self.FK_korisnik_uloga">
+      <End Role="uloga" EntitySet="ulogas" />
+      <End Role="korisnik" EntitySet="korisniks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_racun_zaposlenik" Association="Self.FK_racun_zaposlenik">
+      <End Role="korisnik" EntitySet="korisniks" />
+      <End Role="racun" EntitySet="racuns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_radni_nalog_servisa_zaposlenik" Association="Self.FK_radni_nalog_servisa_zaposlenik">
+      <End Role="korisnik" EntitySet="korisniks" />
+      <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_radni_nalog_servisa_kupac" Association="Self.FK_radni_nalog_servisa_kupac">
+      <End Role="kupac" EntitySet="kupacs" />
+      <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_rezervacija_kupac" Association="Self.FK_rezervacija_kupac">
+      <End Role="kupac" EntitySet="kupacs" />
+      <End Role="rezervacija" EntitySet="rezervacijas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_zahtjev_za_servis_kupac" Association="Self.FK_zahtjev_za_servis_kupac">
+      <End Role="kupac" EntitySet="kupacs" />
+      <End Role="zahtjev_za_servis" EntitySet="zahtjev_za_servis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_racun_radni_nalog_servisa" Association="Self.FK_racun_radni_nalog_servisa">
+      <End Role="radni_nalog_servisa" EntitySet="radni_nalog_servisa" />
+      <End Role="racun" EntitySet="racuns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_stavka_racuna_racun" Association="Self.FK_stavka_racuna_racun">
+      <End Role="racun" EntitySet="racuns" />
+      <End Role="stavka_racuna" EntitySet="stavka_racuna" />
+    </AssociationSet>
+    <EntitySet Name="database_firewall_rules" EntityType="IneffableModel.database_firewall_rules" />
+  </EntityContainer>
+  <EntityType Name="database_firewall_rules">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="start_ip_address" />
+      <PropertyRef Name="end_ip_address" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="modify_date" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="start_ip_address" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="end_ip_address" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="modify_date" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+</Schema>

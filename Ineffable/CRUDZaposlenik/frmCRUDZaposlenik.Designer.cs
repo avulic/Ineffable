@@ -160,7 +160,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Zaposlenici";
             this.Load += new System.EventHandler(this.frmCRUDZaposlenik_Load);
-            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmCRUDZaposlenik_HelpRequested);
             this.gbZaposlenici.ResumeLayout(false);
             this.gbZaposlenici.PerformLayout();
             this.groupBox1.ResumeLayout(false);

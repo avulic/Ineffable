@@ -59,10 +59,5 @@ namespace Komunikacija
         {
             this.ActiveControl = txtNaziv;
         }
-
-        private void frmNoviZahtjev_HelpRequested(object sender, HelpEventArgs hlpevent)
-        {
-            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "novi_zahtjev_za_servisom.htm");
-        }
     }
 }

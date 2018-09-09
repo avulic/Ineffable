@@ -208,7 +208,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmMain_HelpRequested);
             this.msIzbornik.ResumeLayout(false);
             this.msIzbornik.PerformLayout();
             this.ResumeLayout(false);

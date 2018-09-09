@@ -58,9 +58,27 @@ namespace CRUDKupaca
                 bp.SaveChanges();
             }
         }
-        public void izbrisiKupca(int kupacId)
+        public void izbrisiKupca(int korisnikId)
         {
+            using (IneffableEntities bp = new IneffableEntities())
+            {
+                foreach (var item in bp.korisnik)
+                {
 
+                    if (item.korisnik_id == korisnikId)
+                    {
+                        bp.korisnik.Remove(item);
+                    }
+                }
+                foreach (var item in bp.kupac)
+                {
+                    if (item.korisnik_id == korisnikId)
+                    {
+                        bp.kupac.Remove(item);
+                    }
+                }
+                bp.SaveChanges();
+            }
         }    
     }
 }

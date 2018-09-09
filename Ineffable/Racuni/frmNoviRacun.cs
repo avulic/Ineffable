@@ -16,7 +16,7 @@ namespace Racuni
         int trenutni;
         int odabrani;
         int zaposlenik;
-        int? servisTrenutni;
+        int servisTrenutni;
         double? ukupnoServis;
         public frmNoviRacun()
         {
@@ -258,11 +258,6 @@ namespace Racuni
                 brojRacuna++;
                 ukupnoRacuna.Text = brojRacuna.ToString();
             }
-        }
-
-        private void frmNoviRacun_HelpRequested(object sender, HelpEventArgs hlpevent)
-        {
-            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "kreiranje_racuna.htm");
         }
     }
 }

@@ -93,11 +93,6 @@ namespace PrijavaRegistracija
             return ispravno;
         }
 
-        private void frmRegistracija_HelpRequested(object sender, HelpEventArgs hlpevent)
-        {
-            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "registracija.htm");
-        }
-
         private void lbPrijava_Click(object sender, EventArgs e)
         {
             frmPrijava prijava = new frmPrijava(parent);

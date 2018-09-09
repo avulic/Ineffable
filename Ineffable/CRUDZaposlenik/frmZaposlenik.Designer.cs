@@ -335,7 +335,6 @@
             this.Name = "frmZaposlenik";
             this.Text = "frmZaposlenik";
             this.Load += new System.EventHandler(this.frmZaposlenik_Load);
-            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmZaposlenik_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();

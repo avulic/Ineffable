@@ -50,10 +50,5 @@ namespace Komunikacija
                 }
             }
         }
-
-        private void frmZavrseniServisi_HelpRequested(object sender, HelpEventArgs hlpevent)
-        {
-            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "zavrseni_servisi.htm");
-        }
     }
 }
