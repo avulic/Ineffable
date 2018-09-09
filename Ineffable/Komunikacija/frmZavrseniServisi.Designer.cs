@@ -205,6 +205,7 @@
             this.Name = "frmZavrseniServisi";
             this.Text = "Pregled završenih servisa";
             this.Load += new System.EventHandler(this.frmZavrseniServisi_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmZavrseniServisi_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.dgvZavrseniServisi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kupacBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet5)).EndInit();

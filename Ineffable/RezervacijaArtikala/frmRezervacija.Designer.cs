@@ -30,24 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.artiklBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ineffableDataSet = new RezervacijaArtikala.IneffableDataSet();
-            this.gumbRezerviraj = new System.Windows.Forms.Button();
-            this.artiklTableAdapter = new RezervacijaArtikala.IneffableDataSetTableAdapters.artiklTableAdapter();
-            this.dobavljacBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dobavljacTableAdapter = new RezervacijaArtikala.IneffableDataSetTableAdapters.dobavljacTableAdapter();
             this.artiklidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.opisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cijenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kolicinanaskladistuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dobavljacidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dobavljacBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ineffableDataSet = new RezervacijaArtikala.IneffableDataSet();
+            this.artiklBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gumbRezerviraj = new System.Windows.Forms.Button();
+            this.artiklTableAdapter = new RezervacijaArtikala.IneffableDataSetTableAdapters.artiklTableAdapter();
+            this.dobavljacTableAdapter = new RezervacijaArtikala.IneffableDataSetTableAdapters.dobavljacTableAdapter();
             this.kolicina = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.artiklBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.artiklBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -62,45 +62,13 @@
             this.kolicinanaskladistuDataGridViewTextBoxColumn,
             this.dobavljacidDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.artiklBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 10);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(770, 252);
+            this.dataGridView1.Size = new System.Drawing.Size(578, 205);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // artiklBindingSource
-            // 
-            this.artiklBindingSource.DataMember = "artikl";
-            this.artiklBindingSource.DataSource = this.ineffableDataSet;
-            // 
-            // ineffableDataSet
-            // 
-            this.ineffableDataSet.DataSetName = "IneffableDataSet";
-            this.ineffableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // gumbRezerviraj
-            // 
-            this.gumbRezerviraj.Location = new System.Drawing.Point(701, 270);
-            this.gumbRezerviraj.Name = "gumbRezerviraj";
-            this.gumbRezerviraj.Size = new System.Drawing.Size(81, 31);
-            this.gumbRezerviraj.TabIndex = 1;
-            this.gumbRezerviraj.Text = "Rezerviraj";
-            this.gumbRezerviraj.UseVisualStyleBackColor = true;
-            this.gumbRezerviraj.Click += new System.EventHandler(this.gumbRezerviraj_Click);
-            // 
-            // artiklTableAdapter
-            // 
-            this.artiklTableAdapter.ClearBeforeFill = true;
-            // 
-            // dobavljacBindingSource
-            // 
-            this.dobavljacBindingSource.DataMember = "dobavljac";
-            this.dobavljacBindingSource.DataSource = this.ineffableDataSet;
-            // 
-            // dobavljacTableAdapter
-            // 
-            this.dobavljacTableAdapter.ClearBeforeFill = true;
             // 
             // artiklidDataGridViewTextBoxColumn
             // 
@@ -145,38 +113,76 @@
             this.dobavljacidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dobavljacidDataGridViewTextBoxColumn.ValueMember = "dobavljac_id";
             // 
+            // dobavljacBindingSource
+            // 
+            this.dobavljacBindingSource.DataMember = "dobavljac";
+            this.dobavljacBindingSource.DataSource = this.ineffableDataSet;
+            // 
+            // ineffableDataSet
+            // 
+            this.ineffableDataSet.DataSetName = "IneffableDataSet";
+            this.ineffableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // artiklBindingSource
+            // 
+            this.artiklBindingSource.DataMember = "artikl";
+            this.artiklBindingSource.DataSource = this.ineffableDataSet;
+            // 
+            // gumbRezerviraj
+            // 
+            this.gumbRezerviraj.Location = new System.Drawing.Point(526, 219);
+            this.gumbRezerviraj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gumbRezerviraj.Name = "gumbRezerviraj";
+            this.gumbRezerviraj.Size = new System.Drawing.Size(61, 25);
+            this.gumbRezerviraj.TabIndex = 1;
+            this.gumbRezerviraj.Text = "Rezerviraj";
+            this.gumbRezerviraj.UseVisualStyleBackColor = true;
+            this.gumbRezerviraj.Click += new System.EventHandler(this.gumbRezerviraj_Click);
+            // 
+            // artiklTableAdapter
+            // 
+            this.artiklTableAdapter.ClearBeforeFill = true;
+            // 
+            // dobavljacTableAdapter
+            // 
+            this.dobavljacTableAdapter.ClearBeforeFill = true;
+            // 
             // kolicina
             // 
-            this.kolicina.Location = new System.Drawing.Point(855, 12);
+            this.kolicina.Location = new System.Drawing.Point(641, 10);
+            this.kolicina.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kolicina.Name = "kolicina";
-            this.kolicina.Size = new System.Drawing.Size(100, 22);
+            this.kolicina.Size = new System.Drawing.Size(76, 20);
             this.kolicina.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(788, 12);
+            this.label1.Location = new System.Drawing.Point(591, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 17);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Količina:";
             // 
             // frmRezervacija
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1140, 450);
+            this.ClientSize = new System.Drawing.Size(855, 366);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kolicina);
             this.Controls.Add(this.gumbRezerviraj);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmRezervacija";
             this.Text = "frmRezervacija";
             this.Load += new System.EventHandler(this.frmRezervacija_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmRezervacija_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.artiklBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dobavljacBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.artiklBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -186,6 +186,7 @@
             this.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.Text = "frmKupci";
             this.Load += new System.EventHandler(this.frmKupci_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmKupci_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKupci)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSetKupci)).EndInit();

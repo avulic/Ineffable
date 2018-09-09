@@ -520,6 +520,7 @@
             this.Name = "frmKomuniciraj";
             this.Text = "Komunikacija";
             this.Load += new System.EventHandler(this.frmKomuniciraj_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmKomuniciraj_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.dgvServisi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radni_nalog_servisaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).EndInit();

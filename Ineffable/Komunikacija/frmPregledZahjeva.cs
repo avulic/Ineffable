@@ -98,5 +98,10 @@ namespace Komunikacija
                 MessageBox.Show("Odaberite zahtjev.");
             }
         }
+
+        private void frmPregledZahjeva_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "zahtjevi_za_servisom.htm");
+        }
     }
 }

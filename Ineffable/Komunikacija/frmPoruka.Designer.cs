@@ -71,6 +71,7 @@
             this.Name = "frmPoruka";
             this.Text = "Poruka";
             this.Load += new System.EventHandler(this.frmPoruka_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmPoruka_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

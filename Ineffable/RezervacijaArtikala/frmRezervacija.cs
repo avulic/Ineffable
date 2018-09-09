@@ -74,5 +74,10 @@ namespace RezervacijaArtikala
         {
             artikId = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
         }
+
+        private void frmRezervacija_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "rezervacije.htm");
+        }
     }
 }

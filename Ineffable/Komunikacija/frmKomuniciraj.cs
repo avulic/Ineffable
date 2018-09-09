@@ -183,9 +183,12 @@ namespace Komunikacija
                 if (MessageBox.Show("Jeste li sigurni da želite prekinuti servis ovog uređaja?", "Upozorenje!", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
                 {
                     int idPoruke = int.Parse(dgvPoruke.SelectedRows[0].Cells[0].Value.ToString());
+                    int idServisa = int.Parse(dgvPoruke.SelectedRows[0].Cells[3].Value.ToString());
                     using (var db = new IneffableEntities())
                     {
                         poruke odabranaPoruka = db.poruke.FirstOrDefault(s => s.id == idPoruke);
+                        radni_nalog_servisa odabraniServis = db.radni_nalog_servisa.FirstOrDefault(k => k.servis_id == idServisa);
+                        odabraniServis.status = "Popravljeno";
                         db.poruke.Attach(odabranaPoruka);
                         db.poruke.Remove(odabranaPoruka);
                         db.SaveChanges();
@@ -244,5 +247,16 @@ namespace Komunikacija
             forma.ShowDialog(this);
         }
 
+        private void frmKomuniciraj_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            if (uloga == "Zaposlenik")
+            {
+                Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "komunikacija.htm");
+            }
+            if (uloga == "Kupac")
+            {
+                Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "komunikacija_klijent.htm");
+            }
+        }
     }
 }

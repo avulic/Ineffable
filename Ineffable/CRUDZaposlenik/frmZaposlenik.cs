@@ -94,5 +94,10 @@ namespace CRUDZaposlenik
            
 
         }
+
+        private void frmZaposlenik_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "odabrani_zaposlenik.htm");
+        }
     }
 }

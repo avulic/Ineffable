@@ -480,7 +480,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.ClientSize = new System.Drawing.Size(390, 778);
+            this.ClientSize = new System.Drawing.Size(390, 749);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbReg);
             this.Controls.Add(this.btnReg);
@@ -488,9 +488,10 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(390, 778);
+            this.MinimumSize = new System.Drawing.Size(390, 726);
             this.Name = "frmRegistracija";
             this.Text = "Registracija";
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmRegistracija_HelpRequested);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ulogaBindingSource)).EndInit();

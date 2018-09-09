@@ -182,6 +182,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPrijava";
             this.Text = "Prijava";
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmPrijava_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

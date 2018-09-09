@@ -100,5 +100,10 @@ namespace QR_Kod
             frmPrikaziLog f = new frmPrikaziLog(servisId);
             f.ShowDialog(this);
         }
+
+        private void frmRadniNalog_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "kreiranje_servisa.htm");
+        }
     }
 }

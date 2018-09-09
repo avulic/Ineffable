@@ -66,5 +66,10 @@ namespace PrijavaRegistracija
             this.Hide();
             forma.Show();
         }
+
+        private void frmPrijava_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "prijava_registracija.htm");
+        }
     }
 }

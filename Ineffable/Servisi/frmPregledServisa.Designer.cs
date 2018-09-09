@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.lbUredjaji = new System.Windows.Forms.ListBox();
-            this.radninalogservisaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.ineffableDataSet = new Servisi.IneffableDataSet();
             this.radninalogservisaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ineffableDataSet = new Servisi.IneffableDataSet();
+            this.radninalogservisaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.radni_nalog_servisaTableAdapter = new Servisi.IneffableDataSetTableAdapters.radni_nalog_servisaTableAdapter();
             this.btnPrekiniServis = new System.Windows.Forms.Button();
             this.cpBar = new Servisi.ProgresBar();
-            ((System.ComponentModel.ISupportInitialize)(this.radninalogservisaBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radninalogservisaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radninalogservisaBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbUredjaji
@@ -60,20 +60,20 @@
             this.lbUredjaji.ValueMember = "oznaka";
             this.lbUredjaji.SelectedIndexChanged += new System.EventHandler(this.lbUredjaji_SelectedIndexChanged);
             // 
-            // radninalogservisaBindingSource1
+            // radninalogservisaBindingSource
             // 
-            this.radninalogservisaBindingSource1.DataMember = "radni_nalog_servisa";
-            this.radninalogservisaBindingSource1.DataSource = this.ineffableDataSet;
+            this.radninalogservisaBindingSource.DataMember = "radni_nalog_servisa";
+            this.radninalogservisaBindingSource.DataSource = this.ineffableDataSet;
             // 
             // ineffableDataSet
             // 
             this.ineffableDataSet.DataSetName = "IneffableDataSet";
             this.ineffableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // radninalogservisaBindingSource
+            // radninalogservisaBindingSource1
             // 
-            this.radninalogservisaBindingSource.DataMember = "radni_nalog_servisa";
-            this.radninalogservisaBindingSource.DataSource = this.ineffableDataSet;
+            this.radninalogservisaBindingSource1.DataMember = "radni_nalog_servisa";
+            this.radninalogservisaBindingSource1.DataSource = this.ineffableDataSet;
             // 
             // radni_nalog_servisaTableAdapter
             // 
@@ -113,9 +113,10 @@
             this.Name = "frmPregledServisa";
             this.Text = "frmPregledServisa";
             this.Load += new System.EventHandler(this.frmPregledServisa_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.radninalogservisaBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).EndInit();
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmPregledServisa_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.radninalogservisaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radninalogservisaBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

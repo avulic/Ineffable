@@ -78,5 +78,10 @@ namespace Komunikacija
                 Close();
             }
         }
+
+        private void frmEmailPoruka_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "slanje_emaila.htm");
+        }
     }
 }

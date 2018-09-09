@@ -45,5 +45,10 @@ namespace CRUDKupaca
                 crud.izbrisiKupca(kupac_id);
             }
         }
+
+        private void frmKupci_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "pregled_kupaca.htm");
+        }
     }
 }

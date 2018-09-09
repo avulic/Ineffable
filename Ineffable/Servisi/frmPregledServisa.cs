@@ -39,5 +39,10 @@ namespace Servisi
         {
             cpBar.PostaviStatus(servisi[lbUredjaji.SelectedIndex]);
         }
+
+        private void frmPregledServisa_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "uredjaji_na_servisu.htm");
+        }
     }
 }

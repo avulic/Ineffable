@@ -259,5 +259,10 @@ namespace Racuni
                 ukupnoRacuna.Text = brojRacuna.ToString();
             }
         }
+
+        private void frmNoviRacun_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "kreiranje_racuna.htm");
+        }
     }
 }

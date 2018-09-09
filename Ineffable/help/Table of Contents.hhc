@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Dobrodošli">
+		<param name="Local" value="help.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Prijava u sustav">
+		<param name="Local" value="prijava_registracija.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Registracija">
+		<param name="Local" value="registracija.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Po&egrave;etni zaslon">
+		<param name="Local" value="pocetni_zaslon.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CRUD artikala">
+		<param name="Local" value="crud_artikala.htm">
+		<param name="URL" value="kreiranje_artikla.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Kreiranje artikla">
+		<param name="Local" value="kreiranje_artikla.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ažuriranje artikla">
+		<param name="Local" value="azuriranje_artikla.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Kreiranje novog servisa">
+		<param name="Local" value="kreiranje_servisa.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Komunikacija zaposlenika s klijentom">
+		<param name="Local" value="komunikacija.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Prikaz završenih servisa">
+		<param name="Local" value="zavrseni_servisi.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Slanje email poruke klijentu">
+		<param name="Local" value="slanje_emaila.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Slanje poruke o servisu odabranom klijentu">
+		<param name="Local" value="slanje_obavijesti.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Prikaz zahtjeva za servisom">
+		<param name="Local" value="zahtjevi_za_servisom.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Komunikacija klijenta sa zaposlenikom">
+		<param name="Local" value="komunikacija_klijent.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Slanje zahtjeva za servisom">
+		<param name="Local" value="novi_zahtjev_za_servisom.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Rezervacije artikala">
+		<param name="Local" value="rezervacije.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Prikaz ure&eth;aja na servisu">
+		<param name="Local" value="uredjaji_na_servisu.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Kreiranje ra&egrave;una">
+		<param name="Local" value="kreiranje_racuna.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pregled zaposlenika">
+		<param name="Local" value="pregled_zaposlenika.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pregled odabranog zaposlenika">
+		<param name="Local" value="odabrani_zaposlenik.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pregled kupaca">
+		<param name="Local" value="pregled_kupaca.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

@@ -36,21 +36,21 @@
             this.btnPotvrdi = new System.Windows.Forms.Button();
             this.lblPoruka = new System.Windows.Forms.Label();
             this.dgvZahtjevi = new System.Windows.Forms.DataGridView();
-            this.kupacBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ineffableDataSet2 = new Komunikacija.IneffableDataSet2();
-            this.kupacBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.zahtjevzaservisBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.zahtjev_za_servisTableAdapter = new Komunikacija.IneffableDataSet2TableAdapters.zahtjev_za_servisTableAdapter();
-            this.kupacTableAdapter = new Komunikacija.IneffableDataSet2TableAdapters.kupacTableAdapter();
             this.zahtjevidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumpodnosenjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ime = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.kupacBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ineffableDataSet2 = new Komunikacija.IneffableDataSet2();
             this.prezime = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.kupacBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.nazivuredjajaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipuredjajaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.opisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.proizvodjacDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zahtjevzaservisBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.zahtjev_za_servisTableAdapter = new Komunikacija.IneffableDataSet2TableAdapters.zahtjev_za_servisTableAdapter();
+            this.kupacTableAdapter = new Komunikacija.IneffableDataSet2TableAdapters.kupacTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kupacBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet2)).BeginInit();
@@ -141,34 +141,6 @@
             this.dgvZahtjevi.Size = new System.Drawing.Size(753, 191);
             this.dgvZahtjevi.TabIndex = 7;
             // 
-            // kupacBindingSource
-            // 
-            this.kupacBindingSource.DataMember = "kupac";
-            this.kupacBindingSource.DataSource = this.ineffableDataSet2;
-            // 
-            // ineffableDataSet2
-            // 
-            this.ineffableDataSet2.DataSetName = "IneffableDataSet2";
-            this.ineffableDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kupacBindingSource1
-            // 
-            this.kupacBindingSource1.DataMember = "kupac";
-            this.kupacBindingSource1.DataSource = this.ineffableDataSet2;
-            // 
-            // zahtjevzaservisBindingSource
-            // 
-            this.zahtjevzaservisBindingSource.DataMember = "zahtjev_za_servis";
-            this.zahtjevzaservisBindingSource.DataSource = this.ineffableDataSet2;
-            // 
-            // zahtjev_za_servisTableAdapter
-            // 
-            this.zahtjev_za_servisTableAdapter.ClearBeforeFill = true;
-            // 
-            // kupacTableAdapter
-            // 
-            this.kupacTableAdapter.ClearBeforeFill = true;
-            // 
             // zahtjevidDataGridViewTextBoxColumn
             // 
             this.zahtjevidDataGridViewTextBoxColumn.DataPropertyName = "zahtjev_id";
@@ -203,6 +175,16 @@
             this.ime.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.ime.ValueMember = "kupac_id";
             // 
+            // kupacBindingSource
+            // 
+            this.kupacBindingSource.DataMember = "kupac";
+            this.kupacBindingSource.DataSource = this.ineffableDataSet2;
+            // 
+            // ineffableDataSet2
+            // 
+            this.ineffableDataSet2.DataSetName = "IneffableDataSet2";
+            this.ineffableDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // prezime
             // 
             this.prezime.DataPropertyName = "kupac_id";
@@ -214,6 +196,11 @@
             this.prezime.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.prezime.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.prezime.ValueMember = "kupac_id";
+            // 
+            // kupacBindingSource1
+            // 
+            this.kupacBindingSource1.DataMember = "kupac";
+            this.kupacBindingSource1.DataSource = this.ineffableDataSet2;
             // 
             // nazivuredjajaDataGridViewTextBoxColumn
             // 
@@ -239,6 +226,19 @@
             this.proizvodjacDataGridViewTextBoxColumn.HeaderText = "Proizvođač";
             this.proizvodjacDataGridViewTextBoxColumn.Name = "proizvodjacDataGridViewTextBoxColumn";
             // 
+            // zahtjevzaservisBindingSource
+            // 
+            this.zahtjevzaservisBindingSource.DataMember = "zahtjev_za_servis";
+            this.zahtjevzaservisBindingSource.DataSource = this.ineffableDataSet2;
+            // 
+            // zahtjev_za_servisTableAdapter
+            // 
+            this.zahtjev_za_servisTableAdapter.ClearBeforeFill = true;
+            // 
+            // kupacTableAdapter
+            // 
+            this.kupacTableAdapter.ClearBeforeFill = true;
+            // 
             // frmPregledZahjeva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,6 +254,7 @@
             this.Name = "frmPregledZahjeva";
             this.Text = "Pregled zahtjeva";
             this.Load += new System.EventHandler(this.frmPregledZahjeva_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmPregledZahjeva_HelpRequested);
             ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kupacBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ineffableDataSet2)).EndInit();
