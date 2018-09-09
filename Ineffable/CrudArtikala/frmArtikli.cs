@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -21,9 +22,7 @@ namespace CrudArtikala
 
         private void frmArtikli_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'ineffableDataSet.dobavljac' table. You can move, or remove it, as needed.
             this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
-            // TODO: This line of code loads data into the 'ineffableDataSet.artikl' table. You can move, or remove it, as needed.
             this.artiklTableAdapter.Fill(this.ineffableDataSet.artikl);
         }
 
@@ -57,14 +56,34 @@ namespace CrudArtikala
                     using (var db = new IneffableEntities())
                     {
                         artikl odabraniArtikl = db.artikl.FirstOrDefault(s => s.artikl_id == idArtikla);
-                        db.artikl.Attach(odabraniArtikl);
-                        db.artikl.Remove(odabraniArtikl);
-                        db.SaveChanges();
+
+                        var count1 = db.stavka_racuna.Where(s => s.artikl_id == idArtikla).Count();
+                        var count2 = db.rezervacija.Where(s => s.artikl_id == idArtikla).Count();
+                        if (count2 > 0)
+                        {
+                            MessageBox.Show("Artikl nije moguće izbrisati jer je rezerviran.");
+                        }
+                        if (count1 > 0)
+                        {
+                            MessageBox.Show("Artikl nije moguće izbrisati jer se nalazi na računu.");
+                        }
+                        if (count1 == 0 || count2 == 0)
+                        {
+                            db.artikl.Attach(odabraniArtikl);
+                            db.artikl.Remove(odabraniArtikl);
+                            db.SaveChanges();
+                            MessageBox.Show("Artikl uspješno izbrisan");
+                        }
                     }
                 }
             }
             this.dobavljacTableAdapter.Fill(this.ineffableDataSet.dobavljac);
             this.artiklTableAdapter.Fill(this.ineffableDataSet.artikl);
+        }
+
+        private void frmArtikli_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "crud_artikala.htm");
         }
     }
 }

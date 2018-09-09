@@ -13,41 +13,19 @@ namespace PrijavaRegistracija
     public partial class frmPrijava : Form
     {
         Form parent;
+        Korisnik kori { get; set; }
         public frmPrijava(Form parent)
         {
             InitializeComponent();
             this.parent = parent;
         }
-
-        int pomak;
-        int pomakX;
-        int pomakY;
-        private void frmPrijava_MouseDown(object sender, MouseEventArgs e)
-        {
-            pomak = 1;
-            pomakX = e.X;
-            pomakY = e.Y;
-        }
-
-        private void frmPrijava_MouseUp(object sender, MouseEventArgs e)
-        {
-            pomak = 0;
-        }
-
-        private void frmPrijava_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (pomak == 1)
-            {
-                this.SetDesktopLocation(MousePosition.X - pomakX, MousePosition.Y - pomakY);
-            }
-        }
-
         private void btnPrijava_Click(object sender, EventArgs e)
         {
-            Autentifikator autentifikator = new Autentifikator();
+            Cursor.Current = Cursors.WaitCursor;
+
             string korIme = tbKorIme.Text;
             string lozinka = tbLozinka.Text;
-            Cursor.Current = Cursors.WaitCursor;
+
             if (korIme == "")
             {
                 MessageBox.Show("Niste unjeli korisničko ime");
@@ -58,9 +36,13 @@ namespace PrijavaRegistracija
             }
             else
             {
+                Autentifikator autentifikator = new Autentifikator();
                 string korisniknadjen = autentifikator.prijaviKorisnika(korIme, lozinka);
+                Korisnik kori = Autentifikator.dohvatiPrijavljenogKorisnika();
                 if (korisniknadjen == "")
                 {
+                    parent.MainMenuStrip.Visible = true;
+                    
                     this.Close();
                 }
                 else if (korisniknadjen == "lozinka")
@@ -73,14 +55,21 @@ namespace PrijavaRegistracija
                 }
             }        
         }
-
         private void Registracija_Click(object sender, EventArgs e)
         {
-            frmRegistracija registracija = new frmRegistracija(parent);
-            registracija.MdiParent = parent;
-            registracija.WindowState = FormWindowState.Maximized;
-            registracija.Show();
+            frmRegistracija forma = new frmRegistracija(parent, this);
+            
+            forma.TopLevel = false;
+            forma.Parent = parent;
+            parent.Size = forma.Size;
+            forma.Dock = DockStyle.Fill;
+            this.Hide();
+            forma.Show();
         }
 
+        private void frmPrijava_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "prijava_registracija.htm");
+        }
     }
 }

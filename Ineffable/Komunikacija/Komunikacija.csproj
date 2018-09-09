@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F570B77-5545-4661-A139-55FBFF913AF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Komunikacija</RootNamespace>
+    <AssemblyName>Komunikacija</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>..\QR_Kod\bin\Debug\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="QR_Kod">
+      <HintPath>..\QR_Kod\bin\Debug\QR_Kod.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="frmEmailPoruka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailPoruka.Designer.cs">
+      <DependentUpon>frmEmailPoruka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKomuniciraj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKomuniciraj.Designer.cs">
+      <DependentUpon>frmKomuniciraj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMojiServisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMojiServisi.Designer.cs">
+      <DependentUpon>frmMojiServisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoviZahtjev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoviZahtjev.Designer.cs">
+      <DependentUpon>frmNoviZahtjev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmObavijesti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObavijesti.Designer.cs">
+      <DependentUpon>frmObavijesti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPoruka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPoruka.Designer.cs">
+      <DependentUpon>frmPoruka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPregledZahjeva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPregledZahjeva.Designer.cs">
+      <DependentUpon>frmPregledZahjeva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZavrseniServisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZavrseniServisi.Designer.cs">
+      <DependentUpon>frmZavrseniServisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="IneffableDataSet.cs">
+      <DependentUpon>IneffableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet2.cs">
+      <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IneffableDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IneffableDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmEmailPoruka.resx">
+      <DependentUpon>frmEmailPoruka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKomuniciraj.resx">
+      <DependentUpon>frmKomuniciraj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMojiServisi.resx">
+      <DependentUpon>frmMojiServisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoviZahtjev.resx">
+      <DependentUpon>frmNoviZahtjev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmObavijesti.resx">
+      <DependentUpon>frmObavijesti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPoruka.resx">
+      <DependentUpon>frmPoruka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPregledZahjeva.resx">
+      <DependentUpon>frmPregledZahjeva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZavrseniServisi.resx">
+      <DependentUpon>frmZavrseniServisi.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="IneffableDataSet.xsc">
+      <DependentUpon>IneffableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet.xss">
+      <DependentUpon>IneffableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet1.xsc">
+      <DependentUpon>IneffableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet1.xss">
+      <DependentUpon>IneffableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet2.xsc">
+      <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet2.xss">
+      <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet3.xsc">
+      <DependentUpon>IneffableDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet3.xss">
+      <DependentUpon>IneffableDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet4.xsc">
+      <DependentUpon>IneffableDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet4.xss">
+      <DependentUpon>IneffableDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet5.xsc">
+      <DependentUpon>IneffableDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="IneffableDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IneffableDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IneffableDataSet5.xss">
+      <DependentUpon>IneffableDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BPModel\BPModel.csproj">
+      <Project>{ff9c016d-c9ff-4a1b-a1d5-7c43b0753ca9}</Project>
+      <Name>BPModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CrudArtikala\CrudArtikala.csproj">
+      <Project>{724BE790-CDB5-4622-88EC-8712E562FB3C}</Project>
+      <Name>CrudArtikala</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

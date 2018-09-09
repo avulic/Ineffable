@@ -90,6 +90,7 @@
             this.tbKorIme.Name = "tbKorIme";
             this.tbKorIme.Size = new System.Drawing.Size(133, 15);
             this.tbKorIme.TabIndex = 3;
+            this.tbKorIme.Text = "zeljko";
             // 
             // tbLozinka
             // 
@@ -101,8 +102,11 @@
             this.tbLozinka.Margin = new System.Windows.Forms.Padding(4);
             this.tbLozinka.MaximumSize = new System.Drawing.Size(133, 20);
             this.tbLozinka.Name = "tbLozinka";
+            this.tbLozinka.PasswordChar = '*';
             this.tbLozinka.Size = new System.Drawing.Size(133, 15);
             this.tbLozinka.TabIndex = 4;
+            this.tbLozinka.Text = "1111";
+            this.tbLozinka.UseWaitCursor = true;
             // 
             // label3
             // 
@@ -178,9 +182,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPrijava";
             this.Text = "Prijava";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmPrijava_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmPrijava_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.frmPrijava_MouseUp);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.frmPrijava_HelpRequested);
             this.ResumeLayout(false);
             this.PerformLayout();
 

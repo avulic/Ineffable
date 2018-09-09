@@ -10,77 +10,57 @@ using System.Windows.Forms;
 using PrijavaRegistracija;
 using CrudArtikala;
 using QR_Kod;
+using CRUDZaposlenik;
+using Komunikacija;
+using CRUDKupaca;
+using BPModel;
+using Racuni;
+using RezervacijaArtikala;
+using Servisi;
+
 namespace Ineffable
 {
     public partial class frmMain : Form
     {
+
+        Korisnik kori;
         public frmMain()
         {
             InitializeComponent();
-            IsMdiContainer = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.DoubleBuffered = true;
+            this.SetStyle(ControlStyles.ResizeRedraw, true);
+            this.ControlBox = false;
+            this.Text = String.Empty;
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
             frmPrijava prijavaForma = new frmPrijava(this);
+            prijavaForma.FormClosed += new FormClosedEventHandler(provjeraDopustenjaKorisnika);
             prikaziFormu(prijavaForma);
             
         }
-        protected override void OnMdiChildActivate(EventArgs e)
-        {
-            Form[] mdichld = this.MdiChildren;
-            base.OnMdiChildActivate(e);
-            this.BeginInvoke(new Action(() => {
-                if (mdichld.Length == 0)
-                {
-                    msIzbornik.Visible = true;
-                }
-                else
-                {
-                    foreach (Form item in mdichld)
-                    {
-                        if (item.Name == "frmPrijava")
-                        {
-                            item.Closed += delegate
-                            {
-                                msIzbornik.Visible = true;
-                            };
-                        }
-                    }
-                }
-            }));
-        }
+
         void prikaziFormu(Form forma)
         {
-            forma.MdiParent = this;
-            forma.WindowState = FormWindowState.Maximized;
-            forma.Show();
-            this.Size = forma.Size;
-        }
-        int pomak;
-        int pomakX;
-        int pomakY;
-        private void msIzbornik_MouseDown(object sender, MouseEventArgs e)
-        {
-            pomak = 1;
-            pomakX = e.X;
-            pomakY = e.Y;
-        }
-
-        private void msIzbornik_MouseUp(object sender, MouseEventArgs e)
-        {
-            pomak = 0;
-        }
-
-        private void msIzbornik_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (pomak == 1)
+            FormCollection forme = Application.OpenForms;
+            for (int i = 1; i < forme.Count; i++)
             {
-                this.SetDesktopLocation(MousePosition.X - pomakX, MousePosition.Y - pomakY);
+                if (!(forme[i].Name == "frmMain"))
+                {
+                    forme[i].Close();
+                }
             }
+            forma.TopLevel = false;
+            forma.Parent = this;
+            this.Size = new Size(700, 800);
+            
+            forma.Dock = DockStyle.Fill;
+            forma.StartPosition = FormStartPosition.CenterScreen;
+            forma.Show();
         }
-
-
+        
         private void pExit_Paint(object sender, PaintEventArgs e)
         {
             Graphics exitPanel = e.Graphics;
@@ -136,6 +116,32 @@ namespace Ineffable
             WindowState = FormWindowState.Minimized;
         }
 
+        private bool mouseDown;
+        private Point lastLocation;
+
+        private void frmMain_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+
         private void msIzbornikArtikli_Click(object sender, EventArgs e)
         {
             frmArtikli artikli = new frmArtikli(this);
@@ -144,8 +150,93 @@ namespace Ineffable
 
         private void msIzbornikServisi_Click(object sender, EventArgs e)
         {
-            frmKreirajQRKod kod = new frmKreirajQRKod();
+            frmKreirajQRKod kod = new frmKreirajQRKod(0);
             prikaziFormu(kod);
+        }
+
+        private void msIzbornikZaposlenici_Click(object sender, EventArgs e)
+        {
+            frmCRUDZaposlenik zaposlenici = new frmCRUDZaposlenik(this, kori);
+            prikaziFormu(zaposlenici);
+        }
+
+        private void msIzbornikChat_Click(object sender, EventArgs e)
+        {
+            frmKomuniciraj komunikacija = new frmKomuniciraj(kori.ulogaNaziv, kori.id);
+            prikaziFormu(komunikacija);
+        }
+
+        private void kupciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmKupci kupci = new frmKupci();
+            prikaziFormu(kupci);
+        }
+
+        private void provjeraDopustenjaKorisnika(object sender, FormClosedEventArgs e)
+        {
+            kori = Autentifikator.dohvatiPrijavljenogKorisnika();
+            if (kori.ulogaNaziv == "Kupac")
+            {
+                msIzbornikArtikli.Visible = false;
+                msIzbornikServisi.Visible = false;
+                msIzbornikRacun.Visible = false;
+                msIzbornikZaposlenici.Visible = false;
+                msIzbornikKupci.Visible = false;
+            }
+            else
+            {
+                msIzbornikUredjaji.Visible = false;
+            }
+        }
+    
+        private void kreirajRačunToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNoviRacun f = new frmNoviRacun();
+            prikaziFormu(f);
+        }
+        
+        private void pregledajRačuneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRacuni f = new frmRacuni();
+            prikaziFormu(f);
+        }
+        int brojRedaka;
+        private void msIzbornikRezervacija_Click(object sender, EventArgs e)
+        {
+           
+            if (kori.ulogaNaziv == "Zaposlenik" || kori.ulogaNaziv == "Gazda")
+            {
+                int broj;
+                using (IneffableEntities kontekst = new IneffableEntities())
+                {
+                    var baza = from r in kontekst.rezervacija select r;
+                    broj = baza.Count();
+                }
+                if (broj != brojRedaka)
+                {
+                    MessageBox.Show("Promjena kod rezervacija");
+                    brojRedaka = broj;
+                }
+                frmPregledRezervacija f = new frmPregledRezervacija();
+                prikaziFormu(f);
+            }
+            else if (kori.ulogaNaziv == "Kupac")
+            {
+                int korisnik_id = kori.id;
+                frmRezervacija f = new frmRezervacija(korisnik_id);
+                prikaziFormu(f);
+            }
+        }
+
+        private void msIzbornikUredjaji_Click(object sender, EventArgs e)
+        {
+            frmPregledServisa servisi = new frmPregledServisa(this, kori);
+            prikaziFormu(servisi);
+        }
+
+        private void frmMain_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "Help.chm", HelpNavigator.Topic, "pocetni_zaslon.htm");
         }
     }
 }

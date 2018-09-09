@@ -1,32 +1,52 @@
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.pdb
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\MessagingToolkit.QRCode.dll
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csprojResolveAssemblyReference.cache
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.CoreCompileInputs.cache
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.CopyComplete
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.dll
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.pdb
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmKreirajQRKod.resources
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.GenerateResource.cache
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll.config
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.dll
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.dll
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.xml
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.xml
-D:\Program Files (x86)\PI\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmRadniNalog.resources
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csprojResolveAssemblyReference.cache
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmKreirajQRKod.resources
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmRadniNalog.resources
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.GenerateResource.Cache
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.dll
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.pdb
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll.config
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.pdb
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.dll
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.dll
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.dll
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\MessagingToolkit.QRCode.dll
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.pdb
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.xml
-E:\Faks\3.godina\2.semestar\PI\projekt\test\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll.config
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\bin\Debug\MessagingToolkit.QRCode.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csprojResolveAssemblyReference.cache
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmKreirajQRKod.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmPrikaziLog.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmRadniNalog.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.GenerateResource.Cache
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konacno_moje\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.pdb
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll.config
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.pdb
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.dll
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.dll
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.pdb
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.dll.config
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.xml
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmKreirajQRKod.resources
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmPrikaziLog.resources
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmRadniNalog.resources
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.GenerateResource.Cache
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.dll
+C:\Users\Korisnik\Desktop\99\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll.config
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\bin\Debug\QR_Kod.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\bin\Debug\MessagingToolkit.QRCode.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\bin\Debug\BPModel.pdb
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\bin\Debug\EntityFramework.SqlServer.xml
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csprojResolveAssemblyReference.cache
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmKreirajQRKod.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmPrikaziLog.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.frmRadniNalog.resources
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.csproj.GenerateResource.Cache
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.dll
+E:\Faks\3.godina\2.semestar\PI\projekt\konflikti\r18075\Ineffable\QR_Kod\obj\Debug\QR_Kod.pdb
