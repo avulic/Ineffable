@@ -26,52 +26,44 @@ namespace Servisi
             switch (servis.status)
             {
                 case "Zaprimljeno":
-                    lbCijenaFaze.Text = servis.log.cijenaPromjene["Zaprimljeno"].ToString();
-                    lbFaza.Text = "Zaprimljeno";
+                    prikazPodataka("Zaprimljeno");
                     postaviDovrseneStatuse(6);
                     progressBar.Value = (int)(progressBar.Maximum * 0);
                     break;
                 case "Pregledano":
-                    lbCijenaFaze.Text = servis.log.cijenaPromjene["Pregledano"].ToString();
-                    lbFaza.Text = "Pregledano";
+                    prikazPodataka("Pregledano");
                     postaviDovrseneStatuse(5);
                     progressBar.Value = (int)(progressBar.Maximum * 0.16);
                     break;
                 case "Kvar utvrden":
-                    lbCijenaFaze.Text = servis.log.cijenaPromjene["Kvar utvrden"].ToString();
-                    lbFaza.Text = "Kvar utvrdjen";
+                    prikazPodataka("Kvar utvrden");
                     postaviDovrseneStatuse(4);
                     progressBar.Value = (int)(progressBar.Maximum * 0.32);
                     lbKvar.Text = "Kvar utvrđen";
                     break;
                 case "Kvar nije utvrden":
-                    lbCijenaFaze.Text = servis.log.cijenaPromjene["Kvar nije utvrden"].ToString();
-                    lbFaza.Text = "Kvar nije utvrđen";
+                    prikazPodataka("Kvar nije utvrden");
                     postaviDovrseneStatuse(4);
                     progressBar.Value = (int)(progressBar.Maximum * 0.32);
                     lbKvar.Text = "Kvar nije utvrđen";
                     break;
                 case "Popravak u tijeku":
-                    lbCijenaFaze.Text = servis.log.cijenaPromjene["Popravak u tijeku"].ToString();
-                    lbFaza.Text = "Popravak u tijeku";
+                    prikazPodataka("Popravak u tijeku");
                     postaviDovrseneStatuse(3);
                     progressBar.Value = (int)(progressBar.Maximum * 0.48);
                     break;
                 case "Na cekanju":
-                    lbCijenaFaze.Text = servis.log.cijenaPromjene["Na cekanju"].ToString();
-                    lbFaza.Text = "Na cekanju";
+                    prikazPodataka("Na cekanju");
                     postaviDovrseneStatuse(2);
                     progressBar.Value = (int)(progressBar.Maximum * 0.64);
                     break;
                 case "Popravljeno":
-                    lbCijenaFaze.Text = servis.log.cijenaPromjene["Popravljeno"].ToString();
-                    lbFaza.Text = "Popravljeno";
+                    prikazPodataka("Popravljeno");
                     postaviDovrseneStatuse(1);
                     progressBar.Value = (int)(progressBar.Maximum * 0.80);
                     break;
                 case "Isporuceno":
-                    lbCijenaFaze.Text = servis.log.cijenaPromjene["Isporuceno"].ToString();
-                    lbFaza.Text = "Isporuceno";
+                    prikazPodataka("Isporuceno");
                     postaviDovrseneStatuse(0);
                     progressBar.Value = (int)(progressBar.Maximum * 1);
                     break;
@@ -83,6 +75,7 @@ namespace Servisi
             {
                 PictureBox slika = slike[i] as PictureBox;
                 slika.Image = Servisi.Properties.Resources.check;
+                slika.Enabled = true;
             }
             for (int i = status-1; i >= 0; i--)
             {
@@ -102,58 +95,44 @@ namespace Servisi
         }
         private void pbZaprimljeno_Click(object sender, EventArgs e)
         {
-            lbCijenaFaze.Text = servis.log.cijenaPromjene["Zaprimljeno"].ToString();
-            tbOpisFaze.Text = servis.log.opis["Zaprimljeno"];
-            lbFaza.Text = "Zaprimljeno";
+            prikazPodataka("Zaprimljeno");
         }
         private void pbPregledano_Click(object sender, EventArgs e)
         {
-            lbCijenaFaze.Text = servis.log.cijenaPromjene["Pregledano"].ToString();
-            tbOpisFaze.Text = servis.log.opis["Pregledano"];
-            lbFaza.Text = "Pregledano";
+            prikazPodataka("Pregledano");
         }
         private void pbKvar_Click(object sender, EventArgs e)
         {
             if (servis.log.opis.ContainsKey("Kvar utvrden"))
             {
-                lbCijenaFaze.Text = servis.log.cijenaPromjene["Kvar utvrden"].ToString();
-                tbOpisFaze.Text = servis.log.opis["Kvar utvrden"];
-                lbFaza.Text = "Kvar utvrden";
+                prikazPodataka("Kvar utvrden");
             }
             else if (servis.log.opis.ContainsKey("Kvar nije utvrden"))
             {
-                lbCijenaFaze.Text = servis.log.cijenaPromjene["Kvar nije utvrden"].ToString();
-                tbOpisFaze.Text = servis.log.opis["Kvar nije utvrden"];
-                lbFaza.Text = "Kvar nije utvrden";
+                prikazPodataka("Kvar nije utvrden");
             }
         }
         private void pbPopravak_Click(object sender, EventArgs e)
         {
-            lbCijenaFaze.Text = servis.log.cijenaPromjene["Popravak u tijeku"].ToString();
-            tbOpisFaze.Text = servis.log.opis["Popravak u tijeku"];
-            lbFaza.Text = "Popravak u tijeku";
-
+            prikazPodataka("Popravak u tijek");
         }
         private void pbCekanje_Click(object sender, EventArgs e)
         {
-            lbCijenaFaze.Text = servis.log.cijenaPromjene["Na cekanju"].ToString();
-            tbOpisFaze.Text = servis.log.opis["Na cekanju"];
-            lbFaza.Text = "Na cekanju";
-
+            prikazPodataka("Na cekanju");
         }
         private void pbPopravljeno_Click(object sender, EventArgs e)
         {
-            lbCijenaFaze.Text = servis.log.cijenaPromjene["Popravljeno"].ToString();
-            tbOpisFaze.Text = servis.log.opis["Popravljeno"];
-            lbFaza.Text = "Popravljeno";
-
+            prikazPodataka("Popravljeno");
         }
         private void pbIsporuceno_Click(object sender, EventArgs e)
         {
-            lbCijenaFaze.Text = servis.log.cijenaPromjene["Isporuceno"].ToString();
-            tbOpisFaze.Text = servis.log.opis["Isporuceno"];
-            lbFaza.Text = "Isporuceno";
-
+            prikazPodataka("Isporuceno");
         }
+        private void prikazPodataka(String faza)
+        {
+            lbCijenaFaze.Text = servis.log.cijenaPromjene[faza].ToString();
+            tbOpisFaze.Text = servis.log.opis[faza];
+            lbFaza.Text = faza;
+        }   
     }
 }

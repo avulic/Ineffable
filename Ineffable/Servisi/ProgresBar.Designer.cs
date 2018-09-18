@@ -259,6 +259,7 @@
             // pbIsporuceno
             // 
             this.pbIsporuceno.BackColor = System.Drawing.Color.Transparent;
+            this.pbIsporuceno.Enabled = false;
             this.pbIsporuceno.Image = ((System.Drawing.Image)(resources.GetObject("pbIsporuceno.Image")));
             this.pbIsporuceno.Location = new System.Drawing.Point(616, 3);
             this.pbIsporuceno.Name = "pbIsporuceno";
@@ -270,6 +271,7 @@
             // pbPopravljeno
             // 
             this.pbPopravljeno.BackColor = System.Drawing.Color.Transparent;
+            this.pbPopravljeno.Enabled = false;
             this.pbPopravljeno.Image = ((System.Drawing.Image)(resources.GetObject("pbPopravljeno.Image")));
             this.pbPopravljeno.Location = new System.Drawing.Point(510, 4);
             this.pbPopravljeno.Name = "pbPopravljeno";
@@ -281,6 +283,7 @@
             // pbCekanje
             // 
             this.pbCekanje.BackColor = System.Drawing.Color.Transparent;
+            this.pbCekanje.Enabled = false;
             this.pbCekanje.Image = ((System.Drawing.Image)(resources.GetObject("pbCekanje.Image")));
             this.pbCekanje.Location = new System.Drawing.Point(408, 4);
             this.pbCekanje.Name = "pbCekanje";
@@ -292,6 +295,7 @@
             // pbPopravak
             // 
             this.pbPopravak.BackColor = System.Drawing.Color.Transparent;
+            this.pbPopravak.Enabled = false;
             this.pbPopravak.Image = ((System.Drawing.Image)(resources.GetObject("pbPopravak.Image")));
             this.pbPopravak.Location = new System.Drawing.Point(302, 4);
             this.pbPopravak.Name = "pbPopravak";
@@ -303,6 +307,7 @@
             // pbKvar
             // 
             this.pbKvar.BackColor = System.Drawing.Color.Transparent;
+            this.pbKvar.Enabled = false;
             this.pbKvar.Image = ((System.Drawing.Image)(resources.GetObject("pbKvar.Image")));
             this.pbKvar.Location = new System.Drawing.Point(200, 4);
             this.pbKvar.Name = "pbKvar";
@@ -314,6 +319,7 @@
             // pbPregledano
             // 
             this.pbPregledano.BackColor = System.Drawing.Color.Transparent;
+            this.pbPregledano.Enabled = false;
             this.pbPregledano.Image = global::Servisi.Properties.Resources.x;
             this.pbPregledano.Location = new System.Drawing.Point(106, 3);
             this.pbPregledano.Name = "pbPregledano";
@@ -325,6 +331,7 @@
             // pbZaprimljeno
             // 
             this.pbZaprimljeno.BackColor = System.Drawing.Color.Transparent;
+            this.pbZaprimljeno.Enabled = false;
             this.pbZaprimljeno.Image = global::Servisi.Properties.Resources.x;
             this.pbZaprimljeno.Location = new System.Drawing.Point(17, 3);
             this.pbZaprimljeno.Name = "pbZaprimljeno";

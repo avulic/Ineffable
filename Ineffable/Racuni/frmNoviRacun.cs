@@ -100,7 +100,7 @@ namespace Racuni
                     vrijeme = vrijeme,
                     iznos = 0,
                     zaposlenik_id = zaposlenik,
-                    servis_id = null
+                    servis_id = servisTrenutni
 
                 };
                 kontekst.racun.Add(noviRacun);
@@ -111,12 +111,21 @@ namespace Racuni
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            odabrani = int.Parse(comboBox1.SelectedValue.ToString());
+            if (comboBox1.SelectedValue != null)
+            {
+                odabrani = int.Parse(comboBox1.SelectedValue.ToString());
+
+            }
             using (IneffableEntities kontekst = new IneffableEntities())
             {
                 artikl noviArtikl = kontekst.artikl.FirstOrDefault(r => r.artikl_id == odabrani);
-                double cijena = double.Parse(noviArtikl.cijena.ToString());
-                cijenaRacun.Text = cijena.ToString();
+                double cijena;
+                if (noviArtikl != null)
+                {
+                    cijena = double.Parse(noviArtikl.cijena.ToString());
+                    cijenaRacun.Text = cijena.ToString();
+                }
+                
             }
         }
 
@@ -139,6 +148,7 @@ namespace Racuni
             int? kolicinaSkladiste;
             using (IneffableEntities kontekst = new IneffableEntities())
             {
+                racun trenutniRacunId = kontekst.racun.FirstOrDefault(r => r.servis_id == servisTrenutni);
                 artikl noviArtikl = kontekst.artikl.FirstOrDefault(r => r.artikl_id == trenutni);
                 kolicinaSkladiste = noviArtikl.kolicina_na_skladistu;
 
@@ -154,7 +164,7 @@ namespace Racuni
                     {
                         var novaStavka = new stavka_racuna()
                         {
-                            racun_id = racun_id,
+                            racun_id = trenutniRacunId.racun_id,
                             artikl_id = artikl_id,
                             kolicina = kolicina
                         };
@@ -162,40 +172,29 @@ namespace Racuni
                         kontekst.SaveChanges();
                     }
                 }
-                
-                int? servisId;
-                if (comboBox3.SelectedValue == "" || comboBox3.SelectedValue == null)
-                {
-                    servisId = null;
-                }
-                else
-                {
-                    servisId = int.Parse(comboBox3.SelectedValue.ToString());
-                }
-
-                int brojRacuna = int.Parse(ukupnoRacuna.Text.ToString());
-                racun noviRacun = kontekst.racun.FirstOrDefault(r => r.racun_id == brojRacuna);
-                
-                noviRacun.servis_id = servisId;
                 kontekst.SaveChanges();
-
             }
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            zaposlenik = int.Parse(comboBox2.SelectedValue.ToString());
+            if (comboBox2.SelectedValue != null)
+            {
+                zaposlenik = int.Parse(comboBox2.SelectedValue.ToString());
+
+            }
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            int servisTrenutni2 = int.Parse(comboBox3.SelectedValue.ToString());
             using (IneffableEntities kontekst = new IneffableEntities())
             {
-                servisTrenutni = int.Parse(comboBox3.SelectedValue.ToString());
+                if (comboBox3.SelectedValue != null)
+                {
+                    servisTrenutni = int.Parse(comboBox3.SelectedValue.ToString());
+                }
                 var upit = from servis_log in kontekst.servis_log
-                           where servis_log.servis_id == servisTrenutni2
+                           where servis_log.servis_id == servisTrenutni
                            select servis_log;
                 ukupnoServis = 0;
                 foreach (var element in upit)

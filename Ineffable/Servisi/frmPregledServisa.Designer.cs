@@ -97,7 +97,7 @@
             this.cpBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.cpBar.Location = new System.Drawing.Point(140, 37);
             this.cpBar.Name = "cpBar";
-            this.cpBar.Size = new System.Drawing.Size(736, 311);
+            this.cpBar.Size = new System.Drawing.Size(736, 365);
             this.cpBar.TabIndex = 7;
             // 
             // frmPregledServisa

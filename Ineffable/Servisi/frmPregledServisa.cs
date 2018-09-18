@@ -37,7 +37,10 @@ namespace Servisi
 
         private void lbUredjaji_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cpBar.PostaviStatus(servisi[lbUredjaji.SelectedIndex]);
+            if (lbUredjaji.SelectedIndex != -1)
+            {
+                cpBar.PostaviStatus(servisi[lbUredjaji.SelectedIndex]);
+            }
         }
 
         private void frmPregledServisa_HelpRequested(object sender, HelpEventArgs hlpevent)
