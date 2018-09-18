@@ -1,0 +1,15 @@
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\bin\Release\CrudArtikala.dll.config
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\bin\Release\CrudArtikala.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\bin\Release\CrudArtikala.pdb
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\bin\Release\BPModel.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\bin\Release\EntityFramework.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\bin\Release\BPModel.pdb
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\bin\Release\EntityFramework.xml
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\obj\Release\CrudArtikala.csprojResolveAssemblyReference.cache
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\obj\Release\CrudArtikala.frmArtikli.resources
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\obj\Release\CrudArtikala.frmNoviArtikl.resources
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\obj\Release\CrudArtikala.csproj.GenerateResource.Cache
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\obj\Release\CrudArtikala.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CrudArtikala\obj\Release\CrudArtikala.pdb

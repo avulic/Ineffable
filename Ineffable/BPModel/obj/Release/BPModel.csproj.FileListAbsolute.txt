@@ -1,0 +1,9 @@
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\BPModel\bin\Release\BPModel.dll.config
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\BPModel\bin\Release\BPModel.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\BPModel\bin\Release\BPModel.pdb
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\BPModel\bin\Release\EntityFramework.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\BPModel\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\BPModel\bin\Release\EntityFramework.xml
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\BPModel\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\BPModel\obj\Release\BPModel.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\BPModel\obj\Release\BPModel.pdb

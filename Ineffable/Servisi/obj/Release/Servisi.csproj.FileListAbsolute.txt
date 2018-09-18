@@ -1,0 +1,13 @@
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\bin\Release\Servisi.dll.config
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\bin\Release\Servisi.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\bin\Release\BPModel.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\bin\Release\PrijavaRegistracija.dll
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\bin\Release\BPModel.pdb
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\bin\Release\PrijavaRegistracija.pdb
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\bin\Release\EntityFramework.xml
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\obj\Release\Servisi.csprojResolveAssemblyReference.cache
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\obj\Release\Servisi.frmPregledServisa.resources
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\obj\Release\Servisi.ProgresBar.resources
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\obj\Release\Servisi.Properties.Resources.resources
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\obj\Release\Servisi.csproj.GenerateResource.Cache
+C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\Servisi\obj\Release\Servisi.dll
