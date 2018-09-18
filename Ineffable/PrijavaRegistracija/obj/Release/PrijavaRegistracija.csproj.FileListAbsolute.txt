@@ -1,6 +1,5 @@
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\bin\Release\PrijavaRegistracija.dll.config
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\bin\Release\PrijavaRegistracija.dll
-C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\bin\Release\PrijavaRegistracija.pdb
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\bin\Release\BPModel.dll
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\bin\Release\EntityFramework.dll
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\bin\Release\EntityFramework.SqlServer.dll
@@ -13,4 +12,3 @@ C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\obj\Releas
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\obj\Release\PrijavaRegistracija.Properties.Resources.resources
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\obj\Release\PrijavaRegistracija.csproj.GenerateResource.Cache
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\obj\Release\PrijavaRegistracija.dll
-C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\PrijavaRegistracija\obj\Release\PrijavaRegistracija.pdb

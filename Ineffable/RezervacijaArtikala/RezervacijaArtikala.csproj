@@ -131,6 +131,7 @@
     <None Include="IneffableDataSet2.xss">
       <DependentUpon>IneffableDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\BPModel.artikl.datasource" />
     <None Include="Properties\DataSources\BPModel.dobavljac.datasource" />
     <None Include="Properties\Settings.settings">

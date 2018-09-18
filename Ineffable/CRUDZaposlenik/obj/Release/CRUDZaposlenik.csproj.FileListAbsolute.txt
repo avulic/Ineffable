@@ -6,7 +6,6 @@ C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDZaposlenik\bin\Release\Ent
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDZaposlenik\bin\Release\EntityFramework.SqlServer.dll
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDZaposlenik\bin\Release\PrijavaRegistracija.dll
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDZaposlenik\bin\Release\BPModel.pdb
-C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDZaposlenik\bin\Release\PrijavaRegistracija.pdb
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDZaposlenik\bin\Release\EntityFramework.xml
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDZaposlenik\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDZaposlenik\obj\Release\CRUDZaposlenik.csprojResolveAssemblyReference.cache

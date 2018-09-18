@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Ineffable.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Ineffable.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Ineffable" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pGi2xU9nv/rWX/DtV6DMt0w89ezqmNlRFudL6BaRpzs=</dsig:DigestValue>
+        <dsig:DigestValue>ZxV00zYd1hu+0j/mSSobGDmdgEv+y5ge0OMWFqllZUo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>W8xjbfAWndKtrrsGWC4FIHLAxOcstFfspbcrNcVoPEA=</dsig:DigestValue>
+        <dsig:DigestValue>8GSmvJT/of9j+XnLP8TFSk7C4GJ4IWSYLPBAJ7LNwC4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -121,7 +121,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>TKZPXi2JVLjAhvgnByoYhbdcAxWopq5QqvH16yqKCe0=</dsig:DigestValue>
+        <dsig:DigestValue>f7J0HDB4ctjOPMqEtjlFQsszrgGo32LkBUfOrLcjZKw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -150,14 +150,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrijavaRegistracija.dll" size="49664">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrijavaRegistracija.dll" size="53760">
       <assemblyIdentity name="PrijavaRegistracija" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OGtzysYNM4pQAU0Zdk0+Kex/uIoLfR1eZ7FZkLkQ1gE=</dsig:DigestValue>
+        <dsig:DigestValue>arN0Y1LFUzFA4BtEhMp32OXcEVT+sG5z9PuTU10ofTY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -193,7 +193,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BQSoJ4TwTHg8VQFw9ZQVSTXFAsoMIRF1NmwX2J9a41g=</dsig:DigestValue>
+        <dsig:DigestValue>VnLVctQRYB93nQIZ8Iv1MWAEHrrNP22wOKygqsEdsvI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -205,7 +205,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>z8OizEMiaqL91wiF8tjmlu5Z2L2Cx+T2Jk0xT1zZvJ4=</dsig:DigestValue>
+        <dsig:DigestValue>v8Z6/WXV6bAvQfv0wU8E0ndqVD/n+Ah8Diz3C22mI8k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

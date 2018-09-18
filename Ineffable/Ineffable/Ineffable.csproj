@@ -25,7 +25,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>Ineffable</ProductName>
     <PublisherName>Ante</PublisherName>
-    <ApplicationRevision>0</ApplicationRevision>
+    <SuiteName>avulic</SuiteName>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>

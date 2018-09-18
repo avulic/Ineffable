@@ -2,10 +2,8 @@ C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\bin\Release\CRUDKup
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\bin\Release\CRUDKupaca.dll
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\bin\Release\CRUDKupaca.pdb
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\bin\Release\BPModel.dll
-C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\bin\Release\EntityFramework.dll
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\bin\Release\PrijavaRegistracija.dll
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\bin\Release\BPModel.pdb
-C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\bin\Release\PrijavaRegistracija.pdb
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\bin\Release\EntityFramework.xml
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\obj\Release\CRUDKupaca.csprojResolveAssemblyReference.cache
 C:\Users\Ante\Desktop\zadnje_git\r18075\Ineffable\CRUDKupaca\obj\Release\CRUDKupaca.frmKupac.resources
