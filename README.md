@@ -20,6 +20,9 @@ aplikaciju
 ### Upis, promjena, brisanje i pregled zaposlenika, dobavljača i kupaca
 Ante Vulić
 * Omogućavanje izvršavanja CRUD operacija administratoru za sve navedeno. 
+### Pregled servisa
+Ante Vulić
+* Omogućuje korisniku pregled svih njegovih servisa te detaljne informacije o pejedinoj fazi servisa.
 ### Kreiranje i pregled računa
 Matija Žinić
 * Kreiranje novih računa te pregled postojećih
