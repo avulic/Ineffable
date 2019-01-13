@@ -13,16 +13,18 @@ Aplikacija je prvenstveno zamišljena kao pomoć u vođenju informatičke tvrtke
 omogućeno dodavanje, brisanje, ažuriranje i pregled opreme, zaposlenika i klijenata aplikacije. Zaposlenik će imati mogućnost pregleda zahtjeva za servis te upravljanje istima.
 
 # Specifikacija projekta
+
 ### Registracija i prijava korisnika
 Ante Vulić
 * Prijava za korisnike koji imaju račun u aplikaciji, a registracija za korisnike koji prvi put koriste
 aplikaciju
-### Upis, promjena, brisanje i pregled zaposlenika, dobavljača i kupaca
+### CRUD zaposlenika, dobavljača i kupaca
 Ante Vulić
 * Omogućavanje izvršavanja CRUD operacija administratoru za sve navedeno. 
-### Pregled servisa
+### Pregled aktivnih servisa (kupac i zaposlenik)
 Ante Vulić
 * Omogućuje korisniku pregled svih njegovih servisa te detaljne informacije o pejedinoj fazi servisa.
+
 ### Kreiranje i pregled računa
 Matija Žinić
 * Kreiranje novih računa te pregled postojećih
@@ -32,6 +34,7 @@ Matija Žinić
 ### Kreiranje QR koda za svaki zaprimljeni uređaj na servisu 
 Matija Žinić
 * Zaposlenici skeniraju QR kod i automatski im se otvara radni nalog kojeg potom mogu dopuniti novim opisom ili promjenom statusa.
+
 ### Upis, promjena, brisanje i pregled artikala
 Alen Ugarković
 * Pregled sve opreme koja je trenutno dostupna za prodaju te dodavanje nove i mijenjanje postojeće.
