@@ -2,6 +2,14 @@
 Ineffable - Aplikacija namijenjena praćenju rada jedne informatičke tvrtke koja se bavi prodajom i
 servisiranjem informatičke opreme.
 
+# Korisnički račun za prijavu u aplikaciju
+ Kupac:
+  * Username: a 
+  * Password: 1234
+Zaposlenik:
+ * Username: a 
+ * Password: 1234
+
 # Projektni tim
 
 * Matija Žinić
