@@ -33,15 +33,11 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="MessagingToolkit.QRCode">
-      <HintPath>..\QR_Kod\bin\Debug\MessagingToolkit.QRCode.dll</HintPath>
-    </Reference>
-    <Reference Include="QR_Kod">
-      <HintPath>..\QR_Kod\bin\Debug\QR_Kod.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -260,8 +256,12 @@
       <Name>BPModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\CrudArtikala\CrudArtikala.csproj">
-      <Project>{724BE790-CDB5-4622-88EC-8712E562FB3C}</Project>
+      <Project>{724be790-cdb5-4622-88ec-8712e562fb3c}</Project>
       <Name>CrudArtikala</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QR_Kod\QR_Kod.csproj">
+      <Project>{d1357c2c-8fb4-4e47-8712-1972c39850dd}</Project>
+      <Name>QR_Kod</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

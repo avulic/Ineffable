@@ -45,10 +45,6 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="QR_Kod, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\QR_Kod\bin\Debug\QR_Kod.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -120,6 +116,10 @@
     <ProjectReference Include="..\PrijavaRegistracija\PrijavaRegistracija.csproj">
       <Project>{b29d18bb-d599-4b18-832e-2ff2d0e0fe64}</Project>
       <Name>PrijavaRegistracija</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QR_Kod\QR_Kod.csproj">
+      <Project>{d1357c2c-8fb4-4e47-8712-1972c39850dd}</Project>
+      <Name>QR_Kod</Name>
     </ProjectReference>
     <ProjectReference Include="..\Racuni\Racuni.csproj">
       <Project>{4614114f-35c3-459d-91a9-19a10d191563}</Project>

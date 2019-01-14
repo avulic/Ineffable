@@ -125,7 +125,6 @@
     <None Include="IneffableDataSetUloga.xss">
       <DependentUpon>IneffableDataSetUloga.xsd</DependentUpon>
     </None>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\edit_gear.png" />
@@ -133,6 +132,7 @@
     <Content Include="Resources\if_female1_403023.png" />
     <Content Include="Resources\if_male3_403019.png" />
     <Content Include="Resources\x_user.png" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -122,3 +122,12 @@ E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\bin\Debug
 E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\obj\Debug\BPModel.csprojResolveAssemblyReference.cache
 E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\obj\Debug\BPModel.dll
 E:\Faks\3.godina\2.semestar\PI\projekt\nalozi\r18075\Ineffable\BPModel\obj\Debug\BPModel.pdb
+C:\Users\Ante\Projekti\faks\Ineffable_Test\Ineffable\BPModel\bin\Debug\EntityFramework.xml
+C:\Users\Ante\Projekti\faks\Ineffable_Test\Ineffable\BPModel\bin\Debug\BPModel.dll.config
+C:\Users\Ante\Projekti\faks\Ineffable_Test\Ineffable\BPModel\bin\Debug\BPModel.dll
+C:\Users\Ante\Projekti\faks\Ineffable_Test\Ineffable\BPModel\bin\Debug\BPModel.pdb
+C:\Users\Ante\Projekti\faks\Ineffable_Test\Ineffable\BPModel\bin\Debug\EntityFramework.dll
+C:\Users\Ante\Projekti\faks\Ineffable_Test\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ante\Projekti\faks\Ineffable_Test\Ineffable\BPModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ante\Projekti\faks\Ineffable_Test\Ineffable\BPModel\obj\Debug\BPModel.dll
+C:\Users\Ante\Projekti\faks\Ineffable_Test\Ineffable\BPModel\obj\Debug\BPModel.pdb
