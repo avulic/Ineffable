@@ -1,3 +1,6 @@
+Dokumentacija : https://github.com/avulic/Ineffable/wiki
+
+
 # Naziv projekta
 Ineffable - Aplikacija namijenjena praćenju rada jedne informatičke tvrtke koja se bavi prodajom i
 servisiranjem informatičke opreme.
